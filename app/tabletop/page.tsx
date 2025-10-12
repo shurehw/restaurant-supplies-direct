@@ -104,7 +104,6 @@ export default function TabletopPage() {
       <CategoryPageLayout
         title="Tabletop & To-Go Accessories"
         description="Restaurant tabletop supplies and to-go accessories. Disposable cutlery, straws, portion cups, condiment containers, and utensil kits. Bulk wholesale pricing with nationwide delivery."
-        icon="🍴"
         relatedCategories={[
           { name: "Takeout Containers", slug: "takeout-containers" },
           { name: "Cups & Lids", slug: "cups-and-lids" },

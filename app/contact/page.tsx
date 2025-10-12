@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us | Restaurant Supplies Direct",
@@ -92,7 +93,11 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
-                <div className="text-4xl mb-3">📞</div>
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
+                    <Phone className="w-8 h-8 text-primary-600" />
+                  </div>
+                </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Call Us</h3>
                 <p className="text-ink-muted text-sm mb-3">Mon-Fri 8am-6pm PST</p>
                 <a href="tel:1-800-555-0123" className="text-primary-600 hover:underline font-semibold">
@@ -100,7 +105,11 @@ export default function ContactPage() {
                 </a>
               </div>
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
-                <div className="text-4xl mb-3">✉️</div>
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center">
+                    <Mail className="w-8 h-8 text-accent-600" />
+                  </div>
+                </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Email Us</h3>
                 <p className="text-ink-muted text-sm mb-3">24hr response time</p>
                 <a href="mailto:info@restaurantsuppliesdirect.com" className="text-primary-600 hover:underline font-semibold">
@@ -108,7 +117,11 @@ export default function ContactPage() {
                 </a>
               </div>
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
-                <div className="text-4xl mb-3">📍</div>
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                    <MapPin className="w-8 h-8 text-blue-600" />
+                  </div>
+                </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Visit Us</h3>
                 <p className="text-ink-muted text-sm">Los Angeles, CA</p>
                 <Link href="/la-hospitality-supplies" className="text-primary-600 hover:underline font-semibold">

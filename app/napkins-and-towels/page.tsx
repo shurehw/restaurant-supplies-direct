@@ -104,7 +104,6 @@ export default function NapkinsAndTowelsPage() {
       <CategoryPageLayout
         title="Napkins & Paper Towels Wholesale"
         description="Premium restaurant napkins, beverage napkins, dinner napkins, and paper towels. Available in standard and custom-printed options. Bulk wholesale pricing with fast nationwide delivery."
-        icon="🧻"
         relatedCategories={[
           { name: "Cups & Lids", slug: "cups-and-lids" },
           { name: "Takeout Containers", slug: "takeout-containers" },

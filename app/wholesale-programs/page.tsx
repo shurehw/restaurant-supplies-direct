@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Building2, TrendingUp, Palette, Utensils, DollarSign, Users, CreditCard, BarChart3, Zap, Truck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Wholesale Restaurant Supply Programs | Powered by Shure Hospitality Wholesale",
@@ -139,13 +140,17 @@ export default function WholesaleProgramsPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Multi-Location Groups", desc: "3+ restaurant locations", icon: "🏢" },
-              { title: "High-Volume Orders", desc: "$2,000+ monthly spend", icon: "📈" },
-              { title: "Custom Packaging Needs", desc: "Branded supplies required", icon: "🎨" },
-              { title: "Enterprise Catering", desc: "Large-scale operations", icon: "🍽️" },
+              { title: "Multi-Location Groups", desc: "3+ restaurant locations", Icon: Building2 },
+              { title: "High-Volume Orders", desc: "$2,000+ monthly spend", Icon: TrendingUp },
+              { title: "Custom Packaging Needs", desc: "Branded supplies required", Icon: Palette },
+              { title: "Enterprise Catering", desc: "Large-scale operations", Icon: Utensils },
             ].map((item, i) => (
               <div key={i} className="p-6 bg-bg-muted rounded-xl border-2 border-border text-center">
-                <div className="text-5xl mb-4">{item.icon}</div>
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center">
+                    <item.Icon className="w-8 h-8 text-primary-600" />
+                  </div>
+                </div>
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">{item.title}</h3>
                 <p className="text-ink-muted text-sm">{item.desc}</p>
               </div>
@@ -164,16 +169,16 @@ export default function WholesaleProgramsPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { title: "Volume Pricing", desc: "Save 15-30% on bulk orders with tiered discount structure", icon: "💰" },
-              { title: "Dedicated Account Manager", desc: "Personal point of contact who knows your business", icon: "🤝" },
-              { title: "Custom Payment Terms", desc: "Net-30 or Net-60 terms for qualified accounts", icon: "💳" },
-              { title: "Inventory Management", desc: "Track usage, forecast needs, prevent stockouts", icon: "📊" },
-              { title: "Priority Production", desc: "Faster turnaround on custom printing orders", icon: "⚡" },
-              { title: "Same-Day Delivery (LA)", desc: "Local warehousing for urgent orders in Los Angeles", icon: "🚚" },
+              { title: "Volume Pricing", desc: "Save 15-30% on bulk orders with tiered discount structure", Icon: DollarSign },
+              { title: "Dedicated Account Manager", desc: "Personal point of contact who knows your business", Icon: Users },
+              { title: "Custom Payment Terms", desc: "Net-30 or Net-60 terms for qualified accounts", Icon: CreditCard },
+              { title: "Inventory Management", desc: "Track usage, forecast needs, prevent stockouts", Icon: BarChart3 },
+              { title: "Priority Production", desc: "Faster turnaround on custom printing orders", Icon: Zap },
+              { title: "Same-Day Delivery (LA)", desc: "Local warehousing for urgent orders in Los Angeles", Icon: Truck },
             ].map((item, i) => (
               <div key={i} className="flex gap-6 p-6 bg-white rounded-xl border border-border">
-                <div className="flex-shrink-0 w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center text-3xl">
-                  {item.icon}
+                <div className="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center">
+                  <item.Icon className="w-7 h-7 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold text-ink mb-2">{item.title}</h3>

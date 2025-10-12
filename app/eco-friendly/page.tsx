@@ -104,7 +104,6 @@ export default function EcoFriendlyPage() {
       <CategoryPageLayout
         title="Eco-Friendly Restaurant Supplies"
         description="Sustainable restaurant packaging and supplies. Compostable takeout containers, biodegradable cups, eco-friendly cutlery, and recycled paper products. BPI-certified, commercially compostable options with wholesale pricing."
-        icon="🌱"
         relatedCategories={[
           { name: "Takeout Containers", slug: "takeout-containers" },
           { name: "Cups & Lids", slug: "cups-and-lids" },

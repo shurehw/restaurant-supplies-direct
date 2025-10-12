@@ -4,10 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 import LABanner from "@/components/LABanner";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 export default function HomeContent() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,7 +42,7 @@ export default function HomeContent() {
       <div className="bg-gradient-to-r from-[#F97316] to-[#EA580C] text-white py-4 px-4 shadow-md">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-sm sm:text-base font-semibold">
-            🚀 E-Commerce Platform Launching Soon! Browse our catalog now. For immediate orders, <Link href="/contact" className="underline hover:text-white font-bold">contact us for quotes</Link>.
+            E-Commerce Platform Launching Soon! Browse our catalog now. For immediate orders, <Link href="/contact" className="underline hover:text-white font-bold">contact us for quotes</Link>.
           </p>
         </div>
       </div>
@@ -49,7 +51,7 @@ export default function HomeContent() {
       <LABanner />
 
       {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white">
+      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image
@@ -59,10 +61,12 @@ export default function HomeContent() {
               height={48}
               priority
             />
-            <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
+            <h2 className="text-xl sm:text-2xl font-heading font-bold text-ink leading-heading">
               Restaurant Supplies Direct
             </h2>
           </Link>
+
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4">
             <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors text-sm">Categories</Link>
             <Link href="/takeout-containers" className="text-ink-muted hover:text-ink transition-colors text-sm">Containers</Link>
@@ -74,7 +78,94 @@ export default function HomeContent() {
               Get Quote
             </Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-ink-muted hover:text-ink transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+            <div className="flex flex-col space-y-3">
+              <Link
+                href="/shop"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Categories
+              </Link>
+              <Link
+                href="/takeout-containers"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Takeout Containers
+              </Link>
+              <Link
+                href="/cups-and-lids"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Cups & Lids
+              </Link>
+              <Link
+                href="/napkins-and-towels"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Napkins & Towels
+              </Link>
+              <Link
+                href="/gloves-and-bags"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Gloves & Bags
+              </Link>
+              <Link
+                href="/eco-friendly"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Eco-Friendly
+              </Link>
+              <Link
+                href="/tabletop"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Tabletop
+              </Link>
+              <Link
+                href="/custom-printing"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Custom Printing
+              </Link>
+              <Link
+                href="/wholesale-programs"
+                className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Wholesale Programs
+              </Link>
+              <Link
+                href="/contact"
+                className="mx-4 px-4 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-center font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Get Quote
+              </Link>
+            </div>
+          </nav>
+        )}
       </header>
 
       {/* Main Content */}

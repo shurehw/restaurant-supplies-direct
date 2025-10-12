@@ -104,7 +104,6 @@ export default function GlovesAndBagsPage() {
       <CategoryPageLayout
         title="Gloves & Trash Bags Wholesale"
         description="Food-safe disposable gloves and commercial trash bags for restaurants. Nitrile, vinyl, and latex gloves in all sizes. Heavy-duty trash bags and can liners. Bulk wholesale pricing with fast delivery."
-        icon="🧤"
         relatedCategories={[
           { name: "Takeout Containers", slug: "takeout-containers" },
           { name: "Eco-Friendly Supplies", slug: "eco-friendly" },

@@ -1,10 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 interface CategoryPageLayoutProps {
   title: string;
   description: string;
-  icon: string;
   children: React.ReactNode;
   relatedCategories?: {
     name: string;
@@ -19,11 +22,12 @@ interface CategoryPageLayoutProps {
 export default function CategoryPageLayout({
   title,
   description,
-  icon,
   children,
   relatedCategories,
   faqs,
 }: CategoryPageLayoutProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-bg">
       {/* Header */}
@@ -37,10 +41,12 @@ export default function CategoryPageLayout({
               height={48}
               priority
             />
-            <span className="text-2xl font-heading font-bold text-ink leading-heading">
+            <span className="text-xl sm:text-2xl font-heading font-bold text-ink leading-heading">
               Restaurant Supplies Direct
             </span>
           </Link>
+
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors">
               Shop
@@ -52,7 +58,54 @@ export default function CategoryPageLayout({
               Get Quote
             </Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-ink-muted hover:text-ink transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+            <div className="flex flex-col space-y-3">
+              <Link href="/shop" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                All Categories
+              </Link>
+              <Link href="/takeout-containers" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Takeout Containers
+              </Link>
+              <Link href="/cups-and-lids" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Cups & Lids
+              </Link>
+              <Link href="/napkins-and-towels" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Napkins & Towels
+              </Link>
+              <Link href="/gloves-and-bags" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Gloves & Bags
+              </Link>
+              <Link href="/eco-friendly" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Eco-Friendly
+              </Link>
+              <Link href="/tabletop" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Tabletop
+              </Link>
+              <Link href="/custom-printing" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Custom Printing
+              </Link>
+              <Link href="/wholesale-programs" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Wholesale Programs
+              </Link>
+              <Link href="/contact" className="mx-4 px-4 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-center font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Get Quote
+              </Link>
+            </div>
+          </nav>
+        )}
       </header>
 
       {/* Breadcrumb */}
@@ -69,18 +122,15 @@ export default function CategoryPageLayout({
       </div>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 to-white py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-primary-50 to-white py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-start gap-6">
-            <div className="text-6xl sm:text-7xl">{icon}</div>
-            <div className="flex-1">
-              <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4 leading-heading">
-                {title}
-              </h1>
-              <p className="text-xl text-ink-muted max-w-3xl">
-                {description}
-              </p>
-            </div>
+          <div className="max-w-4xl">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink mb-6 leading-heading">
+              {title}
+            </h1>
+            <p className="text-xl sm:text-2xl text-ink-muted">
+              {description}
+            </p>
           </div>
         </div>
       </section>

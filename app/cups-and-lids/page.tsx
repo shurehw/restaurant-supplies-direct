@@ -104,7 +104,6 @@ export default function CupsAndLidsPage() {
       <CategoryPageLayout
         title="Cups & Lids Wholesale"
         description="Premium paper cups, plastic cups, coffee cups, and lids for restaurants and cafes. Available in hot, cold, and compostable options. Bulk pricing, custom printing, and nationwide shipping."
-        icon="☕"
         relatedCategories={[
           { name: "Takeout Containers", slug: "takeout-containers" },
           { name: "Napkins & Towels", slug: "napkins-and-towels" },

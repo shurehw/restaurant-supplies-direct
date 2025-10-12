@@ -86,7 +86,6 @@ export default function TakeoutContainersPage() {
     <CategoryPageLayout
       title="Takeout Containers Wholesale"
       description="Premium takeout containers, to-go boxes, and food packaging for restaurants. Available in paper, plastic, and compostable materials. Bulk pricing, custom printing, and nationwide shipping."
-      icon="📦"
       relatedCategories={[
         { name: "Cups & Lids", slug: "cups-and-lids" },
         { name: "Eco-Friendly Supplies", slug: "eco-friendly" },

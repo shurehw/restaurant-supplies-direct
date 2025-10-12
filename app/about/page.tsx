@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Package, Palette, Leaf, Truck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | Restaurant Supplies Direct",
@@ -129,36 +130,64 @@ export default function AboutPage() {
             <h2 className="text-3xl font-heading font-bold text-ink mb-4">What We Offer</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 bg-bg-muted rounded-lg border border-border">
-                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
-                  📦 Wholesale Pricing
-                </h3>
-                <p className="text-ink-muted text-sm">
-                  Volume discounts and bulk ordering with transparent, competitive pricing
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                    <Package className="w-6 h-6 text-primary-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                      Wholesale Pricing
+                    </h3>
+                    <p className="text-ink-muted text-sm">
+                      Volume discounts and bulk ordering with transparent, competitive pricing
+                    </p>
+                  </div>
+                </div>
               </div>
               <div className="p-6 bg-bg-muted rounded-lg border border-border">
-                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
-                  🎨 Custom Printing
-                </h3>
-                <p className="text-ink-muted text-sm">
-                  In-house design and production for branded cups, napkins, and takeout packaging
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+                    <Palette className="w-6 h-6 text-accent-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                      Custom Printing
+                    </h3>
+                    <p className="text-ink-muted text-sm">
+                      In-house design and production for branded cups, napkins, and takeout packaging
+                    </p>
+                  </div>
+                </div>
               </div>
               <div className="p-6 bg-bg-muted rounded-lg border border-border">
-                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
-                  🌱 Eco-Friendly Options
-                </h3>
-                <p className="text-ink-muted text-sm">
-                  Compostable and sustainable supplies that don't compromise on quality
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <Leaf className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                      Eco-Friendly Options
+                    </h3>
+                    <p className="text-ink-muted text-sm">
+                      Compostable and sustainable supplies that don't compromise on quality
+                    </p>
+                  </div>
+                </div>
               </div>
               <div className="p-6 bg-bg-muted rounded-lg border border-border">
-                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
-                  🚚 Fast Shipping
-                </h3>
-                <p className="text-ink-muted text-sm">
-                  Nationwide delivery with same-day options for LA-area operations
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Truck className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                      Fast Shipping
+                    </h3>
+                    <p className="text-ink-muted text-sm">
+                      Nationwide delivery with same-day options for LA-area operations
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
