@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
       timeStyle: 'short',
     });
 
-    const emailHtml = render(
+    const emailHtml = await render(
       ComingSoonEmail({
         ...data,
         submittedAt,
