@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { resend, EMAIL_CONFIG, verifyEmailConfig } from '@/lib/resend';
-import { render } from '@react-email/render';
 import CustomPrintingQuoteEmail from '@/emails/CustomPrintingQuoteEmail';
 
 export const runtime = 'edge';
@@ -60,19 +59,15 @@ export async function POST(request: NextRequest) {
       timeStyle: 'short',
     });
 
-    const emailHtml = await render(
-      CustomPrintingQuoteEmail({
-        ...data,
-        submittedAt,
-      })
-    );
-
     await resend.emails.send({
       from: EMAIL_CONFIG.from,
       to: EMAIL_CONFIG.to,
       replyTo: data.email,
       subject: `🎨 Custom Printing Quote: ${data.business} (${data.productType})`,
-      html: emailHtml,
+      react: CustomPrintingQuoteEmail({
+        ...data,
+        submittedAt,
+      }),
       tags: [
         { name: 'type', value: 'custom-printing-quote' },
         { name: 'source', value: 'rsd-website' },

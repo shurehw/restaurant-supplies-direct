@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { resend, EMAIL_CONFIG, verifyEmailConfig } from '@/lib/resend';
-import { render } from '@react-email/render';
 import ComingSoonEmail from '@/emails/ComingSoonEmail';
 
 export const runtime = 'edge';
@@ -47,19 +46,15 @@ export async function POST(request: NextRequest) {
       timeStyle: 'short',
     });
 
-    const emailHtml = await render(
-      ComingSoonEmail({
-        ...data,
-        submittedAt,
-      })
-    );
-
     await resend.emails.send({
       from: EMAIL_CONFIG.from,
       to: EMAIL_CONFIG.to,
       replyTo: EMAIL_CONFIG.replyTo,
       subject: `📬 New Coming Soon Signup: ${data.email}`,
-      html: emailHtml,
+      react: ComingSoonEmail({
+        ...data,
+        submittedAt,
+      }),
       tags: [
         { name: 'type', value: 'coming-soon' },
         { name: 'source', value: 'rsd-website' },

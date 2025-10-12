@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { resend, EMAIL_CONFIG, verifyEmailConfig } from '@/lib/resend';
-import { render } from '@react-email/render';
 import LALeadEmail from '@/emails/LALeadEmail';
 
 export const runtime = 'edge';
@@ -74,19 +73,15 @@ export async function POST(request: NextRequest) {
       timeStyle: 'short',
     });
 
-    const emailHtml = await render(
-      LALeadEmail({
-        ...data,
-        submittedAt,
-      })
-    );
-
     await resend.emails.send({
       from: EMAIL_CONFIG.from,
       to: EMAIL_CONFIG.to,
       replyTo: data.email,
       subject: `🎯 New LA Lead: ${data.business} (${data.orderType})`,
-      html: emailHtml,
+      react: LALeadEmail({
+        ...data,
+        submittedAt,
+      }),
       tags: [
         { name: 'type', value: 'la-lead' },
         { name: 'source', value: 'rsd-website' },
