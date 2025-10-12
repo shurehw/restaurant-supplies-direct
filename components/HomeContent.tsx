@@ -37,10 +37,10 @@ export default function HomeContent() {
   return (
     <div className="min-h-screen bg-bg flex flex-col">
       {/* Coming Soon Banner */}
-      <div className="bg-gradient-to-r from-accent-500 to-accent-600 text-white py-3 px-4">
+      <div className="bg-gradient-to-r from-[#F97316] to-[#EA580C] text-white py-4 px-4 shadow-md">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm sm:text-base font-medium">
-            🚀 E-Commerce Platform Launching Soon! Browse our catalog now. For immediate orders, <Link href="/contact" className="underline hover:text-white/90">contact us for quotes</Link>.
+          <p className="text-sm sm:text-base font-semibold">
+            🚀 E-Commerce Platform Launching Soon! Browse our catalog now. For immediate orders, <Link href="/contact" className="underline hover:text-white font-bold">contact us for quotes</Link>.
           </p>
         </div>
       </div>
