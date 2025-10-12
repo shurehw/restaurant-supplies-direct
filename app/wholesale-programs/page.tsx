@@ -29,9 +29,61 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the minimum requirements to qualify for wholesale pricing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We typically work with operations spending $2,000+ per month, multi-location restaurant groups (3+ locations), or businesses with custom packaging needs. Contact us if you're close to these thresholds - we can often work with growing operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can I save with wholesale pricing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Volume discounts typically range from 15-30% off standard pricing, depending on order size and frequency. Larger accounts and annual commitments can access even deeper discounts through our partnership with Shure Hospitality Wholesale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer payment terms like Net-30?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Qualified wholesale accounts can access Net-30 or Net-60 payment terms after credit approval. New accounts typically start with prepayment and transition to terms after establishing history."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle orders for multiple locations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We specialize in multi-location accounts. Your dedicated account manager will coordinate orders, manage inventory, and arrange delivery to all your locations - whether you have 3 stores or 300."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between Restaurant Supplies Direct and Shure Hospitality Wholesale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Restaurant Supplies Direct is powered by Shure Hospitality Wholesale. Small to medium accounts order through RSD for streamlined e-commerce. Large accounts and complex multi-location operations work directly with Shure HW for white-glove enterprise service."
+      }
+    }
+  ]
+};
+
 export default function WholesaleProgramsPage() {
   return (
     <div className="min-h-screen bg-bg">
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Header */}
       <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between">

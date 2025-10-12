@@ -22,9 +22,53 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are your business hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Phone support is available Monday-Friday 8am-6pm PST. Email support operates 24/7 with responses within 24 hours. LA warehouse pickup available Monday-Friday 7am-4pm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you fulfill an urgent order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most in-stock items ship within 1-3 business days. Los Angeles area customers can qualify for same-day delivery on urgent orders. Call us for rush order availability and expedited shipping options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide product samples?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We offer product samples for most items, especially for custom printing orders. Contact us with your sample request and we'll arrange to send them to you, typically at no cost for serious inquiries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I visit your warehouse or showroom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Los Angeles area customers can schedule visits to our warehouse to view products, pick up orders, or meet with our team. Contact us to schedule an appointment."
+      }
+    }
+  ]
+};
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-bg">
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white">
         <div className="max-w-7xl mx-auto flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3">

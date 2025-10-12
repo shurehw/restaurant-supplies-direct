@@ -86,9 +86,69 @@ const process = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the minimum order quantities for custom printing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimums vary by product: cups start at 1,000 units, napkins at 5,000, takeout boxes at 2,500, and bags at 1,000. These minimums help keep per-unit costs low and quality high."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does custom printing take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard turnaround is 2-4 weeks from proof approval. Rush orders (1-2 weeks) are available for an additional fee. Timeline includes design, proofing, production, and shipping."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to provide artwork, or can you design it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both! If you have a logo, we'll adapt it for printing. If not, our in-house design team can create custom artwork that matches your brand. Design services are included in most custom printing orders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see a proof before production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Every custom printing order includes a detailed digital proof showing exactly how your packaging will look. We don't start production until you approve the proof."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does custom printing cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing depends on product type, quantity, number of colors, and print area. Generally, expect to pay 20-40% more than blank stock, with per-unit costs decreasing significantly at higher volumes. Request a quote for exact pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you print multiple colors or full-color designs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We offer 1-4 color printing and full-color digital printing depending on the product. Full-color is great for complex logos and photos. Multi-color spot printing works well for simpler designs and offers better durability."
+      }
+    }
+  ]
+};
+
 export default function CustomPrintingPage() {
   return (
     <div className="min-h-screen bg-bg">
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Header */}
       <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
