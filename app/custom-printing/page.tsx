@@ -1,0 +1,334 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import CustomPrintingQuoteForm from "@/components/CustomPrintingQuoteForm";
+
+export const metadata: Metadata = {
+  title: "Custom Printed Packaging | Branded Cups & Napkins | Restaurant Supplies Direct",
+  description: "Custom printing for restaurant packaging - branded cups, napkins, takeout boxes, and bags. In-house design, fast turnaround, and wholesale pricing. Powered by Shure Hospitality Wholesale.",
+  keywords: [
+    "custom printed packaging",
+    "branded restaurant cups",
+    "custom logo napkins",
+    "printed takeout boxes",
+    "custom restaurant packaging",
+    "branded disposables",
+    "logo printed cups",
+    "custom food packaging",
+  ],
+  openGraph: {
+    title: "Custom Printed Packaging | Restaurant Supplies Direct",
+    description: "Turn your packaging into a marketing tool with custom printed cups, napkins, and takeout boxes.",
+    type: "website",
+  },
+};
+
+const customProducts = [
+  {
+    icon: "☕",
+    name: "Custom Printed Cups",
+    description: "Hot cups, cold cups, coffee sleeves",
+    minOrder: "1,000 units",
+    leadTime: "2-3 weeks",
+  },
+  {
+    icon: "🧻",
+    name: "Logo Napkins",
+    description: "Beverage, lunch, and dinner napkins",
+    minOrder: "5,000 units",
+    leadTime: "2-3 weeks",
+  },
+  {
+    icon: "📦",
+    name: "Branded Takeout Boxes",
+    description: "To-go containers, bags, and trays",
+    minOrder: "2,500 units",
+    leadTime: "3-4 weeks",
+  },
+  {
+    icon: "🛍️",
+    name: "Custom Shopping Bags",
+    description: "Paper and plastic bags with your logo",
+    minOrder: "1,000 units",
+    leadTime: "2-3 weeks",
+  },
+];
+
+const process = [
+  {
+    step: 1,
+    title: "Submit Your Design",
+    description: "Upload your logo or work with our design team to create custom artwork.",
+  },
+  {
+    step: 2,
+    title: "Review Digital Proof",
+    description: "We'll send you a detailed proof showing exactly how your packaging will look.",
+  },
+  {
+    step: 3,
+    title: "Production & Quality Check",
+    description: "Your order goes into production with rigorous quality control at every step.",
+  },
+  {
+    step: 4,
+    title: "Fast Delivery",
+    description: "Nationwide shipping. LA orders eligible for same-day delivery through Shure HW.",
+  },
+];
+
+export default function CustomPrintingPage() {
+  return (
+    <div className="min-h-screen bg-bg">
+      {/* Header */}
+      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo-icon.svg"
+              alt="Restaurant Supplies Direct"
+              width={48}
+              height={48}
+              priority
+            />
+            <span className="text-2xl font-heading font-bold text-ink leading-heading">
+              Restaurant Supplies Direct
+            </span>
+          </Link>
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors">
+              Shop
+            </Link>
+            <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors">
+              Wholesale
+            </Link>
+            <Link href="#quote" className="px-4 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors">
+              Get Quote
+            </Link>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-accent-50 via-white to-primary-50 py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-500 text-white text-sm font-medium mb-6">
+              Powered by Shure Hospitality Wholesale
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink mb-6 leading-heading">
+              Bring Your Brand to Life on Every Cup, Box, and Napkin
+            </h1>
+            <p className="text-xl sm:text-2xl text-ink-muted mb-8">
+              Custom printed packaging that turns every takeout order into a marketing opportunity. In-house design, fast turnaround, and wholesale pricing.
+            </p>
+            <Link
+              href="#quote"
+              className="inline-block px-8 py-4 bg-accent-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-accent-600 transition-colors"
+            >
+              Request Custom Quote
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Products We Print */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
+              What We Can Print For You
+            </h2>
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
+              From coffee cups to takeout boxes, we print on everything your restaurant needs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {customProducts.map((product, index) => (
+              <div key={index} className="p-6 bg-bg-muted rounded-xl border-2 border-border hover:border-accent-500 transition-all">
+                <div className="text-5xl mb-4">{product.icon}</div>
+                <h3 className="text-xl font-heading font-semibold text-ink mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-ink-muted mb-4">{product.description}</p>
+                <div className="text-sm space-y-1">
+                  <div className="text-ink-muted">
+                    <span className="font-semibold">Min Order:</span> {product.minOrder}
+                  </div>
+                  <div className="text-ink-muted">
+                    <span className="font-semibold">Lead Time:</span> {product.leadTime}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 sm:py-20 bg-bg-muted">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
+              How Custom Printing Works
+            </h2>
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
+              From concept to delivery, we make custom printing simple and stress-free.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {process.map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="w-16 h-16 bg-accent-500 text-white rounded-full flex items-center justify-center text-2xl font-heading font-bold mx-auto mb-4">
+                  {item.step}
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-ink mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-ink-muted">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-6">
+                Why Custom Print with Restaurant Supplies Direct?
+              </h2>
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                    🎨
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-1">
+                      In-House Design Team
+                    </h3>
+                    <p className="text-ink-muted">
+                      Don't have a logo? Our design team can create custom artwork that matches your brand.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                    ⚡
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-1">
+                      Fast Turnaround
+                    </h3>
+                    <p className="text-ink-muted">
+                      Most orders ship within 2-4 weeks. Rush orders available for time-sensitive launches.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                    💰
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-1">
+                      Wholesale Pricing
+                    </h3>
+                    <p className="text-ink-muted">
+                      Direct relationships with manufacturers mean better pricing than retail or local print shops.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                    ✅
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-heading font-semibold text-ink mb-1">
+                      Quality Guarantee
+                    </h3>
+                    <p className="text-ink-muted">
+                      Every order includes a detailed proof and quality inspection before shipping.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-12 rounded-2xl border-2 border-primary-600">
+              <div className="text-center">
+                <h3 className="text-2xl font-heading font-bold text-ink mb-4">
+                  Multi-Location? High Volume?
+                </h3>
+                <p className="text-lg text-ink-muted mb-6">
+                  We partner with <strong>Shure Hospitality Wholesale</strong> to serve restaurant groups and high-volume operations with:
+                </p>
+                <ul className="text-left space-y-3 mb-8 text-ink-muted">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-500 font-bold">✓</span>
+                    <span>Dedicated account management</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-500 font-bold">✓</span>
+                    <span>Volume discounts on large orders</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-500 font-bold">✓</span>
+                    <span>Inventory management & forecasting</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-500 font-bold">✓</span>
+                    <span>Same-day delivery in LA</span>
+                  </li>
+                </ul>
+                <Link
+                  href="/wholesale-programs"
+                  className="inline-block px-6 py-3 bg-primary-600 text-white font-heading font-semibold rounded-lg hover:bg-primary-700 transition-colors"
+                >
+                  Learn About Wholesale Programs
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Form Section */}
+      <section id="quote" className="py-16 sm:py-20 bg-bg-muted">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
+              Request a Custom Printing Quote
+            </h2>
+            <p className="text-lg text-ink-muted">
+              Tell us what you need and we'll send you a detailed quote within 1 business day.
+            </p>
+          </div>
+          <div className="bg-white p-8 rounded-xl border-2 border-border">
+            <CustomPrintingQuoteForm />
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-white">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-sm text-ink-muted text-center">
+            Restaurant Supplies Direct is your trusted source for restaurant disposables, packaging, and custom print — shipped direct from the source.
+            <br />
+            Powered by{" "}
+            <a
+              href="https://www.shurehw.com"
+              className="text-primary-600 hover:text-primary-700 transition-colors underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shure Hospitality Wholesale
+            </a>
+            , a national supplier serving leading hospitality brands.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
