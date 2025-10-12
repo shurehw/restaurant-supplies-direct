@@ -1,102 +1,140 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("submitting");
+
+    // TODO: Integrate with your email service (Mailchimp, ConvertKit, etc.)
+    // For now, just simulate a successful submission
+    setTimeout(() => {
+      setStatus("success");
+      setEmail("");
+    }, 1000);
+  };
+
+  return (
+    <div className="min-h-screen bg-bg flex flex-col">
+      {/* Header */}
+      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border">
+        <div className="max-w-7xl mx-auto flex items-center gap-3">
+          <Image
+            src="/logo-icon.svg"
+            alt="Restaurant Supplies Direct"
+            width={48}
+            height={48}
+            priority
+          />
+          <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
+            Restaurant Supplies Direct
+          </h2>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-3xl w-full text-center space-y-8">
+          {/* Badge */}
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 text-accent-600 text-sm font-medium">
+            Coming Soon
+          </div>
+
+          {/* Hero Heading */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink leading-heading">
+            Shop Direct from the Source
+          </h1>
+
+          {/* Subheading */}
+          <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto">
+            Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
+            Nationwide fulfillment for independent operators and leading hospitality brands.
+          </p>
+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
+            <div className="p-6 bg-bg-muted rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Takeout Containers</h3>
+              <p className="text-sm text-ink-muted">Bulk wholesale to-go boxes and deli containers</p>
+            </div>
+            <div className="p-6 bg-bg-muted rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Custom Printing</h3>
+              <p className="text-sm text-ink-muted">Branded cups, napkins, and packaging</p>
+            </div>
+            <div className="p-6 bg-bg-muted rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Eco-Friendly</h3>
+              <p className="text-sm text-ink-muted">Compostable and sustainable options</p>
+            </div>
+          </div>
+
+          {/* Email Signup Form */}
+          <div className="pt-8">
+            <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
+              <div>
+                <label htmlFor="email" className="sr-only">
+                  Email address
+                </label>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <input
+                    id="email"
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    disabled={status === "submitting" || status === "success"}
+                    className="flex-1 px-4 py-3 border border-border rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed"
+                  />
+                  <button
+                    type="submit"
+                    disabled={status === "submitting" || status === "success"}
+                    className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                  >
+                    {status === "submitting" ? "Submitting..." : status === "success" ? "Subscribed!" : "Notify Me"}
+                  </button>
+                </div>
+              </div>
+              {status === "success" && (
+                <p className="text-sm text-success">
+                  Thanks! We&apos;ll notify you when we launch.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-error">
+                  Something went wrong. Please try again.
+                </p>
+              )}
+            </form>
+            <p className="text-sm text-ink-muted mt-4">
+              Be the first to know when we launch and get exclusive early access offers.
+            </p>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-sm text-ink-muted text-center">
+            Restaurant Supplies Direct is your trusted source for restaurant disposables, packaging, and custom print — shipped direct from the source.
+            <br />
+            Powered by{" "}
+            <a
+              href="https://www.shurehw.com"
+              className="text-primary-600 hover:text-primary-700 transition-colors underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shure Hospitality Wholesale
+            </a>
+            , a national supplier serving leading hospitality brands.
+          </p>
+        </div>
       </footer>
     </div>
   );

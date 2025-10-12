@@ -1,0 +1,9 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon Icon -->
+  <path d="M128 64L256 128V256L128 320L0 256V128L128 64Z" fill="#FF6B35"/>
+  <path d="M128 100L200 136V232L128 268L56 232V136L128 100Z" fill="white"/>
+  <path d="M150 240L210 280C218 284 226 276 222 268L180 230L222 218C226 214 222 206 214 206L150 218V240Z" fill="white"/>
+
+  <!-- RSD Text -->
+  <text x="300" y="260" font-family="Plus Jakarta Sans, sans-serif" font-size="200" font-weight="800" fill="#003D7A">RSD</text>
+</svg>
