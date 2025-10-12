@@ -63,11 +63,14 @@ export default function HomeContent() {
               Restaurant Supplies Direct
             </h2>
           </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors">Shop</Link>
-            <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors">Custom Printing</Link>
-            <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors">Wholesale</Link>
-            <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
+          <nav className="hidden md:flex items-center gap-4">
+            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors text-sm">Categories</Link>
+            <Link href="/takeout-containers" className="text-ink-muted hover:text-ink transition-colors text-sm">Containers</Link>
+            <Link href="/cups-and-lids" className="text-ink-muted hover:text-ink transition-colors text-sm">Cups</Link>
+            <Link href="/eco-friendly" className="text-ink-muted hover:text-ink transition-colors text-sm">Eco-Friendly</Link>
+            <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors text-sm">Custom Print</Link>
+            <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors text-sm">Wholesale</Link>
+            <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
               Get Quote
             </Link>
           </nav>
