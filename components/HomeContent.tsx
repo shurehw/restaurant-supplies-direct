@@ -36,101 +36,121 @@ export default function HomeContent() {
 
   return (
     <div className="min-h-screen bg-bg flex flex-col">
+      {/* Coming Soon Banner */}
+      <div className="bg-gradient-to-r from-accent-500 to-accent-600 text-white py-3 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-sm sm:text-base font-medium">
+            🚀 E-Commerce Platform Launching Soon! Browse our catalog now. For immediate orders, <Link href="/contact" className="underline hover:text-white/90">contact us for quotes</Link>.
+          </p>
+        </div>
+      </div>
+
       {/* LA Banner - shows only for LA visitors */}
       <LABanner />
 
       {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border">
-        <div className="max-w-7xl mx-auto flex items-center gap-3">
-          <Image
-            src="/logo-icon.svg"
-            alt="Restaurant Supplies Direct"
-            width={48}
-            height={48}
-            priority
-          />
-          <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
-            Restaurant Supplies Direct
-          </h2>
+      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo-icon.svg"
+              alt="Restaurant Supplies Direct"
+              width={48}
+              height={48}
+              priority
+            />
+            <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
+              Restaurant Supplies Direct
+            </h2>
+          </Link>
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors">Shop</Link>
+            <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors">Custom Printing</Link>
+            <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors">Wholesale</Link>
+            <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
+              Get Quote
+            </Link>
+          </nav>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-3xl w-full text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 text-accent-600 text-sm font-medium">
-            Coming Soon
-          </div>
-
-          {/* Hero Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink leading-heading">
-            Shop Direct from the Source
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto">
-            Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
-            Nationwide fulfillment for independent operators and leading hospitality brands.
-          </p>
-
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Takeout Containers</h3>
-              <p className="text-sm text-ink-muted">Bulk wholesale to-go boxes and deli containers</p>
+      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto">
+          {/* Hero Section */}
+          <div className="max-w-3xl mx-auto text-center space-y-8 mb-16">
+            {/* Badge */}
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 text-accent-600 text-sm font-medium">
+              Browse Now • Orders Opening Soon
             </div>
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Custom Printing</h3>
-              <p className="text-sm text-ink-muted">Branded cups, napkins, and packaging</p>
-            </div>
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Eco-Friendly</h3>
-              <p className="text-sm text-ink-muted">Compostable and sustainable options</p>
-            </div>
-          </div>
 
-          {/* Email Signup Form */}
-          <div className="pt-8">
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
-              <div>
-                <label htmlFor="email" className="sr-only">
-                  Email address
-                </label>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    id="email"
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
-                    disabled={status === "submitting" || status === "success"}
-                    className="flex-1 px-4 py-3 border border-border rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed"
-                  />
-                  <button
-                    type="submit"
-                    disabled={status === "submitting" || status === "success"}
-                    className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
-                  >
-                    {status === "submitting" ? "Submitting..." : status === "success" ? "Subscribed!" : "Notify Me"}
-                  </button>
-                </div>
-              </div>
-              {status === "success" && (
-                <p className="text-sm text-success">
-                  Thanks! We&apos;ll notify you when we launch.
-                </p>
-              )}
-              {status === "error" && (
-                <p className="text-sm text-error">
-                  Something went wrong. Please try again.
-                </p>
-              )}
-            </form>
-            <p className="text-sm text-ink-muted mt-4">
-              Be the first to know when we launch and get exclusive early access offers.
+            {/* Hero Heading */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink leading-heading">
+              Shop Restaurant Supplies Direct from the Source
+            </h1>
+
+            {/* Subheading */}
+            <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto">
+              Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
+              Browse our catalog now. <Link href="/contact" className="text-primary-600 hover:underline font-semibold">Contact us for quotes</Link> while e-commerce checkout is launching.
             </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Link
+                href="/shop"
+                className="px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-primary-700 transition-colors"
+              >
+                Browse Catalog
+              </Link>
+              <Link
+                href="/custom-printing"
+                className="px-8 py-4 bg-white text-ink font-heading font-semibold text-lg rounded-lg hover:bg-gray-100 transition-colors border-2 border-border"
+              >
+                Custom Printing
+              </Link>
+            </div>
+
+            {/* Email Signup Form */}
+            <div className="pt-8 border-t border-border mt-8">
+              <p className="text-sm font-medium text-ink mb-4">Get notified when online ordering launches:</p>
+              <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
+                <div>
+                  <label htmlFor="email" className="sr-only">
+                    Email address
+                  </label>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      id="email"
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email"
+                      disabled={status === "submitting" || status === "success"}
+                      className="flex-1 px-4 py-3 border border-border rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed"
+                    />
+                    <button
+                      type="submit"
+                      disabled={status === "submitting" || status === "success"}
+                      className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                    >
+                      {status === "submitting" ? "Submitting..." : status === "success" ? "Subscribed!" : "Notify Me"}
+                    </button>
+                  </div>
+                </div>
+                {status === "success" && (
+                  <p className="text-sm text-success">
+                    Thanks! We&apos;ll notify you when online ordering launches.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-sm text-error">
+                    Something went wrong. Please try again.
+                  </p>
+                )}
+              </form>
+            </div>
           </div>
         </div>
       </main>
@@ -187,11 +207,11 @@ export default function HomeContent() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
               { name: "Takeout Containers", href: "/takeout-containers", icon: "📦" },
-              { name: "Cups & Lids", href: "/cups-and-lids", icon: "🥤" },
+              { name: "Cups & Lids", href: "/cups-and-lids", icon: "☕" },
               { name: "Napkins & Towels", href: "/napkins-and-towels", icon: "🧻" },
               { name: "Gloves & Bags", href: "/gloves-and-bags", icon: "🧤" },
+              { name: "Tabletop & To-Go", href: "/tabletop", icon: "🍴" },
               { name: "Eco-Friendly", href: "/eco-friendly", icon: "🌱" },
-              { name: "Custom Printing", href: "/custom-printing", icon: "🎨" },
             ].map((category) => (
               <Link
                 key={category.href}
