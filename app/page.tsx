@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import LABanner from "@/components/LABanner";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -21,6 +22,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-bg flex flex-col">
+      {/* LA Banner - shows only for LA visitors */}
+      <LABanner />
+
       {/* Header */}
       <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border">
         <div className="max-w-7xl mx-auto flex items-center gap-3">
