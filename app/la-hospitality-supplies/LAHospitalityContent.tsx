@@ -56,14 +56,33 @@ export default function LAHospitalityContent() {
     e.preventDefault();
     setStatus("submitting");
 
-    // TODO: Integrate with Shure HW CRM
-    // Tag as "RSD-LA-Lead"
-    console.log("LA Lead:", formData);
+    try {
+      const response = await fetch("/api/submit-la-lead", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Simulate submission
-    setTimeout(() => {
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
       setStatus("success");
-    }, 1000);
+      setFormData({
+        name: "",
+        business: "",
+        email: "",
+        phone: "",
+        zipCode: "",
+        orderType: "takeout-packaging",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("error");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

@@ -12,12 +12,25 @@ export default function Home() {
     e.preventDefault();
     setStatus("submitting");
 
-    // TODO: Integrate with your email service (Mailchimp, ConvertKit, etc.)
-    // For now, just simulate a successful submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/submit-coming-soon", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit email");
+      }
+
       setStatus("success");
       setEmail("");
-    }, 1000);
+    } catch (error) {
+      console.error("Error submitting email:", error);
+      setStatus("error");
+    }
   };
 
   return (
