@@ -19,6 +19,15 @@ export const metadata: Metadata = {
     title: "Takeout Containers Wholesale | Restaurant Supplies Direct",
     description: "Wholesale takeout containers and to-go boxes. Bulk pricing and custom printing available.",
     type: "website",
+    siteName: "Restaurant Supplies Direct",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Takeout Containers Wholesale | Restaurant Supplies Direct",
+    description: "Wholesale takeout containers and to-go boxes with bulk pricing.",
+  },
+  alternates: {
+    canonical: "https://restaurantsuppliesdirect.com/takeout-containers",
   },
 };
 

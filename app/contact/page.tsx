@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Contact Us | Restaurant Supplies Direct",
   description: "Get in touch for quotes, bulk orders, custom printing, or wholesale programs. Fast response times and dedicated support.",
   keywords: ["contact restaurant supplies", "bulk order quote", "restaurant supply customer service"],
+  openGraph: {
+    title: "Contact Us | Restaurant Supplies Direct",
+    description: "Get in touch for quotes, bulk orders, custom printing, or wholesale programs. Fast response and dedicated support.",
+    type: "website",
+    siteName: "Restaurant Supplies Direct",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Restaurant Supplies Direct",
+    description: "Get in touch for quotes, bulk orders, custom printing, or wholesale programs.",
+  },
+  alternates: {
+    canonical: "https://restaurantsuppliesdirect.com/contact",
+  },
 };
 
 export default function ContactPage() {

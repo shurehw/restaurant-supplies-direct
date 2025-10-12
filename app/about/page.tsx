@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "About Us | Restaurant Supplies Direct",
   description: "Learn about Restaurant Supplies Direct and our partnership with Shure Hospitality Wholesale. Quality restaurant supplies shipped direct from the source.",
   keywords: ["about restaurant supplies direct", "restaurant supply distributor", "shure hospitality wholesale"],
+  openGraph: {
+    title: "About Us | Restaurant Supplies Direct",
+    description: "Learn about Restaurant Supplies Direct and our partnership with Shure Hospitality Wholesale. Quality supplies shipped direct.",
+    type: "website",
+    siteName: "Restaurant Supplies Direct",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Restaurant Supplies Direct",
+    description: "Quality restaurant supplies shipped direct from the source.",
+  },
+  alternates: {
+    canonical: "https://restaurantsuppliesdirect.com/about",
+  },
 };
 
 export default function AboutPage() {

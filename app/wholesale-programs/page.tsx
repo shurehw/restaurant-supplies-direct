@@ -13,6 +13,20 @@ export const metadata: Metadata = {
     "bulk disposables discount",
     "restaurant group purchasing",
   ],
+  openGraph: {
+    title: "Wholesale Restaurant Supply Programs | Powered by Shure Hospitality Wholesale",
+    description: "Wholesale pricing, bulk orders, and dedicated account management for restaurant groups. Custom packaging and nationwide delivery.",
+    type: "website",
+    siteName: "Restaurant Supplies Direct",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wholesale Restaurant Supply Programs | Powered by Shure Hospitality Wholesale",
+    description: "Wholesale pricing and dedicated account management for restaurant groups.",
+  },
+  alternates: {
+    canonical: "https://restaurantsuppliesdirect.com/wholesale-programs",
+  },
 };
 
 export default function WholesaleProgramsPage() {

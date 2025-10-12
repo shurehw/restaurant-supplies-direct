@@ -20,6 +20,15 @@ export const metadata: Metadata = {
     title: "Custom Printed Packaging | Restaurant Supplies Direct",
     description: "Turn your packaging into a marketing tool with custom printed cups, napkins, and takeout boxes.",
     type: "website",
+    siteName: "Restaurant Supplies Direct",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Custom Printed Packaging | Restaurant Supplies Direct",
+    description: "Custom printed cups, napkins, and takeout boxes for restaurants.",
+  },
+  alternates: {
+    canonical: "https://restaurantsuppliesdirect.com/custom-printing",
   },
 };
 
