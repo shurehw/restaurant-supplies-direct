@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { resend, EMAIL_CONFIG, verifyEmailConfig } from '@/lib/resend';
 import ComingSoonEmail from '@/emails/ComingSoonEmail';
+import * as React from 'react';
 
 export const runtime = 'edge';
 
@@ -54,7 +55,7 @@ export async function POST(request: NextRequest) {
       react: ComingSoonEmail({
         ...data,
         submittedAt,
-      }),
+      }) as React.ReactElement,
       tags: [
         { name: 'type', value: 'coming-soon' },
         { name: 'source', value: 'rsd-website' },

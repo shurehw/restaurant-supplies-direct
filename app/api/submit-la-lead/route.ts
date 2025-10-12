@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { resend, EMAIL_CONFIG, verifyEmailConfig } from '@/lib/resend';
 import LALeadEmail from '@/emails/LALeadEmail';
+import * as React from 'react';
 
 export const runtime = 'edge';
 
@@ -81,7 +82,7 @@ export async function POST(request: NextRequest) {
       react: LALeadEmail({
         ...data,
         submittedAt,
-      }),
+      }) as React.ReactElement,
       tags: [
         { name: 'type', value: 'la-lead' },
         { name: 'source', value: 'rsd-website' },

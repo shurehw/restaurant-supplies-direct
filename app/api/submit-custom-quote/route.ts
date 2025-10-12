@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { resend, EMAIL_CONFIG, verifyEmailConfig } from '@/lib/resend';
 import CustomPrintingQuoteEmail from '@/emails/CustomPrintingQuoteEmail';
+import * as React from 'react';
 
 export const runtime = 'edge';
 
@@ -67,7 +68,7 @@ export async function POST(request: NextRequest) {
       react: CustomPrintingQuoteEmail({
         ...data,
         submittedAt,
-      }),
+      }) as React.ReactElement,
       tags: [
         { name: 'type', value: 'custom-printing-quote' },
         { name: 'source', value: 'rsd-website' },
