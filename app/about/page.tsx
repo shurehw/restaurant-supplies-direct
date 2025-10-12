@@ -142,6 +142,57 @@ export default function AboutPage() {
               </li>
             </ul>
 
+            <h2 className="text-3xl font-heading font-bold text-ink mb-6 mt-12">
+              Our Commitment to Quality and Service
+            </h2>
+            <p className="text-ink-muted mb-6">
+              Every product we sell meets rigorous quality standards. We partner with leading manufacturers who share our commitment to durability, food safety, and performance. Whether it's a compostable takeout container or a custom-printed cup, you can trust that it will perform reliably in a fast-paced restaurant environment.
+            </p>
+            <p className="text-ink-muted mb-6">
+              Our customer service team includes industry veterans who understand the unique challenges of food service operations. Need help choosing the right container for a specific dish? Trying to balance sustainability goals with budget constraints? We provide expert guidance based on real-world restaurant experience.
+            </p>
+            <p className="text-ink-muted mb-8">
+              Through our partnership with <a href="https://www.shurehw.com" className="text-primary-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>, we access the same supply chains, pricing, and logistics that serve major hospitality brands - but we've built a platform that makes those benefits accessible to independent operators and small restaurant groups.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-ink mb-6">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-6 mb-12">
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  How long has Restaurant Supplies Direct been in business?
+                </h3>
+                <p className="text-ink-muted">
+                  Restaurant Supplies Direct is a division of Shure Hospitality Wholesale, which has been serving the hospitality industry for decades. RSD was launched to bring institutional-quality supplies to independent operators through modern e-commerce.
+                </p>
+              </div>
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  Where are your products manufactured?
+                </h3>
+                <p className="text-ink-muted">
+                  We source from leading manufacturers worldwide, with a focus on North American suppliers for faster shipping and better quality control. All products meet US food safety standards and are rigorously tested before we add them to our catalog.
+                </p>
+              </div>
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  Do you have a physical location I can visit?
+                </h3>
+                <p className="text-ink-muted">
+                  Yes! Our Los Angeles warehouse welcomes customer visits by appointment. You can view products in person, pick up orders, or meet with our team. Los Angeles area customers also have access to same-day delivery through Shure HW.
+                </p>
+              </div>
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  What makes you different from other restaurant supply companies?
+                </h3>
+                <p className="text-ink-muted">
+                  We combine the buying power and logistics of a major distributor (Shure HW) with the convenience and transparency of modern e-commerce. You get institutional pricing without institutional hassles - no account minimums, no confusing pricing tiers, and no middlemen markups.
+                </p>
+              </div>
+            </div>
+
             <div className="bg-ink text-white p-8 rounded-xl my-12 text-center">
               <h3 className="text-2xl font-heading font-bold mb-3">
                 Ready to Get Started?

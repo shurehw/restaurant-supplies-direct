@@ -115,6 +115,67 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Additional Content for SEO */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold text-ink mb-6">
+              How to Contact Restaurant Supplies Direct
+            </h2>
+            <p className="text-ink-muted mb-6">
+              Whether you're placing your first order or managing supplies for multiple locations, our team is here to help. We offer multiple ways to connect based on your needs and timeline.
+            </p>
+            <p className="text-ink-muted mb-6">
+              For <strong>immediate questions</strong> or urgent orders, call us at <a href="tel:1-800-555-0123" className="text-primary-600 hover:underline font-semibold">1-800-555-0123</a> during business hours (Mon-Fri 8am-6pm PST). Our phone support team can provide real-time pricing, check stock availability, and process rush orders.
+            </p>
+            <p className="text-ink-muted mb-6">
+              For <strong>custom quotes and detailed inquiries</strong>, email us at <a href="mailto:info@restaurantsuppliesdirect.com" className="text-primary-600 hover:underline font-semibold">info@restaurantsuppliesdirect.com</a>. We respond to all emails within 24 hours and can provide detailed pricing, product recommendations, and shipping estimates.
+            </p>
+            <p className="text-ink-muted mb-8">
+              <strong>Los Angeles area restaurants</strong> can access same-day delivery, local account management, and warehouse pickup through our partnership with Shure Hospitality Wholesale. <Link href="/la-hospitality-supplies" className="text-primary-600 hover:underline font-semibold">Learn more about LA services</Link>.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-ink mb-6 mt-12">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  What are your business hours?
+                </h3>
+                <p className="text-ink-muted">
+                  Phone support is available Monday-Friday 8am-6pm PST. Email support operates 24/7 with responses within 24 hours. LA warehouse pickup available Monday-Friday 7am-4pm.
+                </p>
+              </div>
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  How quickly can you fulfill an urgent order?
+                </h3>
+                <p className="text-ink-muted">
+                  Most in-stock items ship within 1-3 business days. Los Angeles area customers can qualify for same-day delivery on urgent orders. Call us for rush order availability and expedited shipping options.
+                </p>
+              </div>
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  Do you provide product samples?
+                </h3>
+                <p className="text-ink-muted">
+                  Yes! We offer product samples for most items, especially for custom printing orders. Contact us with your sample request and we'll arrange to send them to you, typically at no cost for serious inquiries.
+                </p>
+              </div>
+              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+                <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                  Can I visit your warehouse or showroom?
+                </h3>
+                <p className="text-ink-muted">
+                  Yes! Los Angeles area customers can schedule visits to our warehouse to view products, pick up orders, or meet with our team. Contact us to schedule an appointment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-white">
         <div className="max-w-7xl mx-auto">
           <p className="text-sm text-ink-muted text-center">

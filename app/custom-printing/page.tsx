@@ -302,6 +302,65 @@ export default function CustomPrintingPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-heading font-bold text-ink mb-8 text-center">
+            Custom Printing FAQ
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                What are the minimum order quantities for custom printing?
+              </h3>
+              <p className="text-ink-muted">
+                Minimums vary by product: cups start at 1,000 units, napkins at 5,000, takeout boxes at 2,500, and bags at 1,000. These minimums help keep per-unit costs low and quality high.
+              </p>
+            </div>
+            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                How long does custom printing take?
+              </h3>
+              <p className="text-ink-muted">
+                Standard turnaround is 2-4 weeks from proof approval. Rush orders (1-2 weeks) are available for an additional fee. Timeline includes design, proofing, production, and shipping.
+              </p>
+            </div>
+            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                Do I need to provide artwork, or can you design it?
+              </h3>
+              <p className="text-ink-muted">
+                Both! If you have a logo, we'll adapt it for printing. If not, our in-house design team can create custom artwork that matches your brand. Design services are included in most custom printing orders.
+              </p>
+            </div>
+            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                Can I see a proof before production?
+              </h3>
+              <p className="text-ink-muted">
+                Yes! Every custom printing order includes a detailed digital proof showing exactly how your packaging will look. We don't start production until you approve the proof.
+              </p>
+            </div>
+            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                How much does custom printing cost?
+              </h3>
+              <p className="text-ink-muted">
+                Pricing depends on product type, quantity, number of colors, and print area. Generally, expect to pay 20-40% more than blank stock, with per-unit costs decreasing significantly at higher volumes. Request a quote for exact pricing.
+              </p>
+            </div>
+            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <h3 className="text-lg font-heading font-semibold text-ink mb-2">
+                Can you print multiple colors or full-color designs?
+              </h3>
+              <p className="text-ink-muted">
+                Yes! We offer 1-4 color printing and full-color digital printing depending on the product. Full-color is great for complex logos and photos. Multi-color spot printing works well for simpler designs and offers better durability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quote Form Section */}
       <section id="quote" className="py-16 sm:py-20 bg-bg-muted">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
