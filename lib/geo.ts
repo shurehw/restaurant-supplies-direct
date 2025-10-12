@@ -37,9 +37,10 @@ export function getGeoFromHeaders(headers: Headers): GeoLocation {
   const country = headers.get("x-vercel-ip-country") || undefined;
 
   // Check if user is in LA based on city name
-  const isLA =
+  const isLA = Boolean(
     city?.toLowerCase() === "los angeles" ||
-    region?.toLowerCase() === "ca" && city?.toLowerCase().includes("los angeles");
+    (region?.toLowerCase() === "ca" && city?.toLowerCase().includes("los angeles"))
+  );
 
   return {
     city,
