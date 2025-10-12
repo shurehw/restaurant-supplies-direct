@@ -1,158 +1,134 @@
-"use client";
+import { Metadata } from "next";
+import HomeContent from "@/components/HomeContent";
 
-import { useState } from "react";
-import Image from "next/image";
-import LABanner from "@/components/LABanner";
+export const metadata: Metadata = {
+  title: "Restaurant Supplies Direct | Wholesale Disposables & Custom Packaging",
+  description: "Wholesale restaurant disposables, takeout containers, and custom printed packaging shipped direct from the source. Bulk pricing, fast nationwide delivery, and custom branding available. Trusted by restaurants and food service businesses.",
+  keywords: [
+    "restaurant supplies direct",
+    "wholesale restaurant disposables",
+    "bulk takeout containers",
+    "custom printed packaging",
+    "restaurant packaging wholesale",
+    "food service disposables",
+    "wholesale restaurant supplies online",
+    "restaurant supply distributor",
+  ],
+  openGraph: {
+    title: "Restaurant Supplies Direct | Wholesale Disposables & Custom Packaging",
+    description: "Wholesale restaurant disposables and custom printed packaging shipped direct from the source. Bulk pricing and fast nationwide delivery.",
+    type: "website",
+    siteName: "Restaurant Supplies Direct",
+    url: "https://restaurantsuppliesdirect.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Restaurant Supplies Direct | Wholesale Disposables & Custom Packaging",
+    description: "Wholesale restaurant disposables shipped direct from the source with bulk pricing.",
+  },
+  alternates: {
+    canonical: "https://restaurantsuppliesdirect.com",
+  },
+};
+
+// JSON-LD Organization Schema
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Restaurant Supplies Direct",
+  "url": "https://restaurantsuppliesdirect.com",
+  "logo": "https://restaurantsuppliesdirect.com/logo-full.svg",
+  "description": "Wholesale restaurant disposables and custom packaging shipped direct from the source",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Shure Hospitality Wholesale",
+    "url": "https://www.shurehw.com"
+  },
+  "areaServed": "US",
+  "serviceType": [
+    "Restaurant Supply Wholesale",
+    "Custom Packaging",
+    "Restaurant Disposables"
+  ]
+};
+
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of restaurant supplies do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We carry a complete range of restaurant disposables including takeout containers, cups and lids, napkins, gloves, trash bags, eco-friendly packaging, and custom printed items. All products are available for bulk wholesale orders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer wholesale pricing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We offer volume discounts and wholesale pricing on all products. The more you buy, the more you save. Contact us for custom quotes on large orders or multi-location accounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get custom printed packaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We offer in-house custom printing on cups, napkins, takeout boxes, and bags. Our design team can help create branded packaging that showcases your restaurant's identity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are your minimum order quantities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimum orders vary by product, typically starting at one case (100-500 units). Custom printing orders have higher minimums. Contact us for specific product MOQs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer eco-friendly and compostable options?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We carry a wide selection of compostable takeout containers, sustainable packaging, and recyclable disposables that meet BPI and CMA compostability standards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast is shipping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most orders ship within 1-3 business days. We offer standard ground shipping nationwide, with expedited options available. Los Angeles area customers can qualify for same-day delivery through Shure Hospitality Wholesale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve restaurant groups and multi-location businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Through our partnership with Shure Hospitality Wholesale, we provide dedicated account management, volume pricing, and custom solutions for restaurant groups."
+      }
+    }
+  ]
+};
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("submitting");
-
-    try {
-      const response = await fetch("/api/submit-coming-soon", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to submit email");
-      }
-
-      setStatus("success");
-      setEmail("");
-    } catch (error) {
-      console.error("Error submitting email:", error);
-      setStatus("error");
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-bg flex flex-col">
-      {/* LA Banner - shows only for LA visitors */}
-      <LABanner />
-
-      {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border">
-        <div className="max-w-7xl mx-auto flex items-center gap-3">
-          <Image
-            src="/logo-icon.svg"
-            alt="Restaurant Supplies Direct"
-            width={48}
-            height={48}
-            priority
-          />
-          <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
-            Restaurant Supplies Direct
-          </h2>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-3xl w-full text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 text-accent-600 text-sm font-medium">
-            Coming Soon
-          </div>
-
-          {/* Hero Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink leading-heading">
-            Shop Direct from the Source
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto">
-            Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
-            Nationwide fulfillment for independent operators and leading hospitality brands.
-          </p>
-
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Takeout Containers</h3>
-              <p className="text-sm text-ink-muted">Bulk wholesale to-go boxes and deli containers</p>
-            </div>
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Custom Printing</h3>
-              <p className="text-sm text-ink-muted">Branded cups, napkins, and packaging</p>
-            </div>
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <h3 className="text-lg font-heading font-semibold text-ink mb-2">Eco-Friendly</h3>
-              <p className="text-sm text-ink-muted">Compostable and sustainable options</p>
-            </div>
-          </div>
-
-          {/* Email Signup Form */}
-          <div className="pt-8">
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
-              <div>
-                <label htmlFor="email" className="sr-only">
-                  Email address
-                </label>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    id="email"
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
-                    disabled={status === "submitting" || status === "success"}
-                    className="flex-1 px-4 py-3 border border-border rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed"
-                  />
-                  <button
-                    type="submit"
-                    disabled={status === "submitting" || status === "success"}
-                    className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
-                  >
-                    {status === "submitting" ? "Submitting..." : status === "success" ? "Subscribed!" : "Notify Me"}
-                  </button>
-                </div>
-              </div>
-              {status === "success" && (
-                <p className="text-sm text-success">
-                  Thanks! We&apos;ll notify you when we launch.
-                </p>
-              )}
-              {status === "error" && (
-                <p className="text-sm text-error">
-                  Something went wrong. Please try again.
-                </p>
-              )}
-            </form>
-            <p className="text-sm text-ink-muted mt-4">
-              Be the first to know when we launch and get exclusive early access offers.
-            </p>
-          </div>
-        </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-sm text-ink-muted text-center">
-            Restaurant Supplies Direct is your trusted source for restaurant disposables, packaging, and custom print — shipped direct from the source.
-            <br />
-            Powered by{" "}
-            <a
-              href="https://www.shurehw.com"
-              className="text-primary-600 hover:text-primary-700 transition-colors underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Shure Hospitality Wholesale
-            </a>
-            , a national supplier serving leading hospitality brands.
-          </p>
-        </div>
-      </footer>
-    </div>
+    <>
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <HomeContent />
+    </>
   );
 }

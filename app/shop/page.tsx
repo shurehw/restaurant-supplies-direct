@@ -3,9 +3,30 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Shop Restaurant Supplies | Restaurant Supplies Direct",
-  description: "Browse our complete catalog of restaurant disposables, packaging, and supplies. Wholesale pricing, bulk orders, and custom printing available.",
-  keywords: ["shop restaurant supplies", "wholesale restaurant packaging", "bulk disposables", "restaurant supply catalog"],
+  title: "Shop Restaurant Supplies | Bulk Wholesale Pricing",
+  description: "Browse wholesale restaurant disposables - takeout containers, cups, napkins, gloves, and eco-friendly packaging. Bulk orders with fast nationwide shipping and custom printing available.",
+  keywords: [
+    "shop restaurant supplies",
+    "wholesale restaurant packaging",
+    "bulk disposables",
+    "restaurant supply catalog",
+    "buy restaurant supplies online",
+    "food service supplies wholesale",
+  ],
+  openGraph: {
+    title: "Shop Restaurant Supplies | Bulk Wholesale Pricing",
+    description: "Browse wholesale restaurant disposables with bulk pricing and fast shipping.",
+    type: "website",
+    siteName: "Restaurant Supplies Direct",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shop Restaurant Supplies | Bulk Wholesale Pricing",
+    description: "Browse wholesale restaurant disposables with bulk pricing.",
+  },
+  alternates: {
+    canonical: "https://restaurantsuppliesdirect.com/shop",
+  },
 };
 
 const categories = [
