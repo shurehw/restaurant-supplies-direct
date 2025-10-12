@@ -6,7 +6,9 @@ export type AnalyticsEvent =
   | "la_checkout_redirect"
   | "la_lead_submission"
   | "la_page_view"
-  | "shw_link_click";
+  | "shw_link_click"
+  | "custom_quote_submission"
+  | "coming_soon_signup";
 
 interface EventProperties {
   [key: string]: string | number | boolean | undefined;
