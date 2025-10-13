@@ -88,83 +88,125 @@ export default function HomeContent() {
               {/* Mega Menu Dropdown */}
               {megaMenuOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
-                  <div className="w-[600px] max-w-[90vw] bg-white rounded-lg shadow-2xl border border-border p-6">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="w-[800px] max-w-[90vw] bg-white rounded-lg shadow-2xl border-2 border-border p-6">
+                  <div className="grid grid-cols-3 gap-4">
                     <Link
                       href="/takeout-containers"
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                      className="flex flex-col rounded-lg hover:shadow-lg border-2 border-transparent hover:border-orange-500 transition-all group overflow-hidden"
                     >
-                      <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
+                      <div className="w-full h-32 bg-gray-100 overflow-hidden">
+                        <img
+                          src="https://images.unsplash.com/photo-1605522561251-70da7b3733c6?w=400&h=300&fit=crop"
+                          alt="Takeout containers"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                      </div>
+                      <div className="p-3 bg-white">
+                        <h3 className="font-heading font-bold text-ink text-sm mb-1">
                           Takeout Containers
                         </h3>
                         <p className="text-xs text-ink-muted">
-                          To-go boxes, deli containers, clamshells
+                          To-go boxes, clamshells
                         </p>
                       </div>
                     </Link>
                     <Link
                       href="/cups-and-lids"
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                      className="flex flex-col rounded-lg hover:shadow-lg border-2 border-transparent hover:border-amber-500 transition-all group overflow-hidden"
                     >
-                      <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
+                      <div className="w-full h-32 bg-gray-100 overflow-hidden">
+                        <img
+                          src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop"
+                          alt="Coffee cups"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                      </div>
+                      <div className="p-3 bg-white">
+                        <h3 className="font-heading font-bold text-ink text-sm mb-1">
                           Cups & Lids
                         </h3>
                         <p className="text-xs text-ink-muted">
-                          Paper cups, plastic cups, coffee cups
+                          Paper & plastic cups
                         </p>
                       </div>
                     </Link>
                     <Link
                       href="/napkins-and-towels"
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                      className="flex flex-col rounded-lg hover:shadow-lg border-2 border-transparent hover:border-blue-500 transition-all group overflow-hidden"
                     >
-                      <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
+                      <div className="w-full h-32 bg-gray-100 overflow-hidden">
+                        <img
+                          src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=400&h=300&fit=crop"
+                          alt="Napkins"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                      </div>
+                      <div className="p-3 bg-white">
+                        <h3 className="font-heading font-bold text-ink text-sm mb-1">
                           Napkins & Towels
                         </h3>
                         <p className="text-xs text-ink-muted">
-                          Beverage napkins, dinner napkins, paper towels
+                          All napkin sizes
                         </p>
                       </div>
                     </Link>
                     <Link
                       href="/gloves-and-bags"
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                      className="flex flex-col rounded-lg hover:shadow-lg border-2 border-transparent hover:border-purple-500 transition-all group overflow-hidden"
                     >
-                      <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
+                      <div className="w-full h-32 bg-gray-100 overflow-hidden">
+                        <img
+                          src="https://images.unsplash.com/photo-1584634728739-b5c9b8e60df5?w=400&h=300&fit=crop"
+                          alt="Gloves and bags"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                      </div>
+                      <div className="p-3 bg-white">
+                        <h3 className="font-heading font-bold text-ink text-sm mb-1">
                           Gloves & Bags
                         </h3>
                         <p className="text-xs text-ink-muted">
-                          Disposable gloves, trash bags
+                          Disposables & trash
                         </p>
                       </div>
                     </Link>
                     <Link
                       href="/eco-friendly"
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                      className="flex flex-col rounded-lg hover:shadow-lg border-2 border-transparent hover:border-green-500 transition-all group overflow-hidden"
                     >
-                      <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
+                      <div className="w-full h-32 bg-gray-100 overflow-hidden">
+                        <img
+                          src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop"
+                          alt="Eco-friendly packaging"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                      </div>
+                      <div className="p-3 bg-white">
+                        <h3 className="font-heading font-bold text-ink text-sm mb-1">
                           Eco-Friendly
                         </h3>
                         <p className="text-xs text-ink-muted">
-                          Compostable, biodegradable, sustainable
+                          Compostable options
                         </p>
                       </div>
                     </Link>
                     <Link
                       href="/tabletop"
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                      className="flex flex-col rounded-lg hover:shadow-lg border-2 border-transparent hover:border-gray-500 transition-all group overflow-hidden"
                     >
-                      <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
+                      <div className="w-full h-32 bg-gray-100 overflow-hidden">
+                        <img
+                          src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=400&h=300&fit=crop"
+                          alt="Cutlery and straws"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                      </div>
+                      <div className="p-3 bg-white">
+                        <h3 className="font-heading font-bold text-ink text-sm mb-1">
                           Tabletop
                         </h3>
                         <p className="text-xs text-ink-muted">
-                          Cutlery, straws, portion cups
+                          Cutlery & straws
                         </p>
                       </div>
                     </Link>
