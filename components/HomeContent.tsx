@@ -45,10 +45,10 @@ export default function HomeContent() {
   return (
     <div className="min-h-screen bg-bg flex flex-col">
       {/* Coming Soon Banner */}
-      <div className="bg-gradient-to-r from-[#F97316] to-[#EA580C] text-white py-2.5 px-4 shadow-sm">
+      <div className="bg-black text-white py-2.5 px-4 border-b border-zinc-800">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-xs sm:text-sm font-semibold">
-            🚀 Online ordering coming soon! Browse now & <Link href="/contact" className="underline hover:text-white font-bold">get a quote</Link> for immediate orders.
+          <p className="text-xs sm:text-sm font-medium">
+            Online ordering drops soon — <Link href="/contact" className="underline hover:text-zinc-300 font-semibold">hit us up</Link> for orders now
           </p>
         </div>
       </div>
@@ -186,7 +186,7 @@ export default function HomeContent() {
               <LogIn className="w-4 h-4" />
               Login
             </Link>
-            <Link href="/contact" className="px-4 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-semibold">
+            <Link href="/contact" className="px-4 py-1.5 bg-black text-white rounded-lg hover:bg-zinc-900 transition-colors text-sm font-semibold">
               Get Quote
             </Link>
           </nav>
@@ -271,7 +271,7 @@ export default function HomeContent() {
               <div className="border-t border-border pt-3 mt-3">
                 <Link
                   href="/login"
-                  className="mx-4 px-4 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors text-center font-medium flex items-center justify-center gap-2"
+                  className="mx-4 px-4 py-3 border-2 border-black text-black rounded-lg hover:bg-gray-50 transition-colors text-center font-medium flex items-center justify-center gap-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <LogIn className="w-4 h-4" />
@@ -280,7 +280,7 @@ export default function HomeContent() {
               </div>
               <Link
                 href="/contact"
-                className="mx-4 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
+                className="mx-4 px-4 py-3 bg-black text-white rounded-lg hover:bg-zinc-900 transition-colors text-center font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Get Quote
@@ -300,52 +300,52 @@ export default function HomeContent() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-5">
               {/* Badge */}
-              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-semibold shadow-md">
+              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-black text-white text-xs font-semibold border border-zinc-800">
                 Browse Now • Orders Opening Soon
               </div>
 
               {/* Hero Heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-ink leading-[1.1]">
-                Shop Restaurant Supplies{" "}
+                Restaurant Supplies.{" "}
                 <span className="gradient-text">
-                  Direct from the Source
+                  Direct.
                 </span>
               </h1>
 
               {/* Subheading */}
               <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto leading-snug">
-                Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
+                Premium disposables, packaging, and custom print. No middleman, no markup.
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <Link
                   href="/shop"
-                  className="group px-6 py-3 bg-blue-600 text-white font-semibold text-base rounded-lg hover:bg-blue-700 transition-all shadow-md hover:shadow-lg"
+                  className="group px-6 py-3 bg-black text-white font-semibold text-base rounded-lg hover:bg-zinc-900 transition-all"
                 >
                   Browse Catalog
                   <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/custom-printing"
-                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-lg hover:bg-gray-50 transition-all border-2 border-gray-200 shadow-md hover:shadow-lg"
+                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-lg hover:bg-gray-50 transition-all border-2 border-gray-200"
                 >
-                  Custom Printing
+                  Custom Print
                 </Link>
               </div>
 
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center justify-center gap-4 pt-4 text-xs text-ink-muted font-medium">
                 <div className="flex items-center gap-1.5">
-                  <Truck className="w-4 h-4 text-blue-600" />
+                  <Truck className="w-4 h-4 text-ink" />
                   <span>Fast Shipping</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Package className="w-4 h-4 text-blue-600" />
+                  <Package className="w-4 h-4 text-ink" />
                   <span>Wholesale Pricing</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Leaf className="w-4 h-4 text-blue-600" />
+                  <Leaf className="w-4 h-4 text-ink" />
                   <span>Eco Options</span>
                 </div>
               </div>
@@ -358,7 +358,7 @@ export default function HomeContent() {
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-xl shadow-lg border border-border p-6 sm:p-8">
               <p className="text-xl font-heading font-bold text-ink mb-2 text-center">Get Early Access</p>
-              <p className="text-sm text-ink-muted mb-6 text-center">Be first to know when we launch online ordering</p>
+              <p className="text-sm text-ink-muted mb-6 text-center">Get notified when we drop</p>
               <form onSubmit={handleSubmit} className="space-y-3">
                 <div>
                   <label htmlFor="email" className="sr-only">
@@ -378,15 +378,15 @@ export default function HomeContent() {
                     <button
                       type="submit"
                       disabled={status === "submitting" || status === "success"}
-                      className="px-6 py-3 bg-gradient-to-r from-blue-600 to-orange-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-orange-700 transition-all shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-sm"
+                      className="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-zinc-900 transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-sm"
                     >
-                      {status === "submitting" ? "Submitting..." : status === "success" ? "✓ Subscribed!" : "Notify Me"}
+                      {status === "submitting" ? "Submitting..." : status === "success" ? "Done" : "Notify Me"}
                     </button>
                   </div>
                 </div>
                 {status === "success" && (
                   <p className="text-xs text-success">
-                    Thanks! We&apos;ll notify you when online ordering launches.
+                    You&apos;re on the list.
                   </p>
                 )}
                 {status === "error" && (
@@ -405,10 +405,10 @@ export default function HomeContent() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-2">
-              Why Choose Us?
+              Why Work With Us
             </h2>
             <p className="text-base text-ink-muted max-w-2xl mx-auto">
-              Premium supplies, transparent pricing, and dedicated service
+              Direct pricing, quality products, zero BS
             </p>
           </div>
 
