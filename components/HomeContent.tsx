@@ -401,7 +401,7 @@ export default function HomeContent() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-5">
               {/* Badge */}
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-orange text-white text-xs font-bold shadow-xl border-2 border-brand-orange-dark">
+              <div className="inline-flex items-center px-4 py-2 rounded-full text-white text-xs font-bold shadow-xl border-2" style={{ backgroundColor: '#FF6B35', borderColor: '#E55520' }}>
                 Browse Now • Orders Opening Soon
               </div>
 
