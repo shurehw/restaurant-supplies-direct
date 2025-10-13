@@ -4,6 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import LABanner from "@/components/LABanner";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
+import TrustBadges from "@/components/TrustBadges";
+import StickyQuoteCTA from "@/components/StickyQuoteCTA";
+import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import { Menu, X, ChevronDown, Package, Palette, Leaf, Truck, Box, Coffee, FileText, ShoppingBag, Utensils, Sparkles, LogIn, UserPlus } from "lucide-react";
 
@@ -489,6 +493,12 @@ export default function HomeContent() {
         </div>
       </section>
 
+      {/* Trust Badges */}
+      <TrustBadges />
+
+      {/* Testimonials */}
+      <Testimonials />
+
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -538,6 +548,8 @@ export default function HomeContent() {
       </section>
 
       <Footer />
+      <StickyQuoteCTA />
+      <BackToTop />
     </div>
   );
 }

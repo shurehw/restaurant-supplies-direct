@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import HomeContent from "@/components/HomeContent";
+import { SiteNavigationSchema, WebSiteSchema, AggregateRatingSchema } from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "Restaurant Supplies Direct | Wholesale Disposables & Custom Packaging",
@@ -128,6 +129,9 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <SiteNavigationSchema />
+      <WebSiteSchema />
+      <AggregateRatingSchema />
       <HomeContent />
     </>
   );
