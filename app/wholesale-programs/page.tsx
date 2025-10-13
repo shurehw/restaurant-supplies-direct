@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Building2, TrendingUp, Palette, Utensils, DollarSign, Users, CreditCard, BarChart3, Zap, Truck } from "lucide-react";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Wholesale Restaurant Supply Programs | Powered by Shure Hospitality Wholesale",
@@ -310,20 +311,7 @@ export default function WholesaleProgramsPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-white">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-sm text-ink-muted text-center">
-            Restaurant Supplies Direct is your trusted source for restaurant disposables, packaging, and custom print — shipped direct from the source.
-            <br />
-            Powered by{" "}
-            <a href="https://www.shurehw.com" className="text-primary-600 hover:text-primary-700 transition-colors underline" target="_blank" rel="noopener noreferrer">
-              Shure Hospitality Wholesale
-            </a>
-            , a national supplier serving leading hospitality brands.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

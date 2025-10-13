@@ -331,7 +331,7 @@ export default function HomeContent() {
               </div>
 
               {/* Trust Badges */}
-              <div className="flex flex-wrap items-center justify-center gap-6 pt-8 text-sm text-ink-muted">
+              <div className="flex flex-wrap items-center justify-center gap-6 pt-8 text-sm text-ink">
                 <div className="flex items-center gap-2">
                   <Truck className="w-5 h-5 text-primary-600" />
                   <span>Fast Nationwide Shipping</span>
@@ -468,10 +468,10 @@ export default function HomeContent() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
               { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, color: "bg-orange-100 text-orange-600" },
-              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, color: "bg-brown-100 text-brown-600" },
+              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, color: "bg-amber-100 text-amber-700" },
               { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, color: "bg-blue-100 text-blue-600" },
               { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, color: "bg-purple-100 text-purple-600" },
-              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, color: "bg-gray-100 text-gray-600" },
+              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, color: "bg-gray-100 text-gray-700" },
               { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, color: "bg-green-100 text-green-600" },
             ].map((category) => (
               <Link

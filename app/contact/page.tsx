@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Contact Us | Restaurant Supplies Direct",
@@ -233,16 +234,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-white">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-sm text-ink-muted text-center">
-            Restaurant Supplies Direct is powered by{" "}
-            <a href="https://www.shurehw.com" className="text-primary-600 hover:text-primary-700 underline" target="_blank" rel="noopener noreferrer">
-              Shure Hospitality Wholesale
-            </a>
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
