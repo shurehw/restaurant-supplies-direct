@@ -226,7 +226,7 @@ export default function HomeContent() {
               )}
             </div>
 
-            <div className="relative">
+            <div className="relative hidden lg:block">
               <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
                 <Search className="w-4 h-4 text-gray-400" />
                 <input
@@ -763,7 +763,7 @@ export default function HomeContent() {
                       POPULAR
                     </div>
                   )}
-                  <div className="absolute top-3 left-3">
+                  <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
                     <ProductBadges
                       certifications={product.certifications}
                       isCompostable={product.isCompostable}

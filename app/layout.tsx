@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   title: "Coming Soon | Restaurant Supplies Direct",
   description: "Premium restaurant disposables, packaging, and custom print — shipped direct from the source. Powered by Shure Hospitality Wholesale.",
   keywords: ["restaurant supplies direct", "wholesale restaurant packaging", "restaurant disposables online", "takeout containers", "custom printed packaging"],
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  themeColor: '#000000',
+  manifest: '/manifest.json',
   icons: {
     icon: [
       { url: "/logo-icon.svg", type: "image/svg+xml" },
@@ -33,11 +40,22 @@ export const metadata: Metadata = {
     description: "Premium restaurant disposables, packaging, and custom print — shipped direct from the source.",
     type: "website",
     siteName: "Restaurant Supplies Direct",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Coming Soon | Restaurant Supplies Direct",
     description: "Premium restaurant disposables, packaging, and custom print — shipped direct from the source.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
