@@ -685,7 +685,7 @@ export default function HomeContent() {
                 unit: "per 1000ct",
                 popular: true,
                 material: "Paper",
-                certifications: ["FDA"],
+                certifications: ["FDA" as const],
                 specs: { size: "8oz", caseQuantity: "1000 pcs" }
               },
               {
@@ -695,7 +695,7 @@ export default function HomeContent() {
                 unit: "per 200ct",
                 popular: true,
                 material: "Plastic",
-                certifications: ["FDA"],
+                certifications: ["FDA" as const],
                 specs: { dimensions: "9\" x 6\" x 3\"", caseQuantity: "200 pcs" }
               },
               {
@@ -716,7 +716,7 @@ export default function HomeContent() {
                 popular: false,
                 material: "PLA",
                 isCompostable: true,
-                certifications: ["BPI"],
+                certifications: ["BPI" as const],
                 specs: { capacity: "16oz", caseQuantity: "1000 pcs" }
               },
             ].map((product, i) => (
