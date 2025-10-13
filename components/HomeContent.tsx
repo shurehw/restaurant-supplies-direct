@@ -321,7 +321,7 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                 <Link
                   href="/shop"
-                  className="group px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-xl hover:bg-primary-700 transition-all shadow-lg shadow-primary-600/30 hover:shadow-xl hover:shadow-primary-600/40 hover:-translate-y-0.5"
+                  className="group px-8 py-4 bg-blue-600 text-white font-heading font-semibold text-lg rounded-xl hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                 >
                   Browse Catalog
                   <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
