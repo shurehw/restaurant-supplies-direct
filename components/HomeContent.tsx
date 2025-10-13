@@ -76,6 +76,18 @@ export default function HomeContent() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-3">
+            {/* Search Bar */}
+            <div className="relative hidden lg:block">
+              <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+                <Search className="w-4 h-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  className="bg-transparent border-none outline-none text-sm w-40 placeholder:text-gray-400"
+                />
+              </div>
+            </div>
+
             {/* Categories with Mega Menu */}
             <div
               className="relative"
@@ -226,16 +238,6 @@ export default function HomeContent() {
               )}
             </div>
 
-            <div className="relative hidden lg:block">
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
-                <Search className="w-4 h-4 text-gray-400" />
-                <input
-                  type="text"
-                  placeholder="Search products..."
-                  className="bg-transparent border-none outline-none text-sm w-40 placeholder:text-gray-400"
-                />
-              </div>
-            </div>
             <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Custom Print</Link>
             <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Wholesale</Link>
             <Link href="/blog" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Blog</Link>
