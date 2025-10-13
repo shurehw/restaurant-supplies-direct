@@ -245,7 +245,7 @@ export default function HomeContent() {
               <LogIn className="w-4 h-4" />
               Login
             </Link>
-            <Link href="/contact" className="px-4 py-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all text-sm font-semibold shadow-md hover:shadow-lg">
+            <Link href="/contact" className="px-4 py-1.5 bg-gradient-to-r from-brand-blue to-brand-blue-dark text-white rounded-lg hover:from-brand-blue-dark hover:to-brand-blue-dark transition-all text-sm font-semibold shadow-md hover:shadow-lg">
               Get Quote
             </Link>
           </nav>
@@ -401,7 +401,7 @@ export default function HomeContent() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-5">
               {/* Badge */}
-              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-semibold shadow-lg">
+              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-gradient-to-r from-brand-orange to-brand-orange-dark text-white text-xs font-semibold shadow-lg">
                 Browse Now • Orders Opening Soon
               </div>
 
@@ -422,14 +422,14 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <Link
                   href="/shop"
-                  className="group px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold text-base rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl"
+                  className="group px-6 py-3 bg-gradient-to-r from-brand-blue to-brand-blue-light text-white font-semibold text-base rounded-lg hover:from-brand-blue-dark hover:to-brand-blue transition-all shadow-lg hover:shadow-xl"
                 >
                   Browse Catalog
                   <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/custom-printing"
-                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-lg hover:bg-gray-50 transition-all border-2 border-orange-500 hover:border-orange-600 hover:shadow-lg"
+                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-lg hover:bg-gray-50 transition-all border-2 border-brand-orange hover:border-brand-orange-dark hover:shadow-lg"
                 >
                   Custom Print
                 </Link>
@@ -521,8 +521,8 @@ export default function HomeContent() {
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Wholesale Pricing</h3>
               <p className="text-ink-muted text-sm leading-relaxed">Volume discounts and bulk ordering with transparent, competitive pricing on all supplies.</p>
             </div>
-            <div className="group p-5 bg-white rounded-xl border-2 border-border hover:border-orange-600 hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
+            <div className="group p-5 bg-white rounded-xl border-2 border-border hover:border-brand-orange hover:shadow-lg transition-all">
+              <div className="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Palette className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Custom Branding</h3>

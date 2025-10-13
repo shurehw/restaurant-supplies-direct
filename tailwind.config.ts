@@ -18,18 +18,29 @@ export default {
         ink: "#0F172A",
         "ink-muted": "#334155",
 
-        // Primary (Blue)
-        primary: {
-          50: "#EFF6FF",
-          600: "#2563EB",
-          700: "#1D4ED8",
+        // Brand Colors (from logo)
+        brand: {
+          blue: "#003D7A",
+          "blue-light": "#0052A3",
+          "blue-dark": "#002952",
+          "blue-50": "#E6EEF7",
+          orange: "#FF6B35",
+          "orange-light": "#FF8556",
+          "orange-dark": "#E55520",
+          "orange-50": "#FFF3EE",
         },
 
-        // Accent (Orange)
+        // Legacy aliases (keep for compatibility)
+        primary: {
+          50: "#E6EEF7",
+          600: "#003D7A",
+          700: "#002952",
+        },
+
         accent: {
-          50: "#FFF7ED",
-          500: "#F97316",
-          600: "#EA580C",
+          50: "#FFF3EE",
+          500: "#FF6B35",
+          600: "#E55520",
         },
 
         // Feedback
