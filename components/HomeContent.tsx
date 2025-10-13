@@ -307,7 +307,7 @@ export default function HomeContent() {
               {/* Hero Heading */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold text-ink leading-tight">
                 Shop Restaurant Supplies{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+                <span className="gradient-text">
                   Direct from the Source
                 </span>
               </h1>
