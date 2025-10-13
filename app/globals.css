@@ -30,7 +30,8 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
 /* Gradient text utility */
