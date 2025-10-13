@@ -96,7 +96,7 @@ export default function HomeContent() {
                     >
                       <div className="w-full h-32 bg-gray-100 overflow-hidden">
                         <img
-                          src="https://images.unsplash.com/photo-1605522561251-70da7b3733c6?w=400&h=300&fit=crop"
+                          src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=400&h=300&fit=crop"
                           alt="Takeout containers"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         />
@@ -136,7 +136,7 @@ export default function HomeContent() {
                     >
                       <div className="w-full h-32 bg-gray-100 overflow-hidden">
                         <img
-                          src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=400&h=300&fit=crop"
+                          src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=300&fit=crop"
                           alt="Napkins"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         />
@@ -156,7 +156,7 @@ export default function HomeContent() {
                     >
                       <div className="w-full h-32 bg-gray-100 overflow-hidden">
                         <img
-                          src="https://images.unsplash.com/photo-1584634728739-b5c9b8e60df5?w=400&h=300&fit=crop"
+                          src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&h=300&fit=crop"
                           alt="Gloves and bags"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         />
@@ -176,7 +176,7 @@ export default function HomeContent() {
                     >
                       <div className="w-full h-32 bg-gray-100 overflow-hidden">
                         <img
-                          src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop"
+                          src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&h=300&fit=crop"
                           alt="Eco-friendly packaging"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         />
@@ -196,7 +196,7 @@ export default function HomeContent() {
                     >
                       <div className="w-full h-32 bg-gray-100 overflow-hidden">
                         <img
-                          src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=400&h=300&fit=crop"
+                          src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=300&fit=crop"
                           alt="Cutlery and straws"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         />
