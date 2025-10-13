@@ -585,10 +585,10 @@ export default function HomeContent() {
                 className={`group relative overflow-hidden rounded-xl border-2 border-border ${category.borderColor} hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300`}
               >
                 <div className={`${category.bgColor} p-8 text-center relative`}>
-                  <div className="absolute top-2 right-2 px-2 py-0.5 bg-white rounded-full text-[10px] font-bold text-gray-600 shadow-sm">
+                  <div className="absolute top-2 right-2 px-2 py-0.5 bg-black/80 backdrop-blur-sm rounded-full text-[10px] font-bold text-white shadow-lg">
                     {category.count}
                   </div>
-                  <div className={`w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-md ${category.iconColor}`}>
+                  <div className={`w-16 h-16 bg-white/95 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg border-2 border-white/40 ${category.iconColor}`}>
                     <category.Icon className="w-8 h-8" />
                   </div>
                   <h3 className="text-sm font-heading font-bold text-ink">{category.name}</h3>
