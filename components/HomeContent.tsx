@@ -11,7 +11,7 @@ import BackToTop from "@/components/BackToTop";
 import ProductBadges from "@/components/ProductBadges";
 import ProductSpecs from "@/components/ProductSpecs";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Package, Palette, Leaf, Truck, Box, Coffee, FileText, ShoppingBag, Utensils, Sparkles, LogIn, UserPlus } from "lucide-react";
+import { Menu, X, ChevronDown, Package, Palette, Leaf, Truck, Box, Coffee, FileText, ShoppingBag, Utensils, Sparkles, LogIn, UserPlus, Search } from "lucide-react";
 
 export default function HomeContent() {
   const [email, setEmail] = useState("");
@@ -226,6 +226,16 @@ export default function HomeContent() {
               )}
             </div>
 
+            <div className="relative">
+              <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+                <Search className="w-4 h-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  className="bg-transparent border-none outline-none text-sm w-40 placeholder:text-gray-400"
+                />
+              </div>
+            </div>
             <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Custom Print</Link>
             <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Wholesale</Link>
             <Link href="/blog" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Blog</Link>
@@ -233,7 +243,7 @@ export default function HomeContent() {
               <LogIn className="w-4 h-4" />
               Login
             </Link>
-            <Link href="/contact" className="px-4 py-1.5 bg-black text-white rounded-lg hover:bg-zinc-900 transition-colors text-sm font-semibold">
+            <Link href="/contact" className="px-4 py-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all text-sm font-semibold shadow-md hover:shadow-lg">
               Get Quote
             </Link>
           </nav>
@@ -373,12 +383,23 @@ export default function HomeContent() {
         {/* Hero Section with Background */}
         <div className="relative bg-gradient-to-br from-blue-50 via-white to-orange-50 py-12 sm:py-16 overflow-hidden">
           {/* Decorative elements */}
-          <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
+          <div className="absolute inset-0 -z-10">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(249,115,22,0.1),transparent_50%)]"></div>
+            <svg className="absolute inset-0 w-full h-full opacity-[0.03]" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                  <path d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" strokeWidth="1"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+          </div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-5">
               {/* Badge */}
-              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-black text-white text-xs font-semibold border border-zinc-800">
+              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-semibold shadow-lg">
                 Browse Now • Orders Opening Soon
               </div>
 
@@ -399,14 +420,14 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <Link
                   href="/shop"
-                  className="group px-6 py-3 bg-black text-white font-semibold text-base rounded-lg hover:bg-zinc-900 transition-all"
+                  className="group px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold text-base rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl"
                 >
                   Browse Catalog
                   <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/custom-printing"
-                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-lg hover:bg-gray-50 transition-all border-2 border-gray-200"
+                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-lg hover:bg-gray-50 transition-all border-2 border-orange-500 hover:border-orange-600 hover:shadow-lg"
                 >
                   Custom Print
                 </Link>
@@ -549,19 +570,22 @@ export default function HomeContent() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-gradient-to-br from-orange-50 to-orange-100", iconColor: "text-orange-600", borderColor: "hover:border-orange-500" },
-              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-gradient-to-br from-amber-50 to-amber-100", iconColor: "text-amber-700", borderColor: "hover:border-amber-500" },
-              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-gradient-to-br from-blue-50 to-blue-100", iconColor: "text-blue-600", borderColor: "hover:border-blue-500" },
-              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-gradient-to-br from-purple-50 to-purple-100", iconColor: "text-purple-600", borderColor: "hover:border-purple-500" },
-              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gradient-to-br from-gray-50 to-gray-100", iconColor: "text-gray-700", borderColor: "hover:border-gray-500" },
-              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-gradient-to-br from-green-50 to-green-100", iconColor: "text-green-600", borderColor: "hover:border-green-500" },
+              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-gradient-to-br from-orange-50 to-orange-100", iconColor: "text-orange-600", borderColor: "hover:border-orange-500", count: "500+" },
+              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-gradient-to-br from-amber-50 to-amber-100", iconColor: "text-amber-700", borderColor: "hover:border-amber-500", count: "300+" },
+              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-gradient-to-br from-blue-50 to-blue-100", iconColor: "text-blue-600", borderColor: "hover:border-blue-500", count: "200+" },
+              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-gradient-to-br from-purple-50 to-purple-100", iconColor: "text-purple-600", borderColor: "hover:border-purple-500", count: "150+" },
+              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gradient-to-br from-gray-50 to-gray-100", iconColor: "text-gray-700", borderColor: "hover:border-gray-500", count: "250+" },
+              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-gradient-to-br from-green-50 to-green-100", iconColor: "text-green-600", borderColor: "hover:border-green-500", count: "180+" },
             ].map((category) => (
               <Link
                 key={category.href}
                 href={category.href}
-                className={`group relative overflow-hidden rounded-xl border-2 border-border ${category.borderColor} hover:shadow-xl transition-all transform hover:-translate-y-1`}
+                className={`group relative overflow-hidden rounded-xl border-2 border-border ${category.borderColor} hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300`}
               >
-                <div className={`${category.bgColor} p-8 text-center`}>
+                <div className={`${category.bgColor} p-8 text-center relative`}>
+                  <div className="absolute top-2 right-2 px-2 py-0.5 bg-white rounded-full text-[10px] font-bold text-gray-600 shadow-sm">
+                    {category.count}
+                  </div>
                   <div className={`w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-md ${category.iconColor}`}>
                     <category.Icon className="w-8 h-8" />
                   </div>
@@ -720,10 +744,19 @@ export default function HomeContent() {
                 specs: { capacity: "16oz", caseQuantity: "1000 pcs" }
               },
             ].map((product, i) => (
-              <div key={i} className="group bg-white rounded-xl border-2 border-border hover:border-black hover:shadow-xl transition-all">
+              <div key={i} className="group bg-white rounded-xl border-2 border-border hover:border-black hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
                 <div className="relative">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl flex items-center justify-center">
-                    <Package className="w-16 h-16 text-gray-400" />
+                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl flex items-center justify-center overflow-hidden">
+                    <img
+                      src={`https://images.unsplash.com/photo-${
+                        i === 0 ? '1544787219-7f47ccb76574' : // Coffee cups
+                        i === 1 ? '1603532648955-039310d9ed75' : // Takeout containers
+                        i === 2 ? '1596814062351-48d83e6c2c12' : // Paper bags
+                        '1611273426858-450d8e3c9fce' // Compostable cups
+                      }?w=400&h=400&fit=crop`}
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
                   </div>
                   {product.popular && (
                     <div className="absolute top-3 right-3 px-2 py-1 bg-black text-white text-xs font-bold rounded">

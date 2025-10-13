@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin, CreditCard, Smartphone, Lock } from "lucide-react";
+import { Mail, Phone, MapPin, CreditCard, Smartphone, Lock, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,9 +13,24 @@ export default function Footer() {
             <p className="text-sm text-gray-300 mb-4">
               Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-400 mb-4">
               Powered by <a href="https://www.shurehw.com" className="text-gray-300 hover:text-white underline" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>
             </p>
+            {/* Social Media Links */}
+            <div className="flex gap-3">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors">
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-colors">
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-sky-500 rounded-lg flex items-center justify-center transition-colors">
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-blue-700 rounded-lg flex items-center justify-center transition-colors">
+                <Linkedin className="w-4 h-4" />
+              </a>
+            </div>
           </div>
 
           {/* Shop */}
