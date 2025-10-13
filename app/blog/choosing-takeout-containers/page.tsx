@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 
@@ -25,23 +25,7 @@ export default function BlogPost() {
         ]}
       />
 
-      {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white">
-        <div className="max-w-7xl mx-auto flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/logo-icon.svg"
-              alt="Restaurant Supplies Direct"
-              width={48}
-              height={48}
-              priority
-            />
-            <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
-              Restaurant Supplies Direct
-            </h2>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Breadcrumb */}
       <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -59,7 +43,7 @@ export default function BlogPost() {
         {/* Header */}
         <header className="mb-8">
           <div className="flex items-center gap-3 text-sm text-ink-muted mb-4">
-            <span className="px-3 py-1 bg-blue-100 text-blue-600 font-semibold rounded-full">
+            <span className="px-3 py-1 bg-gray-100 text-black font-semibold rounded-full">
               Buying Guide
             </span>
             <time dateTime="2025-10-10">October 10, 2025</time>
@@ -146,7 +130,7 @@ export default function BlogPost() {
             <li>Plant-based PLA containers</li>
           </ul>
 
-          <div className="bg-blue-50 p-8 rounded-2xl border-2 border-blue-600 my-12">
+          <div className="bg-gray-50 p-8 rounded-2xl border-2 border-black my-12">
             <h3 className="font-heading font-bold text-ink text-2xl mb-4">
               Ready to Order?
             </h3>
@@ -155,7 +139,7 @@ export default function BlogPost() {
             </p>
             <Link
               href="/takeout-containers"
-              className="inline-block px-8 py-4 bg-blue-600 text-white font-heading font-semibold rounded-xl hover:bg-blue-700 transition-colors shadow-lg"
+              className="inline-block px-8 py-4 bg-black text-white font-heading font-semibold rounded-xl hover:bg-zinc-900 transition-colors shadow-lg"
             >
               Shop Takeout Containers
             </Link>
@@ -175,7 +159,7 @@ export default function BlogPost() {
           </ul>
 
           <p className="text-ink-muted leading-relaxed">
-            Have questions about which containers are right for your menu? <Link href="/contact" className="text-blue-600 hover:text-blue-700 underline font-semibold">Contact our team</Link> for personalized recommendations.
+            Have questions about which containers are right for your menu? <Link href="/contact" className="text-black hover:text-zinc-900 underline font-semibold">Contact our team</Link> for personalized recommendations.
           </p>
         </div>
 
@@ -185,7 +169,7 @@ export default function BlogPost() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link
               href="/blog/eco-friendly-packaging-guide"
-              className="p-6 bg-white rounded-xl border-2 border-border hover:border-blue-600 hover:shadow-lg transition-all"
+              className="p-6 bg-white rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all"
             >
               <h4 className="font-heading font-bold text-ink mb-2">
                 Complete Guide to Eco-Friendly Restaurant Packaging
@@ -194,7 +178,7 @@ export default function BlogPost() {
             </Link>
             <Link
               href="/blog/reduce-packaging-costs"
-              className="p-6 bg-white rounded-xl border-2 border-border hover:border-blue-600 hover:shadow-lg transition-all"
+              className="p-6 bg-white rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all"
             >
               <h4 className="font-heading font-bold text-ink mb-2">
                 5 Ways to Reduce Packaging Costs

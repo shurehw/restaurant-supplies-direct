@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -51,26 +51,10 @@ const blogPosts = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-bg">
-      {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white">
-        <div className="max-w-7xl mx-auto flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/logo-icon.svg"
-              alt="Restaurant Supplies Direct"
-              width={48}
-              height={48}
-              priority
-            />
-            <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
-              Restaurant Supplies Direct
-            </h2>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-16">
+      <section className="bg-gradient-to-br from-gray-50 to-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4 leading-heading">
@@ -90,12 +74,12 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article
                 key={post.slug}
-                className="bg-white rounded-2xl border-2 border-border hover:border-blue-600 hover:shadow-xl transition-all overflow-hidden group"
+                className="bg-white rounded-2xl border-2 border-border hover:border-black hover:shadow-xl transition-all overflow-hidden group"
               >
                 {/* Placeholder image area */}
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-accent-100 relative">
+                <div className="h-48 bg-gradient-to-br from-gray-100 to-accent-100 relative">
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-white text-blue-600 text-xs font-semibold rounded-full">
+                    <span className="px-3 py-1 bg-white text-black text-xs font-semibold rounded-full">
                       {post.category}
                     </span>
                   </div>
@@ -114,7 +98,7 @@ export default function BlogPage() {
                     <span>{post.readTime}</span>
                   </div>
 
-                  <h2 className="text-2xl font-heading font-bold text-ink mb-3 group-hover:text-blue-600 transition-colors">
+                  <h2 className="text-2xl font-heading font-bold text-ink mb-3 group-hover:text-black transition-colors">
                     {post.title}
                   </h2>
 
@@ -122,7 +106,7 @@ export default function BlogPage() {
 
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                    className="inline-flex items-center text-black font-semibold hover:text-zinc-900 transition-colors"
                   >
                     Read Article →
                   </Link>

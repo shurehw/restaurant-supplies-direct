@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import CustomPrintingQuoteForm from "@/components/CustomPrintingQuoteForm";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -35,28 +35,24 @@ export const metadata: Metadata = {
 
 const customProducts = [
   {
-    icon: "☕",
     name: "Custom Printed Cups",
     description: "Hot cups, cold cups, coffee sleeves",
     minOrder: "1,000 units",
     leadTime: "2-3 weeks",
   },
   {
-    icon: "🧻",
     name: "Logo Napkins",
     description: "Beverage, lunch, and dinner napkins",
     minOrder: "5,000 units",
     leadTime: "2-3 weeks",
   },
   {
-    icon: "📦",
     name: "Branded Takeout Boxes",
     description: "To-go containers, bags, and trays",
     minOrder: "2,500 units",
     leadTime: "3-4 weeks",
   },
   {
-    icon: "🛍️",
     name: "Custom Shopping Bags",
     description: "Paper and plastic bags with your logo",
     minOrder: "1,000 units",
@@ -150,34 +146,7 @@ export default function CustomPrintingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/logo-icon.svg"
-              alt="Restaurant Supplies Direct"
-              width={48}
-              height={48}
-              priority
-            />
-            <span className="text-2xl font-heading font-bold text-ink leading-heading">
-              Restaurant Supplies Direct
-            </span>
-          </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors">
-              Shop
-            </Link>
-            <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors">
-              Wholesale
-            </Link>
-            <Link href="#quote" className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
-              Get Quote
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-24">
@@ -216,7 +185,6 @@ export default function CustomPrintingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {customProducts.map((product, index) => (
               <div key={index} className="p-6 bg-bg-muted rounded-xl border-2 border-border hover:border-orange-500 transition-all">
-                <div className="text-5xl mb-4">{product.icon}</div>
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
                   {product.name}
                 </h3>
@@ -272,8 +240,8 @@ export default function CustomPrintingPage() {
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
-                    🎨
+                  <div className="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-black rounded"></div>
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-ink mb-1">
@@ -285,8 +253,8 @@ export default function CustomPrintingPage() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
-                    ⚡
+                  <div className="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-black rounded"></div>
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-ink mb-1">
@@ -298,8 +266,8 @@ export default function CustomPrintingPage() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
-                    💰
+                  <div className="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-black rounded"></div>
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-ink mb-1">
@@ -311,8 +279,8 @@ export default function CustomPrintingPage() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
-                    ✅
+                  <div className="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-black rounded"></div>
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-ink mb-1">
@@ -325,7 +293,7 @@ export default function CustomPrintingPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-12 rounded-2xl border-2 border-blue-600">
+            <div className="bg-gradient-to-br from-gray-50 to-orange-50 p-12 rounded-2xl border-2 border-black">
               <div className="text-center">
                 <h3 className="text-2xl font-heading font-bold text-ink mb-4">
                   Multi-Location? High Volume?
@@ -335,25 +303,25 @@ export default function CustomPrintingPage() {
                 </p>
                 <ul className="text-left space-y-3 mb-8 text-ink-muted">
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">-</span>
                     <span>Dedicated account management</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">-</span>
                     <span>Volume discounts on large orders</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">-</span>
                     <span>Inventory management & forecasting</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">-</span>
                     <span>Same-day delivery in LA</span>
                   </li>
                 </ul>
                 <Link
                   href="/wholesale-programs"
-                  className="inline-block px-6 py-3 bg-blue-600 text-white font-heading font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                  className="inline-block px-6 py-3 bg-black text-white font-heading font-semibold rounded-lg hover:bg-zinc-900 transition-colors"
                 >
                   Learn About Wholesale Programs
                 </Link>

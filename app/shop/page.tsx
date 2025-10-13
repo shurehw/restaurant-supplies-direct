@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -35,63 +35,41 @@ const categories = [
     name: "Takeout Containers",
     slug: "takeout-containers",
     description: "Paper food containers, plastic deli containers, to-go boxes",
-    icon: "📦",
   },
   {
     name: "Cups & Lids",
     slug: "cups-and-lids",
     description: "Disposable drink cups, coffee lids, paper cups wholesale",
-    icon: "🥤",
   },
   {
     name: "Napkins & Towels",
     slug: "napkins-and-towels",
     description: "Dinner napkins, paper towels, interfold napkins",
-    icon: "🧻",
   },
   {
     name: "Gloves & Bags",
     slug: "gloves-and-bags",
     description: "Nitrile gloves bulk, HDPE trash bags, disposable gloves",
-    icon: "🧤",
   },
   {
     name: "Eco-Friendly",
     slug: "eco-friendly",
     description: "Compostable takeout containers, sustainable packaging",
-    icon: "🌱",
   },
   {
     name: "Tabletop & To-Go",
     slug: "tabletop",
     description: "Cutlery, straws, condiment packets, serving ware",
-    icon: "🍴",
   },
 ];
 
 export default function ShopPage() {
   return (
     <div className="min-h-screen bg-bg">
-      {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white">
-        <div className="max-w-7xl mx-auto flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/logo-icon.svg"
-              alt="Restaurant Supplies Direct"
-              width={48}
-              height={48}
-              priority
-            />
-            <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
-              Restaurant Supplies Direct
-            </h2>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-gray-50 to-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4 leading-heading">
@@ -110,7 +88,7 @@ export default function ShopPage() {
           <div className="flex items-center justify-between gap-4">
             <div>
               <p className="text-ink font-medium">
-                🚀 E-commerce launching soon! Need supplies now?
+                E-commerce launching soon! Need supplies now?
               </p>
               <p className="text-sm text-ink-muted mt-1">
                 Call us for immediate orders or bulk pricing
@@ -118,7 +96,7 @@ export default function ShopPage() {
             </div>
             <Link
               href="/contact"
-              className="whitespace-nowrap px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              className="whitespace-nowrap px-6 py-3 bg-black text-white font-medium rounded-lg hover:bg-zinc-900 transition-colors"
             >
               Get Quote
             </Link>
@@ -134,14 +112,13 @@ export default function ShopPage() {
               <Link
                 key={category.slug}
                 href={`/${category.slug}`}
-                className="group p-8 bg-white border-2 border-border rounded-xl hover:border-blue-600 hover:shadow-lg transition-all"
+                className="group p-8 bg-white border-2 border-border rounded-xl hover:border-black hover:shadow-lg transition-all"
               >
-                <div className="text-5xl mb-4">{category.icon}</div>
-                <h3 className="text-2xl font-heading font-bold text-ink mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-2xl font-heading font-bold text-ink mb-2 group-hover:text-black transition-colors">
                   {category.name}
                 </h3>
                 <p className="text-ink-muted mb-4">{category.description}</p>
-                <span className="text-blue-600 font-medium group-hover:underline">
+                <span className="text-black font-medium group-hover:underline">
                   Shop Category →
                 </span>
               </Link>

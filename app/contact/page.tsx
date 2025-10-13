@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -71,16 +71,7 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white">
-        <div className="max-w-7xl mx-auto flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo-icon.svg" alt="Restaurant Supplies Direct" width={48} height={48} priority />
-            <h2 className="text-2xl font-heading font-bold text-ink leading-heading">
-              Restaurant Supplies Direct
-            </h2>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -95,13 +86,13 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Phone className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                    <Phone className="w-8 h-8 text-black" />
                   </div>
                 </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Call Us</h3>
                 <p className="text-ink-muted text-sm mb-3">Mon-Fri 8am-6pm PST</p>
-                <a href="tel:1-800-555-0123" className="text-blue-600 hover:underline font-semibold">
+                <a href="tel:1-800-555-0123" className="text-black hover:underline font-semibold">
                   1-800-555-0123
                 </a>
               </div>
@@ -113,19 +104,19 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Email Us</h3>
                 <p className="text-ink-muted text-sm mb-3">24hr response time</p>
-                <a href="mailto:info@restaurantsuppliesdirect.com" className="text-blue-600 hover:underline font-semibold">
+                <a href="mailto:info@restaurantsuppliesdirect.com" className="text-black hover:underline font-semibold">
                   info@rsd.com
                 </a>
               </div>
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                    <MapPin className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                    <MapPin className="w-8 h-8 text-black" />
                   </div>
                 </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Visit Us</h3>
                 <p className="text-ink-muted text-sm">Los Angeles, CA</p>
-                <Link href="/la-hospitality-supplies" className="text-blue-600 hover:underline font-semibold">
+                <Link href="/la-hospitality-supplies" className="text-black hover:underline font-semibold">
                   LA Services →
                 </Link>
               </div>
@@ -153,7 +144,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 rounded-xl border-2 border-blue-600 text-center">
+            <div className="bg-gradient-to-br from-gray-50 to-orange-50 p-8 rounded-xl border-2 border-black text-center">
               <h3 className="text-2xl font-heading font-bold text-ink mb-3">
                 For Enterprise & Multi-Location
               </h3>
@@ -162,7 +153,7 @@ export default function ContactPage() {
               </p>
               <a
                 href="https://www.shurehw.com"
-                className="inline-block px-6 py-3 bg-blue-600 text-white font-heading font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-block px-6 py-3 bg-black text-white font-heading font-semibold rounded-lg hover:bg-zinc-900 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -184,13 +175,13 @@ export default function ContactPage() {
               Whether you're placing your first order or managing supplies for multiple locations, our team is here to help. We offer multiple ways to connect based on your needs and timeline.
             </p>
             <p className="text-ink-muted mb-6">
-              For <strong>immediate questions</strong> or urgent orders, call us at <a href="tel:1-800-555-0123" className="text-blue-600 hover:underline font-semibold">1-800-555-0123</a> during business hours (Mon-Fri 8am-6pm PST). Our phone support team can provide real-time pricing, check stock availability, and process rush orders.
+              For <strong>immediate questions</strong> or urgent orders, call us at <a href="tel:1-800-555-0123" className="text-black hover:underline font-semibold">1-800-555-0123</a> during business hours (Mon-Fri 8am-6pm PST). Our phone support team can provide real-time pricing, check stock availability, and process rush orders.
             </p>
             <p className="text-ink-muted mb-6">
-              For <strong>custom quotes and detailed inquiries</strong>, email us at <a href="mailto:info@restaurantsuppliesdirect.com" className="text-blue-600 hover:underline font-semibold">info@restaurantsuppliesdirect.com</a>. We respond to all emails within 24 hours and can provide detailed pricing, product recommendations, and shipping estimates.
+              For <strong>custom quotes and detailed inquiries</strong>, email us at <a href="mailto:info@restaurantsuppliesdirect.com" className="text-black hover:underline font-semibold">info@restaurantsuppliesdirect.com</a>. We respond to all emails within 24 hours and can provide detailed pricing, product recommendations, and shipping estimates.
             </p>
             <p className="text-ink-muted mb-8">
-              <strong>Los Angeles area restaurants</strong> can access same-day delivery, local account management, and warehouse pickup through our partnership with Shure Hospitality Wholesale. <Link href="/la-hospitality-supplies" className="text-blue-600 hover:underline font-semibold">Learn more about LA services</Link>.
+              <strong>Los Angeles area restaurants</strong> can access same-day delivery, local account management, and warehouse pickup through our partnership with Shure Hospitality Wholesale. <Link href="/la-hospitality-supplies" className="text-black hover:underline font-semibold">Learn more about LA services</Link>.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-ink mb-6 mt-12">

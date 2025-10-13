@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-slate-900 text-white">
+    <footer className="w-full bg-black text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -14,7 +14,7 @@ export default function Footer() {
               Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
             </p>
             <p className="text-xs text-gray-400">
-              Powered by <a href="https://www.shurehw.com" className="text-blue-400 hover:text-blue-300 underline" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>
+              Powered by <a href="https://www.shurehw.com" className="text-gray-300 hover:text-white underline" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
             <div className="mt-6">
               <Link
                 href="/contact"
-                className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-block px-4 py-2 bg-white text-black text-sm font-semibold rounded-lg hover:bg-gray-200 transition-colors"
               >
                 Get a Quote
               </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700">
+      <div className="border-t border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>

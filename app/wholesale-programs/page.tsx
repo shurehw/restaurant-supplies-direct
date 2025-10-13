@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Building2, TrendingUp, Palette, Utensils, DollarSign, Users, CreditCard, BarChart3, Zap, Truck } from "lucide-react";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -86,27 +86,10 @@ export default function WholesaleProgramsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-border bg-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo-icon.svg" alt="Restaurant Supplies Direct" width={48} height={48} priority />
-            <span className="text-2xl font-heading font-bold text-ink leading-heading">
-              Restaurant Supplies Direct
-            </span>
-          </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors">Shop</Link>
-            <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors">Custom Printing</Link>
-            <Link href="#apply" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-              Apply Now
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-black to-zinc-900 text-white py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white text-sm font-medium mb-6">
@@ -120,7 +103,7 @@ export default function WholesaleProgramsPage() {
             </p>
             <Link
               href="#apply"
-              className="inline-block px-8 py-4 bg-white text-blue-600 font-heading font-semibold text-lg rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-block px-8 py-4 bg-white text-black font-heading font-semibold text-lg rounded-lg hover:bg-gray-100 transition-colors"
             >
               Apply for Wholesale Account
             </Link>
@@ -148,8 +131,8 @@ export default function WholesaleProgramsPage() {
             ].map((item, i) => (
               <div key={i} className="p-6 bg-bg-muted rounded-xl border-2 border-border text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                    <item.Icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <item.Icon className="w-8 h-8 text-black" />
                   </div>
                 </div>
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">{item.title}</h3>
@@ -178,8 +161,8 @@ export default function WholesaleProgramsPage() {
               { title: "Same-Day Delivery (LA)", desc: "Local warehousing for urgent orders in Los Angeles", Icon: Truck },
             ].map((item, i) => (
               <div key={i} className="flex gap-6 p-6 bg-white rounded-xl border border-border">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <item.Icon className="w-7 h-7 text-blue-600" />
+                <div className="flex-shrink-0 w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                  <item.Icon className="w-7 h-7 text-black" />
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold text-ink mb-2">{item.title}</h3>
@@ -207,14 +190,14 @@ export default function WholesaleProgramsPage() {
               </p>
               <Link
                 href="https://www.shurehw.com"
-                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-lg transition-colors"
+                className="inline-flex items-center gap-2 text-black hover:text-zinc-900 font-semibold text-lg transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Learn more about Shure HW →
               </Link>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 rounded-2xl border-2 border-blue-600">
+            <div className="bg-gradient-to-br from-gray-50 to-orange-50 p-8 rounded-2xl border-2 border-black">
               <h3 className="text-2xl font-heading font-bold text-ink mb-6">Case Study: Multi-Unit Group</h3>
               <div className="space-y-4 text-ink-muted">
                 <p><strong>Challenge:</strong> 12-location fast-casual chain needed consistent packaging across all stores with custom branding.</p>
@@ -300,12 +283,12 @@ export default function WholesaleProgramsPage() {
             </p>
             <Link
               href="/la-hospitality-supplies#quote"
-              className="block w-full px-6 py-4 bg-blue-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-blue-700 transition-colors text-center"
+              className="block w-full px-6 py-4 bg-black text-white font-heading font-semibold text-lg rounded-lg hover:bg-zinc-900 transition-colors text-center"
             >
               Submit Wholesale Application
             </Link>
             <p className="text-sm text-ink-muted text-center mt-4">
-              Or call us directly: <a href="tel:1-800-555-0123" className="text-blue-600 hover:underline font-semibold">1-800-555-0123</a>
+              Or call us directly: <a href="tel:1-800-555-0123" className="text-black hover:underline font-semibold">1-800-555-0123</a>
             </p>
           </div>
         </div>
