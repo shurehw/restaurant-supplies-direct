@@ -115,3 +115,82 @@ export function AggregateRatingSchema() {
     />
   );
 }
+
+export function OrganizationSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Restaurant Supplies Direct",
+    "url": "https://restaurantsuppliesdirect.com",
+    "logo": "https://restaurantsuppliesdirect.com/logo-full.svg",
+    "description": "Wholesale restaurant disposables, takeout containers, and custom printed packaging shipped direct from the source.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-0123",
+      "contactType": "Customer Service",
+      "email": "info@restaurantsuppliesdirect.com",
+      "areaServed": "US"
+    },
+    "sameAs": [
+      "https://www.shurehw.com"
+    ]
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function BlogPostSchema({
+  title,
+  description,
+  datePublished,
+  url,
+}: {
+  title: string;
+  description: string;
+  datePublished: string;
+  url: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": title,
+    "description": description,
+    "datePublished": datePublished,
+    "dateModified": datePublished,
+    "author": {
+      "@type": "Organization",
+      "name": "Restaurant Supplies Direct"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Restaurant Supplies Direct",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://restaurantsuppliesdirect.com/logo-full.svg"
+      }
+    },
+    "url": url,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": url
+    }
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

@@ -152,6 +152,166 @@ export default function NapkinsAndTowelsPage() {
           </div>
         </div>
 
+        {/* Featured Products Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-heading font-bold text-ink mb-8">
+            Featured Products
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Product 1 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">2-Ply White Dinner Napkins 17x17"</h3>
+              <p className="text-sm text-ink-muted mb-3">Premium 2-ply dinner napkins, perfect for full-service restaurants and catering events. 1/4 fold design.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Soft and absorbent 2-ply construction</li>
+                <li>- Standard 17x17" dinner size</li>
+                <li>- Clean white appearance</li>
+                <li>- Restaurant-grade quality</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $36 per case (3000 napkins)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 2 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Kraft Brown Beverage Napkins 5x5"</h3>
+              <p className="text-sm text-ink-muted mb-3">Eco-friendly natural kraft cocktail napkins for bars, cafes, and casual dining. 1-ply construction.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Natural unbleached kraft appearance</li>
+                <li>- Standard cocktail napkin size</li>
+                <li>- Perfect for bars and coffee shops</li>
+                <li>- Custom printing available</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $18 per case (4000 napkins)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 3 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Tall-Fold Dispenser Napkins</h3>
+              <p className="text-sm text-ink-muted mb-3">White 1-ply napkins for countertop tall-fold dispensers. Perfect for QSR and fast-casual operations.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Fits standard tall-fold dispensers</li>
+                <li>- One-at-a-time dispensing</li>
+                <li>- Economical 1-ply design</li>
+                <li>- Reduces waste and mess</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $28 per case (6000 napkins)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 4 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Premium Black Linen-Feel Napkins</h3>
+              <p className="text-sm text-ink-muted mb-3">Upscale 3-ply napkins with linen-like texture. Premium presentation for fine dining establishments.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Luxurious linen-feel texture</li>
+                <li>- Superior 3-ply absorbency</li>
+                <li>- Elegant black color</li>
+                <li>- Disposable convenience</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $68 per case (1000 napkins)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 5 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Recycled Content Napkins 13x13"</h3>
+              <p className="text-sm text-ink-muted mb-3">Eco-friendly luncheon napkins made from 100% recycled fiber. Perfect for sustainable operations.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- 100% recycled paper content</li>
+                <li>- Natural brown color</li>
+                <li>- Luncheon/bistro size</li>
+                <li>- FSC-certified sustainable</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $32 per case (4000 napkins)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 6 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Multi-Fold Paper Hand Towels</h3>
+              <p className="text-sm text-ink-muted mb-3">Standard white multi-fold towels for restroom dispensers. Soft, absorbent, and economical.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Fits standard multi-fold dispensers</li>
+                <li>- Strong and absorbent</li>
+                <li>- White, bleached paper</li>
+                <li>- Great for high-traffic restrooms</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $42 per case (4000 towels)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 7 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Jumbo Roll Kitchen Paper Towels</h3>
+              <p className="text-sm text-ink-muted mb-3">Heavy-duty 2-ply paper towel rolls for back-of-house kitchen use. Commercial-grade absorbency.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Commercial 2-ply construction</li>
+                <li>- 12 jumbo rolls per case</li>
+                <li>- High absorbency for kitchen tasks</li>
+                <li>- Cost-effective per-sheet pricing</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $54 per case (12 rolls)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 8 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Custom Printed Logo Napkins</h3>
+              <p className="text-sm text-ink-muted mb-3">Turn napkins into marketing tools with custom logo printing. Available in multiple colors and sizes.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Full-color custom logo printing</li>
+                <li>- Multiple napkin sizes available</li>
+                <li>- Choice of napkin colors</li>
+                <li>- Minimum 5000 napkins</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $0.04 per napkin</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Lead Gen CTA Block */}
         <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">

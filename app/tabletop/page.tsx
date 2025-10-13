@@ -152,6 +152,166 @@ export default function TabletopPage() {
           </div>
         </div>
 
+        {/* Featured Products Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-heading font-bold text-ink mb-8">
+            Featured Products
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Product 1 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Heavy-Weight Black Plastic Cutlery</h3>
+              <p className="text-sm text-ink-muted mb-3">Premium heavy-weight plastic cutlery set with elegant black finish. Perfect for upscale takeout and catering.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Heavy-weight 7 gram construction</li>
+                <li>- Elegant black color</li>
+                <li>- Forks, knives, and spoons</li>
+                <li>- Won't bend or break easily</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $48 per case (600 pieces)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 2 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Wooden Disposable Cutlery Set</h3>
+              <p className="text-sm text-ink-muted mb-3">Eco-friendly birch wood cutlery with rustic appeal. Biodegradable and great for cold foods and desserts.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Made from sustainable birch wood</li>
+                <li>- Natural rustic aesthetic</li>
+                <li>- Biodegradable and compostable</li>
+                <li>- Smooth splinter-free finish</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $38 per case (1000 pieces)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 3 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Clear Portion Cups 2oz with Lids</h3>
+              <p className="text-sm text-ink-muted mb-3">Crystal-clear 2oz portion cups perfect for sauces, dressings, and samples. Secure-fitting lids included.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- 2oz capacity for sauces</li>
+                <li>- Crystal-clear PET plastic</li>
+                <li>- Leak-resistant lids included</li>
+                <li>- Stackable for easy storage</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $28 per case (2500 cups)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 4 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Jumbo Wrapped Paper Straws 10"</h3>
+              <p className="text-sm text-ink-muted mb-3">Extra-long individually wrapped paper straws for tall drinks and bubble tea. Lasts 2-4 hours without softening.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Extra-long 10" length</li>
+                <li>- Individually wrapped for hygiene</li>
+                <li>- Biodegradable paper construction</li>
+                <li>- Wide diameter for bubble tea</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $34 per case (2000 straws)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 5 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">6-Piece Wrapped Cutlery Kit</h3>
+              <p className="text-sm text-ink-muted mb-3">Complete cutlery kit with fork, knife, spoon, napkin, salt, and pepper. Pre-wrapped for convenience.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Fork, knife, spoon included</li>
+                <li>- Napkin, salt, pepper packets</li>
+                <li>- Individually wrapped for hygiene</li>
+                <li>- Perfect for delivery and takeout</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $68 per case (500 kits)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 6 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Black Souffle Cups 4oz with Lids</h3>
+              <p className="text-sm text-ink-muted mb-3">Premium black portion cups with translucent lids for upscale presentation of sides and samples.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Elegant black presentation</li>
+                <li>- 4oz capacity for sides</li>
+                <li>- Secure translucent lids</li>
+                <li>- Perfect for premium takeout</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $42 per case (500 cups)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 7 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Compostable PLA Clear Straws</h3>
+              <p className="text-sm text-ink-muted mb-3">Plant-based clear straws that look like plastic but are fully compostable. BPI-certified sustainable option.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Made from plant-based PLA</li>
+                <li>- Looks and feels like plastic</li>
+                <li>- BPI-certified compostable</li>
+                <li>- Standard 7.75" length</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $32 per case (2400 straws)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 8 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Plastic Sporks Medium-Weight</h3>
+              <p className="text-sm text-ink-muted mb-3">Versatile spork combines fork and spoon functionality. Space-saving alternative to separate cutlery.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Fork and spoon in one utensil</li>
+                <li>- Medium-weight construction</li>
+                <li>- Saves cost and storage space</li>
+                <li>- Perfect for quick-service</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $22 per case (1000 sporks)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Lead Gen CTA Block */}
         <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">

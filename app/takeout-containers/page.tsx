@@ -134,6 +134,128 @@ export default function TakeoutContainersPage() {
         </div>
       </div>
 
+      {/* Featured Products Section */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-heading font-bold text-ink mb-8">
+          Featured Products
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Product 1 */}
+          <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+            <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="text-gray-400 text-sm">Product Image</div>
+            </div>
+            <h3 className="text-lg font-heading font-bold text-ink mb-2">32oz Kraft Paper Food Container</h3>
+            <p className="text-sm text-ink-muted mb-3">Heavy-duty kraft paper container with secure-fit lid, perfect for hot entrees and family-style meals.</p>
+            <ul className="text-xs text-ink-muted space-y-1 mb-4">
+              <li>- Leak-resistant poly-lined interior</li>
+              <li>- Microwave safe, grease-resistant</li>
+              <li>- Stackable design for efficient storage</li>
+              <li>- Custom printing available</li>
+            </ul>
+            <p className="text-sm font-semibold text-ink mb-3">Starting at $48 per case (200 units)</p>
+            <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+              Get Quote
+            </Link>
+          </div>
+
+          {/* Product 2 */}
+          <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+            <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="text-gray-400 text-sm">Product Image</div>
+            </div>
+            <h3 className="text-lg font-heading font-bold text-ink mb-2">Clear Hinged Deli Container 16oz</h3>
+            <p className="text-sm text-ink-muted mb-3">Crystal-clear PET plastic clamshell container ideal for salads, sandwiches, and grab-and-go items.</p>
+            <ul className="text-xs text-ink-muted space-y-1 mb-4">
+              <li>- Tamper-evident secure closure</li>
+              <li>- Superior clarity showcases food</li>
+              <li>- Crack-resistant construction</li>
+              <li>- Recyclable where facilities exist</li>
+            </ul>
+            <p className="text-sm font-semibold text-ink mb-3">Starting at $62 per case (250 units)</p>
+            <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+              Get Quote
+            </Link>
+          </div>
+
+          {/* Product 3 */}
+          <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+            <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="text-gray-400 text-sm">Product Image</div>
+            </div>
+            <h3 className="text-lg font-heading font-bold text-ink mb-2">Compostable Bagasse Clamshell 9"</h3>
+            <p className="text-sm text-ink-muted mb-3">Eco-friendly 9-inch 3-compartment container made from sugarcane fiber, BPI-certified compostable.</p>
+            <ul className="text-xs text-ink-muted space-y-1 mb-4">
+              <li>- Holds hot foods up to 200°F</li>
+              <li>- Three-compartment design</li>
+              <li>- Breaks down in 90-180 days</li>
+              <li>- Microwave and freezer safe</li>
+            </ul>
+            <p className="text-sm font-semibold text-ink mb-3">Starting at $78 per case (200 units)</p>
+            <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+              Get Quote
+            </Link>
+          </div>
+
+          {/* Product 4 */}
+          <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+            <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="text-gray-400 text-sm">Product Image</div>
+            </div>
+            <h3 className="text-lg font-heading font-bold text-ink mb-2">Black PP Rectangular Container 24oz</h3>
+            <p className="text-sm text-ink-muted mb-3">Premium black polypropylene container with clear anti-fog lid for upscale presentation.</p>
+            <ul className="text-xs text-ink-muted space-y-1 mb-4">
+              <li>- Microwave, dishwasher, and freezer safe</li>
+              <li>- Anti-fog lid maintains visibility</li>
+              <li>- Premium presentation for fine dining</li>
+              <li>- Reusable and durable construction</li>
+            </ul>
+            <p className="text-sm font-semibold text-ink mb-3">Starting at $94 per case (150 units)</p>
+            <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+              Get Quote
+            </Link>
+          </div>
+
+          {/* Product 5 */}
+          <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+            <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="text-gray-400 text-sm">Product Image</div>
+            </div>
+            <h3 className="text-lg font-heading font-bold text-ink mb-2">Paper Soup Container 12oz with Lid</h3>
+            <p className="text-sm text-ink-muted mb-3">Double-poly-coated paper soup cup with vented lid for hot soups, chili, and liquid foods.</p>
+            <ul className="text-xs text-ink-muted space-y-1 mb-4">
+              <li>- Leak-proof double poly coating</li>
+              <li>- Vented lid prevents condensation</li>
+              <li>- Safe for hot liquids up to 205°F</li>
+              <li>- Space-saving stackable design</li>
+            </ul>
+            <p className="text-sm font-semibold text-ink mb-3">Starting at $52 per case (250 units)</p>
+            <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+              Get Quote
+            </Link>
+          </div>
+
+          {/* Product 6 */}
+          <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+            <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="text-gray-400 text-sm">Product Image</div>
+            </div>
+            <h3 className="text-lg font-heading font-bold text-ink mb-2">Aluminum Foil Pan with Board Lid 8"</h3>
+            <p className="text-sm text-ink-muted mb-3">Heavy-duty aluminum foil container perfect for catering, meal prep, and hot food transport.</p>
+            <ul className="text-xs text-ink-muted space-y-1 mb-4">
+              <li>- Oven-safe up to 500°F</li>
+              <li>- Sturdy board lid included</li>
+              <li>- Perfect for lasagna and casseroles</li>
+              <li>- Recyclable aluminum construction</li>
+            </ul>
+            <p className="text-sm font-semibold text-ink mb-3">Starting at $44 per case (100 units)</p>
+            <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+              Get Quote
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Lead Gen CTA Block */}
       <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
         <div className="max-w-3xl mx-auto text-center">

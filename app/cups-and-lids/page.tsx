@@ -152,6 +152,166 @@ export default function CupsAndLidsPage() {
           </div>
         </div>
 
+        {/* Featured Products Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-heading font-bold text-ink mb-8">
+            Featured Products
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Product 1 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">16oz Double-Wall Hot Coffee Cup</h3>
+              <p className="text-sm text-ink-muted mb-3">Premium insulated paper cup with double-wall construction, no sleeve required. Ideal for specialty coffee shops.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- No-burn double-wall insulation</li>
+                <li>- Leak-resistant poly lining</li>
+                <li>- Fits standard 16oz sip lids</li>
+                <li>- Custom printing available</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $72 per case (500 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 2 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">24oz Clear PET Cold Cup</h3>
+              <p className="text-sm text-ink-muted mb-3">Ultra-clear plastic cup perfect for iced coffee, smoothies, and bubble tea. Shows off colorful drinks beautifully.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Crystal-clear PET construction</li>
+                <li>- Crack-resistant design</li>
+                <li>- Pairs with dome or flat lids</li>
+                <li>- Recyclable where facilities exist</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $68 per case (600 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 3 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">12oz Compostable PLA-Lined Cup</h3>
+              <p className="text-sm text-ink-muted mb-3">Eco-friendly hot cup with plant-based PLA lining. BPI-certified compostable for sustainable operations.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- BPI-certified compostable</li>
+                <li>- Made from renewable resources</li>
+                <li>- Suitable for hot beverages</li>
+                <li>- Breaks down in 90-180 days</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $82 per case (1000 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 4 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Black Sip Lid for Hot Cups</h3>
+              <p className="text-sm text-ink-muted mb-3">Premium black sip-through lid with reclosable tab. Fits 8-24oz hot cups. Prevents spills and keeps drinks hot.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Reclosable sip tab</li>
+                <li>- Secure snap-on fit</li>
+                <li>- Prevents leaks and splashes</li>
+                <li>- Fits multiple cup sizes</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $38 per case (1000 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 5 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Clear Dome Lid with Straw Slot</h3>
+              <p className="text-sm text-ink-muted mb-3">High-dome lid perfect for whipped toppings and frozen drinks. Straw slot for easy sipping.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Extra-high dome for toppings</li>
+                <li>- Wide straw slot opening</li>
+                <li>- Fits 12-24oz cold cups</li>
+                <li>- Crystal clear visibility</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $42 per case (1000 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 6 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">8oz Kraft Paper Espresso Cup</h3>
+              <p className="text-sm text-ink-muted mb-3">Small hot cup with natural kraft paper look, perfect for espresso, cortado, and small hot beverages.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Natural kraft aesthetic</li>
+                <li>- Single-wall construction</li>
+                <li>- Eco-friendly appearance</li>
+                <li>- Pairs with 8oz hot lids</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $48 per case (1000 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 7 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">20oz Single-Wall Hot Cup with Sleeves</h3>
+              <p className="text-sm text-ink-muted mb-3">Economy hot cup with corrugated sleeves included. Cost-effective solution for high-volume operations.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Includes corrugated sleeves</li>
+                <li>- Most economical hot cup option</li>
+                <li>- High-quality poly lining</li>
+                <li>- Bulk pack for easy storage</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $58 per case (1000 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 8 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">32oz Stadium Cup with Lid</h3>
+              <p className="text-sm text-ink-muted mb-3">Extra-large reusable plastic cup for fountain drinks, slushies, and jumbo beverages. Dishwasher safe.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Heavy-duty reusable design</li>
+                <li>- Dishwasher safe construction</li>
+                <li>- Secure snap-on lid included</li>
+                <li>- Perfect for sports venues</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $96 per case (250 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Lead Gen CTA Block */}
         <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">

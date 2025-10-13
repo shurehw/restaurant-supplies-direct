@@ -152,6 +152,166 @@ export default function GlovesAndBagsPage() {
           </div>
         </div>
 
+        {/* Featured Products Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-heading font-bold text-ink mb-8">
+            Featured Products
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Product 1 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Blue Nitrile Powder-Free Gloves</h3>
+              <p className="text-sm text-ink-muted mb-3">Premium latex-free nitrile gloves ideal for food handling and prep. FDA-approved for direct food contact.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Latex-free, powder-free construction</li>
+                <li>- Excellent chemical resistance</li>
+                <li>- Textured fingertips for grip</li>
+                <li>- Available in S, M, L, XL</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $12 per box (100 gloves)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 2 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Clear Vinyl Food Service Gloves</h3>
+              <p className="text-sm text-ink-muted mb-3">Economical vinyl gloves for light-duty food handling and assembly tasks. Great for high-volume operations.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Cost-effective latex-free option</li>
+                <li>- Loose fit for easy on/off</li>
+                <li>- Food-safe PVC vinyl</li>
+                <li>- Ideal for quick tasks</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $6 per box (100 gloves)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 3 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Black Nitrile Heavy-Duty Gloves</h3>
+              <p className="text-sm text-ink-muted mb-3">Extra-thick 6mil nitrile gloves for heavy-duty kitchen tasks, dishwashing, and cleaning.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- 6mil thickness for durability</li>
+                <li>- Superior puncture resistance</li>
+                <li>- Textured grip for wet conditions</li>
+                <li>- Professional black appearance</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $18 per box (100 gloves)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 4 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">33 Gallon Trash Bags Heavy-Duty</h3>
+              <p className="text-sm text-ink-muted mb-3">Commercial-grade 33 gallon trash bags for standard kitchen waste. 1.5mil thickness for strength.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Fits standard 33 gallon cans</li>
+                <li>- 1.5mil industrial strength</li>
+                <li>- Star-seal bottom prevents leaks</li>
+                <li>- Black color for discreet appearance</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $24 per case (100 bags)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 5 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Clear HDPE T-Shirt Bags</h3>
+              <p className="text-sm text-ink-muted mb-3">Standard plastic grocery bags for takeout and retail. Economical and versatile for various uses.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Standard 1/6 barrel size</li>
+                <li>- Convenient carry handles</li>
+                <li>- Food-safe HDPE plastic</li>
+                <li>- Bulk pricing available</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $16 per case (1000 bags)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 6 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Compostable Plant-Based Gloves</h3>
+              <p className="text-sm text-ink-muted mb-3">Eco-friendly compostable gloves made from plant-based materials. BPI-certified for commercial composting.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Made from renewable resources</li>
+                <li>- BPI-certified compostable</li>
+                <li>- Latex and powder-free</li>
+                <li>- Same performance as traditional</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $16 per box (100 gloves)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 7 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">60 Gallon Extra-Large Trash Bags</h3>
+              <p className="text-sm text-ink-muted mb-3">Heavy-duty 60 gallon bags for large volume waste and commercial cleaning. 2.0mil extra-strength.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Extra-large 60 gallon capacity</li>
+                <li>- 2.0mil industrial thickness</li>
+                <li>- Reinforced gusset seam</li>
+                <li>- Perfect for bulk waste</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $38 per case (100 bags)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 8 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Compostable Trash Bags 13 Gallon</h3>
+              <p className="text-sm text-ink-muted mb-3">ASTM D6400 certified compostable bags for sustainable waste programs. Fits standard 13 gallon bins.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- ASTM D6400 certified</li>
+                <li>- Made from plant starches</li>
+                <li>- Breaks down in 90-180 days</li>
+                <li>- Green color indicates eco-friendly</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $32 per case (100 bags)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Lead Gen CTA Block */}
         <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">

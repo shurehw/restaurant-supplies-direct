@@ -188,6 +188,166 @@ export default function EcoFriendlyPage() {
           </div>
         </div>
 
+        {/* Featured Products Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-heading font-bold text-ink mb-8">
+            Featured Products
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Product 1 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Bagasse 9" 3-Compartment Clamshell</h3>
+              <p className="text-sm text-ink-muted mb-3">Eco-friendly takeout container made from sugarcane fiber. BPI-certified compostable and microwave safe.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Made from renewable sugarcane</li>
+                <li>- BPI-certified compostable</li>
+                <li>- Holds hot foods up to 200°F</li>
+                <li>- Three divided compartments</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $78 per case (200 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 2 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">PLA-Lined Compostable Hot Cup 12oz</h3>
+              <p className="text-sm text-ink-muted mb-3">Plant-based hot cup with compostable PLA lining. Perfect for coffee shops committed to sustainability.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Plant-based PLA lining</li>
+                <li>- Commercially compostable</li>
+                <li>- Suitable for hot beverages</li>
+                <li>- Custom printing available</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $82 per case (1000 cups)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 3 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">CPLA Compostable Cutlery Set</h3>
+              <p className="text-sm text-ink-muted mb-3">Heat-resistant crystallized PLA cutlery that's stronger than standard plastic. Fully compostable.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Heat-resistant up to 185°F</li>
+                <li>- Strong and durable CPLA</li>
+                <li>- Forks, knives, and spoons</li>
+                <li>- Breaks down in 180 days</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $64 per case (1000 pieces)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 4 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Kraft Paper Straws 7.75"</h3>
+              <p className="text-sm text-ink-muted mb-3">Biodegradable paper straws that last 2-4 hours in cold beverages. Eco-friendly alternative to plastic.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- 100% biodegradable paper</li>
+                <li>- Lasts 2-4 hours without softening</li>
+                <li>- Standard 7.75" length</li>
+                <li>- Meets plastic ban requirements</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $28 per case (2400 straws)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 5 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Molded Fiber Soup Container 16oz</h3>
+              <p className="text-sm text-ink-muted mb-3">Compostable soup container made from recycled paper fibers. Leak-resistant and microwave safe.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Made from recycled fibers</li>
+                <li>- Leak-resistant construction</li>
+                <li>- Microwave and freezer safe</li>
+                <li>- Compostable lid included</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $72 per case (250 units)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 6 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Bamboo Fiber Takeout Plates 10"</h3>
+              <p className="text-sm text-ink-muted mb-3">Sturdy disposable plates made from renewable bamboo and sugarcane. Perfect for catering and events.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Made from bamboo and bagasse</li>
+                <li>- Sturdy for hot and cold foods</li>
+                <li>- Cut-resistant and leak-proof</li>
+                <li>- Fully compostable</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $58 per case (500 plates)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 7 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Recycled Content Paper Napkins</h3>
+              <p className="text-sm text-ink-muted mb-3">100% recycled paper napkins with FSC certification. Natural brown color shows eco commitment.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- 100% recycled paper content</li>
+                <li>- FSC-certified sustainable</li>
+                <li>- Natural unbleached appearance</li>
+                <li>- Multiple sizes available</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $32 per case (4000 napkins)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+
+            {/* Product 8 */}
+            <div className="bg-white p-5 rounded-xl border-2 border-border hover:border-black hover:shadow-lg transition-all">
+              <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-gray-400 text-sm">Product Image</div>
+              </div>
+              <h3 className="text-lg font-heading font-bold text-ink mb-2">Compostable Clear Cold Cup 20oz</h3>
+              <p className="text-sm text-ink-muted mb-3">Plant-based PLA cold cup that looks like plastic but composts. Crystal-clear for showcasing drinks.</p>
+              <ul className="text-xs text-ink-muted space-y-1 mb-4">
+                <li>- Made from plant-based PLA</li>
+                <li>- Crystal-clear like traditional plastic</li>
+                <li>- BPI-certified compostable</li>
+                <li>- Perfect for iced beverages</li>
+              </ul>
+              <p className="text-sm font-semibold text-ink mb-3">Starting at $88 per case (600 cups)</p>
+              <Link href="/contact" className="block w-full text-center px-4 py-2 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                Get Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Lead Gen CTA Block */}
         <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">
