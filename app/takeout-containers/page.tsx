@@ -105,7 +105,7 @@ export default function TakeoutContainersPage() {
           Our selection includes everything from traditional <strong>plastic deli containers</strong> to eco-friendly <strong>compostable takeout boxes</strong>. We work with leading manufacturers to ensure you get restaurant-grade quality at wholesale prices — shipped direct from the source.
         </p>
         <p className="text-ink-muted">
-          Need <Link href="/custom-printing" className="text-primary-600 hover:underline font-semibold">custom printed packaging</Link>? We can brand your containers with your logo and messaging. Looking for <Link href="/eco-friendly" className="text-primary-600 hover:underline font-semibold">sustainable options</Link>? We carry the largest selection of compostable and recyclable containers.
+          Need <Link href="/custom-printing" className="text-blue-600 hover:underline font-semibold">custom printed packaging</Link>? We can brand your containers with your logo and messaging. Looking for <Link href="/eco-friendly" className="text-blue-600 hover:underline font-semibold">sustainable options</Link>? We carry the largest selection of compostable and recyclable containers.
         </p>
       </div>
 
@@ -116,7 +116,7 @@ export default function TakeoutContainersPage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {products.map((product, index) => (
-            <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-primary-600 transition-all">
+            <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-blue-600 transition-all">
               <h3 className="text-xl font-heading font-semibold text-ink mb-2">
                 {product.name}
               </h3>
@@ -135,7 +135,7 @@ export default function TakeoutContainersPage() {
       </div>
 
       {/* Lead Gen CTA Block */}
-      <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 sm:p-12 rounded-2xl border-2 border-primary-600 mb-12">
+      <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-2xl sm:text-3xl font-heading font-bold text-ink mb-4">
             Ready to Order Takeout Containers in Bulk?
@@ -147,7 +147,7 @@ export default function TakeoutContainersPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-primary-700 transition-colors"
+              className="px-8 py-4 bg-blue-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-blue-700 transition-colors"
             >
               Request Quote
             </Link>
@@ -176,7 +176,7 @@ export default function TakeoutContainersPage() {
           <li><strong>Eco-conscious brands:</strong> Compostable bagasse or kraft paper options</li>
         </ul>
         <p className="text-ink-muted">
-          Need help selecting the right containers for your operation? <Link href="/contact" className="text-primary-600 hover:underline font-semibold">Contact our team</Link> for personalized recommendations based on your menu and volume.
+          Need help selecting the right containers for your operation? <Link href="/contact" className="text-blue-600 hover:underline font-semibold">Contact our team</Link> for personalized recommendations based on your menu and volume.
         </p>
       </div>
     </CategoryPageLayout>

@@ -59,7 +59,7 @@ export default function BlogPost() {
         {/* Header */}
         <header className="mb-8">
           <div className="flex items-center gap-3 text-sm text-ink-muted mb-4">
-            <span className="px-3 py-1 bg-primary-100 text-primary-600 font-semibold rounded-full">
+            <span className="px-3 py-1 bg-blue-100 text-blue-600 font-semibold rounded-full">
               Buying Guide
             </span>
             <time dateTime="2025-10-10">October 10, 2025</time>
@@ -146,7 +146,7 @@ export default function BlogPost() {
             <li>Plant-based PLA containers</li>
           </ul>
 
-          <div className="bg-primary-50 p-8 rounded-2xl border-2 border-primary-600 my-12">
+          <div className="bg-blue-50 p-8 rounded-2xl border-2 border-blue-600 my-12">
             <h3 className="font-heading font-bold text-ink text-2xl mb-4">
               Ready to Order?
             </h3>
@@ -155,7 +155,7 @@ export default function BlogPost() {
             </p>
             <Link
               href="/takeout-containers"
-              className="inline-block px-8 py-4 bg-primary-600 text-white font-heading font-semibold rounded-xl hover:bg-primary-700 transition-colors shadow-lg"
+              className="inline-block px-8 py-4 bg-blue-600 text-white font-heading font-semibold rounded-xl hover:bg-blue-700 transition-colors shadow-lg"
             >
               Shop Takeout Containers
             </Link>
@@ -175,7 +175,7 @@ export default function BlogPost() {
           </ul>
 
           <p className="text-ink-muted leading-relaxed">
-            Have questions about which containers are right for your menu? <Link href="/contact" className="text-primary-600 hover:text-primary-700 underline font-semibold">Contact our team</Link> for personalized recommendations.
+            Have questions about which containers are right for your menu? <Link href="/contact" className="text-blue-600 hover:text-blue-700 underline font-semibold">Contact our team</Link> for personalized recommendations.
           </p>
         </div>
 
@@ -185,7 +185,7 @@ export default function BlogPost() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link
               href="/blog/eco-friendly-packaging-guide"
-              className="p-6 bg-white rounded-xl border-2 border-border hover:border-primary-600 hover:shadow-lg transition-all"
+              className="p-6 bg-white rounded-xl border-2 border-border hover:border-blue-600 hover:shadow-lg transition-all"
             >
               <h4 className="font-heading font-bold text-ink mb-2">
                 Complete Guide to Eco-Friendly Restaurant Packaging
@@ -194,7 +194,7 @@ export default function BlogPost() {
             </Link>
             <Link
               href="/blog/reduce-packaging-costs"
-              className="p-6 bg-white rounded-xl border-2 border-border hover:border-primary-600 hover:shadow-lg transition-all"
+              className="p-6 bg-white rounded-xl border-2 border-border hover:border-blue-600 hover:shadow-lg transition-all"
             >
               <h4 className="font-heading font-bold text-ink mb-2">
                 5 Ways to Reduce Packaging Costs

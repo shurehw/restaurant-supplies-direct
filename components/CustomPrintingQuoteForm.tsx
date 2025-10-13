@@ -64,7 +64,7 @@ export default function CustomPrintingQuoteForm() {
 
   if (status === "success") {
     return (
-      <div className="bg-accent-50 border-2 border-accent-500 rounded-xl p-8 text-center">
+      <div className="bg-orange-50 border-2 border-orange-500 rounded-xl p-8 text-center">
         <div className="text-5xl mb-4">✓</div>
         <h3 className="text-2xl font-heading font-bold text-ink mb-3">
           Quote Request Received!
@@ -74,7 +74,7 @@ export default function CustomPrintingQuoteForm() {
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="text-accent-500 hover:text-accent-600 font-medium underline"
+          className="text-orange-500 hover:text-orange-600 font-medium underline"
         >
           Submit another request
         </button>
@@ -97,7 +97,7 @@ export default function CustomPrintingQuoteForm() {
             value={formData.name}
             onChange={handleChange}
             disabled={status === "submitting"}
-            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
+            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
           />
         </div>
         <div>
@@ -112,7 +112,7 @@ export default function CustomPrintingQuoteForm() {
             value={formData.business}
             onChange={handleChange}
             disabled={status === "submitting"}
-            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
+            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
           />
         </div>
       </div>
@@ -130,7 +130,7 @@ export default function CustomPrintingQuoteForm() {
             value={formData.email}
             onChange={handleChange}
             disabled={status === "submitting"}
-            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
+            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
           />
         </div>
         <div>
@@ -145,7 +145,7 @@ export default function CustomPrintingQuoteForm() {
             value={formData.phone}
             onChange={handleChange}
             disabled={status === "submitting"}
-            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
+            className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
           />
         </div>
       </div>
@@ -161,7 +161,7 @@ export default function CustomPrintingQuoteForm() {
           value={formData.productType}
           onChange={handleChange}
           disabled={status === "submitting"}
-          className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 bg-white disabled:bg-bg-muted disabled:cursor-not-allowed"
+          className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white disabled:bg-bg-muted disabled:cursor-not-allowed"
         >
           <option value="">Select a product type</option>
           <option value="cups">Custom Printed Cups</option>
@@ -185,7 +185,7 @@ export default function CustomPrintingQuoteForm() {
           onChange={handleChange}
           disabled={status === "submitting"}
           placeholder="e.g., 5,000 cups, 10,000 napkins"
-          className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
+          className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:bg-bg-muted disabled:cursor-not-allowed"
         />
       </div>
 
@@ -201,14 +201,14 @@ export default function CustomPrintingQuoteForm() {
           onChange={handleChange}
           disabled={status === "submitting"}
           placeholder="Tell us about your design needs, timeline, and any specific requirements..."
-          className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 resize-none disabled:bg-bg-muted disabled:cursor-not-allowed"
+          className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none disabled:bg-bg-muted disabled:cursor-not-allowed"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full px-6 py-4 bg-accent-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-accent-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full px-6 py-4 bg-orange-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-orange-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {status === "submitting" ? "Submitting..." : "Request Quote"}
       </button>

@@ -70,7 +70,7 @@ export default function BlogPage() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 to-white py-16">
+      <section className="bg-gradient-to-br from-blue-50 to-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4 leading-heading">
@@ -90,12 +90,12 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article
                 key={post.slug}
-                className="bg-white rounded-2xl border-2 border-border hover:border-primary-600 hover:shadow-xl transition-all overflow-hidden group"
+                className="bg-white rounded-2xl border-2 border-border hover:border-blue-600 hover:shadow-xl transition-all overflow-hidden group"
               >
                 {/* Placeholder image area */}
-                <div className="h-48 bg-gradient-to-br from-primary-100 to-accent-100 relative">
+                <div className="h-48 bg-gradient-to-br from-blue-100 to-accent-100 relative">
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-white text-primary-600 text-xs font-semibold rounded-full">
+                    <span className="px-3 py-1 bg-white text-blue-600 text-xs font-semibold rounded-full">
                       {post.category}
                     </span>
                   </div>
@@ -114,7 +114,7 @@ export default function BlogPage() {
                     <span>{post.readTime}</span>
                   </div>
 
-                  <h2 className="text-2xl font-heading font-bold text-ink mb-3 group-hover:text-primary-600 transition-colors">
+                  <h2 className="text-2xl font-heading font-bold text-ink mb-3 group-hover:text-blue-600 transition-colors">
                     {post.title}
                   </h2>
 
@@ -122,7 +122,7 @@ export default function BlogPage() {
 
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
+                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
                   >
                     Read Article →
                   </Link>

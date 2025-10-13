@@ -123,7 +123,7 @@ export default function EcoFriendlyPage() {
             Our <strong>sustainable restaurant supplies</strong> collection includes <strong>compostable cups</strong>, bagasse containers, biodegradable cutlery, and recycled paper products. Every item meets ASTM D6400/D6868 standards for commercial compostability, ensuring they actually decompose as promised — not just "greenwashing."
           </p>
           <p className="text-ink-muted">
-            Want to brand your eco-friendly packaging? We offer <Link href="/custom-printing" className="text-primary-600 hover:underline font-semibold">custom printing on compostable products</Link> using soy-based inks that maintain compostability. Show your commitment to sustainability while building your brand. Need help transitioning to eco-friendly supplies? <Link href="/contact" className="text-primary-600 hover:underline font-semibold">Contact our sustainability team</Link>.
+            Want to brand your eco-friendly packaging? We offer <Link href="/custom-printing" className="text-blue-600 hover:underline font-semibold">custom printing on compostable products</Link> using soy-based inks that maintain compostability. Show your commitment to sustainability while building your brand. Need help transitioning to eco-friendly supplies? <Link href="/contact" className="text-blue-600 hover:underline font-semibold">Contact our sustainability team</Link>.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function EcoFriendlyPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {products.map((product, index) => (
-              <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-primary-600 transition-all">
+              <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-blue-600 transition-all">
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
                   {product.name}
                 </h3>
@@ -189,7 +189,7 @@ export default function EcoFriendlyPage() {
         </div>
 
         {/* Lead Gen CTA Block */}
-        <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 sm:p-12 rounded-2xl border-2 border-primary-600 mb-12">
+        <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl sm:text-3xl font-heading font-bold text-ink mb-4">
               Ready to Switch to Eco-Friendly Supplies?
@@ -201,7 +201,7 @@ export default function EcoFriendlyPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-primary-700 transition-colors"
+                className="px-8 py-4 bg-blue-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Request Quote
               </Link>
@@ -231,7 +231,7 @@ export default function EcoFriendlyPage() {
             <li><strong>Go all-in:</strong> Full transition shows stronger commitment than half-measures</li>
           </ul>
           <p className="text-ink-muted">
-            Need help planning your sustainability transition? Our team can audit your current supplies, recommend eco-friendly alternatives, and create a phased implementation plan. <Link href="/contact" className="text-primary-600 hover:underline font-semibold">Schedule a sustainability consultation</Link>.
+            Need help planning your sustainability transition? Our team can audit your current supplies, recommend eco-friendly alternatives, and create a phased implementation plan. <Link href="/contact" className="text-blue-600 hover:underline font-semibold">Schedule a sustainability consultation</Link>.
           </p>
         </div>
       </CategoryPageLayout>

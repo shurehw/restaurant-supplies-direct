@@ -123,7 +123,7 @@ export default function TabletopPage() {
             Our <strong>restaurant tabletop supplies</strong> include heavy-duty cutlery, paper and plastic straws, condiment cups with lids, and pre-wrapped utensil kits. All products are food-safe, available in bulk quantities, and ship fast nationwide. We carry traditional plastic, compostable CPLA, wooden, and paper options to match every operation type and brand values.
           </p>
           <p className="text-ink-muted">
-            Looking for eco-friendly tabletop options? Check our <Link href="/eco-friendly" className="text-primary-600 hover:underline font-semibold">sustainable supplies collection</Link> featuring compostable cutlery, paper straws, and plant-based accessories. Need volume pricing? <Link href="/wholesale-programs" className="text-primary-600 hover:underline font-semibold">Join our wholesale program</Link> for dedicated account management and deeper discounts.
+            Looking for eco-friendly tabletop options? Check our <Link href="/eco-friendly" className="text-blue-600 hover:underline font-semibold">sustainable supplies collection</Link> featuring compostable cutlery, paper straws, and plant-based accessories. Need volume pricing? <Link href="/wholesale-programs" className="text-blue-600 hover:underline font-semibold">Join our wholesale program</Link> for dedicated account management and deeper discounts.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function TabletopPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {products.map((product, index) => (
-              <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-primary-600 transition-all">
+              <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-blue-600 transition-all">
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
                   {product.name}
                 </h3>
@@ -153,7 +153,7 @@ export default function TabletopPage() {
         </div>
 
         {/* Lead Gen CTA Block */}
-        <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 sm:p-12 rounded-2xl border-2 border-primary-600 mb-12">
+        <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl sm:text-3xl font-heading font-bold text-ink mb-4">
               Ready to Stock Up on Tabletop Supplies?
@@ -165,7 +165,7 @@ export default function TabletopPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-primary-700 transition-colors"
+                className="px-8 py-4 bg-blue-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Request Quote
               </Link>
@@ -195,7 +195,7 @@ export default function TabletopPage() {
             <li><strong>Catering & events:</strong> Bulk unwrapped cutlery, large portion cups, versatile accessories</li>
           </ul>
           <p className="text-ink-muted">
-            Not sure what supplies work best for your operation? <Link href="/contact" className="text-primary-600 hover:underline font-semibold">Contact our team</Link> for product recommendations and samples based on your service model and volume requirements.
+            Not sure what supplies work best for your operation? <Link href="/contact" className="text-blue-600 hover:underline font-semibold">Contact our team</Link> for product recommendations and samples based on your service model and volume requirements.
           </p>
         </div>
       </CategoryPageLayout>

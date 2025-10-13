@@ -30,7 +30,7 @@ export default function StickyQuoteCTA() {
     >
       <Link
         href="/contact"
-        className="flex items-center gap-2 px-6 py-4 bg-gradient-to-r from-primary-600 to-accent-600 text-white font-heading font-semibold rounded-full shadow-2xl hover:shadow-primary-600/50 hover:scale-105 transition-all"
+        className="flex items-center gap-2 px-6 py-4 bg-gradient-to-r from-blue-600 to-orange-600 text-white font-heading font-semibold rounded-full shadow-2xl hover:shadow-blue-600/50 hover:scale-105 transition-all"
       >
         <MessageSquare className="w-5 h-5" />
         Get Quote

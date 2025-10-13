@@ -70,7 +70,7 @@ export default function CategoryPageLayout({
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Takeout Containers
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -83,7 +83,7 @@ export default function CategoryPageLayout({
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Cups & Lids
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -96,7 +96,7 @@ export default function CategoryPageLayout({
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Napkins & Towels
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -109,7 +109,7 @@ export default function CategoryPageLayout({
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Gloves & Bags
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -122,7 +122,7 @@ export default function CategoryPageLayout({
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Eco-Friendly
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -135,7 +135,7 @@ export default function CategoryPageLayout({
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Tabletop
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -147,7 +147,7 @@ export default function CategoryPageLayout({
                   <div className="mt-4 pt-4 border-t border-border">
                     <Link
                       href="/shop"
-                      className="text-sm text-primary-600 hover:text-primary-700 font-semibold"
+                      className="text-sm text-blue-600 hover:text-blue-700 font-semibold"
                     >
                       View All Categories →
                     </Link>
@@ -163,7 +163,7 @@ export default function CategoryPageLayout({
               <LogIn className="w-4 h-4" />
               Login
             </Link>
-            <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
+            <Link href="/contact" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
               Get Quote
             </Link>
           </nav>
@@ -209,7 +209,7 @@ export default function CategoryPageLayout({
               <Link href="/wholesale-programs" className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 Wholesale Programs
               </Link>
-              <Link href="/contact" className="mx-4 px-4 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-center font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact" className="mx-4 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Get Quote
               </Link>
             </div>
@@ -231,7 +231,7 @@ export default function CategoryPageLayout({
       </div>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 to-white py-16 sm:py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-white py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink mb-6 leading-heading">
@@ -245,7 +245,7 @@ export default function CategoryPageLayout({
       </section>
 
       {/* Coming Soon Notice */}
-      <section className="py-6 bg-accent-50 border-y border-accent-600">
+      <section className="py-6 bg-orange-50 border-y border-orange-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
             <p className="text-ink">
@@ -253,7 +253,7 @@ export default function CategoryPageLayout({
             </p>
             <Link
               href="/contact"
-              className="whitespace-nowrap px-6 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+              className="whitespace-nowrap px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
               Get Quote
             </Link>
@@ -301,9 +301,9 @@ export default function CategoryPageLayout({
                 <Link
                   key={cat.slug}
                   href={`/${cat.slug}`}
-                  className="p-6 bg-white border border-border rounded-lg hover:border-primary-600 hover:shadow-lg transition-all"
+                  className="p-6 bg-white border border-border rounded-lg hover:border-blue-600 hover:shadow-lg transition-all"
                 >
-                  <span className="text-lg font-heading font-semibold text-ink hover:text-primary-600">
+                  <span className="text-lg font-heading font-semibold text-ink hover:text-blue-600">
                     {cat.name} →
                   </span>
                 </Link>
@@ -331,7 +331,7 @@ export default function CategoryPageLayout({
             </Link>
             <Link
               href="/custom-printing"
-              className="px-8 py-4 bg-accent-500 text-white font-heading font-semibold rounded-lg hover:bg-accent-600 transition-colors"
+              className="px-8 py-4 bg-orange-500 text-white font-heading font-semibold rounded-lg hover:bg-orange-600 transition-colors"
             >
               Custom Printing
             </Link>

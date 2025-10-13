@@ -14,7 +14,7 @@ export default function Footer() {
               Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
             </p>
             <p className="text-xs text-gray-400">
-              Powered by <a href="https://www.shurehw.com" className="text-primary-400 hover:text-primary-300 underline" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>
+              Powered by <a href="https://www.shurehw.com" className="text-blue-400 hover:text-blue-300 underline" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
             <div className="mt-6">
               <Link
                 href="/contact"
-                className="inline-block px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors"
+                className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Get a Quote
               </Link>

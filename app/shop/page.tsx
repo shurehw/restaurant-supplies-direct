@@ -91,7 +91,7 @@ export default function ShopPage() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 to-white py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-blue-50 to-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4 leading-heading">
@@ -105,7 +105,7 @@ export default function ShopPage() {
       </section>
 
       {/* Coming Soon Notice */}
-      <section className="py-8 bg-accent-50 border-y border-accent-600">
+      <section className="py-8 bg-orange-50 border-y border-orange-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
             <div>
@@ -118,7 +118,7 @@ export default function ShopPage() {
             </div>
             <Link
               href="/contact"
-              className="whitespace-nowrap px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+              className="whitespace-nowrap px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
               Get Quote
             </Link>
@@ -134,14 +134,14 @@ export default function ShopPage() {
               <Link
                 key={category.slug}
                 href={`/${category.slug}`}
-                className="group p-8 bg-white border-2 border-border rounded-xl hover:border-primary-600 hover:shadow-lg transition-all"
+                className="group p-8 bg-white border-2 border-border rounded-xl hover:border-blue-600 hover:shadow-lg transition-all"
               >
                 <div className="text-5xl mb-4">{category.icon}</div>
-                <h3 className="text-2xl font-heading font-bold text-ink mb-2 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-2xl font-heading font-bold text-ink mb-2 group-hover:text-blue-600 transition-colors">
                   {category.name}
                 </h3>
                 <p className="text-ink-muted mb-4">{category.description}</p>
-                <span className="text-primary-600 font-medium group-hover:underline">
+                <span className="text-blue-600 font-medium group-hover:underline">
                   Shop Category →
                 </span>
               </Link>
@@ -168,7 +168,7 @@ export default function ShopPage() {
             </Link>
             <Link
               href="/custom-printing"
-              className="px-8 py-4 bg-accent-500 text-white font-heading font-semibold rounded-lg hover:bg-accent-600 transition-colors"
+              className="px-8 py-4 bg-orange-500 text-white font-heading font-semibold rounded-lg hover:bg-orange-600 transition-colors"
             >
               Custom Printing
             </Link>

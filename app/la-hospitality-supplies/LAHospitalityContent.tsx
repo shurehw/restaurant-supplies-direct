@@ -123,10 +123,10 @@ export default function LAHospitalityContent() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-orange-50 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto space-y-6">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-500 text-white text-sm font-medium">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium">
               Los Angeles Area Only
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink leading-heading">
@@ -136,7 +136,7 @@ export default function LAHospitalityContent() {
               Same-day delivery and custom packaging for Los Angeles hospitality venues — powered by{" "}
               <a
                 href="https://www.shurehw.com"
-                className="text-primary-600 hover:text-primary-700 underline font-semibold"
+                className="text-blue-600 hover:text-blue-700 underline font-semibold"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -200,7 +200,7 @@ export default function LAHospitalityContent() {
 
           {/* Service Area Visual */}
           <div className="bg-white rounded-xl p-8 sm:p-12 border border-border max-w-4xl mx-auto">
-            <div className="aspect-video bg-gradient-to-br from-primary-50 to-accent-50 rounded-lg flex items-center justify-center border-2 border-dashed border-border">
+            <div className="aspect-video bg-gradient-to-br from-blue-50 to-orange-50 rounded-lg flex items-center justify-center border-2 border-dashed border-border">
               <div className="text-center space-y-4">
                 <div className="text-6xl">🗺️</div>
                 <p className="text-lg font-medium text-ink">Service Radius: Los Angeles County</p>
@@ -236,7 +236,7 @@ export default function LAHospitalityContent() {
           </div>
 
           {status === "success" ? (
-            <div className="bg-primary-50 border-2 border-primary-600 rounded-xl p-8 text-center">
+            <div className="bg-blue-50 border-2 border-blue-600 rounded-xl p-8 text-center">
               <div className="text-5xl mb-4">✓</div>
               <h3 className="text-2xl font-heading font-bold text-ink mb-3">
                 Thank You!
@@ -246,7 +246,7 @@ export default function LAHospitalityContent() {
               </p>
               <button
                 onClick={() => setStatus("idle")}
-                className="text-primary-600 hover:text-primary-700 font-medium underline"
+                className="text-blue-600 hover:text-blue-700 font-medium underline"
               >
                 Submit another request
               </button>
@@ -265,7 +265,7 @@ export default function LAHospitalityContent() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -279,7 +279,7 @@ export default function LAHospitalityContent() {
                     required
                     value={formData.business}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -296,7 +296,7 @@ export default function LAHospitalityContent() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -310,7 +310,7 @@ export default function LAHospitalityContent() {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -329,7 +329,7 @@ export default function LAHospitalityContent() {
                     placeholder="90001"
                     value={formData.zipCode}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -342,7 +342,7 @@ export default function LAHospitalityContent() {
                     required
                     value={formData.orderType}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent bg-white"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white"
                   >
                     <option value="takeout-packaging">Takeout Containers</option>
                     <option value="custom-printing">Custom Printing</option>
@@ -366,14 +366,14 @@ export default function LAHospitalityContent() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Order volume, custom printing requirements, delivery frequency, etc."
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="w-full px-6 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-6 py-4 bg-blue-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {status === "submitting" ? "Submitting..." : "Request Account"}
               </button>
@@ -398,7 +398,7 @@ export default function LAHospitalityContent() {
           </p>
           <Link
             href="https://www.shurehw.com"
-            className="inline-flex items-center gap-2 text-accent-500 hover:text-accent-600 font-medium text-lg transition-colors"
+            className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 font-medium text-lg transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >

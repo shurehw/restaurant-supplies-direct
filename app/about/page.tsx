@@ -103,7 +103,7 @@ export default function AboutPage() {
               We're changing that by bringing institutional-quality supplies, transparent pricing, and white-glove service directly to every operator — whether you're running one location or one hundred.
             </p>
 
-            <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-xl border-2 border-primary-600 my-12">
+            <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 rounded-xl border-2 border-blue-600 my-12">
               <h3 className="text-2xl font-heading font-bold text-ink mb-4">
                 Backed by Shure Hospitality Wholesale
               </h3>
@@ -115,7 +115,7 @@ export default function AboutPage() {
               </p>
               <Link
                 href="https://www.shurehw.com"
-                className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold transition-colors"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -132,8 +132,8 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 bg-bg-muted rounded-lg border border-border">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Package className="w-6 h-6 text-primary-600" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Package className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-ink mb-2">
@@ -148,7 +148,7 @@ export default function AboutPage() {
               <div className="p-6 bg-bg-muted rounded-lg border border-border">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
-                    <Palette className="w-6 h-6 text-accent-600" />
+                    <Palette className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-ink mb-2">
@@ -195,23 +195,23 @@ export default function AboutPage() {
             <h2 className="text-3xl font-heading font-bold text-ink mb-4">Who We Serve</h2>
             <ul className="space-y-3 text-ink-muted mb-8">
               <li className="flex items-start gap-3">
-                <span className="text-primary-600 font-bold text-xl">✓</span>
+                <span className="text-blue-600 font-bold text-xl">✓</span>
                 <span>Independent restaurants and cafes</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary-600 font-bold text-xl">✓</span>
+                <span className="text-blue-600 font-bold text-xl">✓</span>
                 <span>Food trucks and pop-up concepts</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary-600 font-bold text-xl">✓</span>
+                <span className="text-blue-600 font-bold text-xl">✓</span>
                 <span>Multi-unit restaurant groups</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary-600 font-bold text-xl">✓</span>
+                <span className="text-blue-600 font-bold text-xl">✓</span>
                 <span>Catering companies and event venues</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary-600 font-bold text-xl">✓</span>
+                <span className="text-blue-600 font-bold text-xl">✓</span>
                 <span>Hotels and entertainment venues</span>
               </li>
             </ul>
@@ -226,7 +226,7 @@ export default function AboutPage() {
               Our customer service team includes industry veterans who understand the unique challenges of food service operations. Need help choosing the right container for a specific dish? Trying to balance sustainability goals with budget constraints? We provide expert guidance based on real-world restaurant experience.
             </p>
             <p className="text-ink-muted mb-8">
-              Through our partnership with <a href="https://www.shurehw.com" className="text-primary-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>, we access the same supply chains, pricing, and logistics that serve major hospitality brands - but we've built a platform that makes those benefits accessible to independent operators and small restaurant groups.
+              Through our partnership with <a href="https://www.shurehw.com" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>, we access the same supply chains, pricing, and logistics that serve major hospitality brands - but we've built a platform that makes those benefits accessible to independent operators and small restaurant groups.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-ink mb-6">
@@ -283,7 +283,7 @@ export default function AboutPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="px-6 py-3 bg-accent-500 text-white font-heading font-semibold rounded-lg hover:bg-accent-600 transition-colors"
+                  className="px-6 py-3 bg-orange-500 text-white font-heading font-semibold rounded-lg hover:bg-orange-600 transition-colors"
                 >
                   Contact Us
                 </Link>

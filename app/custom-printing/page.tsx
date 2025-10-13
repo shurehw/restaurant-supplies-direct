@@ -172,7 +172,7 @@ export default function CustomPrintingPage() {
             <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors">
               Wholesale
             </Link>
-            <Link href="#quote" className="px-4 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors">
+            <Link href="#quote" className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
               Get Quote
             </Link>
           </nav>
@@ -180,10 +180,10 @@ export default function CustomPrintingPage() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-accent-50 via-white to-primary-50 py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-500 text-white text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
               Powered by Shure Hospitality Wholesale
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink mb-6 leading-heading">
@@ -194,7 +194,7 @@ export default function CustomPrintingPage() {
             </p>
             <Link
               href="#quote"
-              className="inline-block px-8 py-4 bg-accent-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-accent-600 transition-colors"
+              className="inline-block px-8 py-4 bg-orange-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-orange-600 transition-colors"
             >
               Request Custom Quote
             </Link>
@@ -215,7 +215,7 @@ export default function CustomPrintingPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {customProducts.map((product, index) => (
-              <div key={index} className="p-6 bg-bg-muted rounded-xl border-2 border-border hover:border-accent-500 transition-all">
+              <div key={index} className="p-6 bg-bg-muted rounded-xl border-2 border-border hover:border-orange-500 transition-all">
                 <div className="text-5xl mb-4">{product.icon}</div>
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
                   {product.name}
@@ -249,7 +249,7 @@ export default function CustomPrintingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((item) => (
               <div key={item.step} className="text-center">
-                <div className="w-16 h-16 bg-accent-500 text-white rounded-full flex items-center justify-center text-2xl font-heading font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-2xl font-heading font-bold mx-auto mb-4">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
@@ -272,7 +272,7 @@ export default function CustomPrintingPage() {
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
                     🎨
                   </div>
                   <div>
@@ -285,7 +285,7 @@ export default function CustomPrintingPage() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
                     ⚡
                   </div>
                   <div>
@@ -298,7 +298,7 @@ export default function CustomPrintingPage() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
                     💰
                   </div>
                   <div>
@@ -311,7 +311,7 @@ export default function CustomPrintingPage() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-2xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-2xl">
                     ✅
                   </div>
                   <div>
@@ -325,7 +325,7 @@ export default function CustomPrintingPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-12 rounded-2xl border-2 border-primary-600">
+            <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-12 rounded-2xl border-2 border-blue-600">
               <div className="text-center">
                 <h3 className="text-2xl font-heading font-bold text-ink mb-4">
                   Multi-Location? High Volume?
@@ -335,25 +335,25 @@ export default function CustomPrintingPage() {
                 </p>
                 <ul className="text-left space-y-3 mb-8 text-ink-muted">
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">✓</span>
                     <span>Dedicated account management</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">✓</span>
                     <span>Volume discounts on large orders</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">✓</span>
                     <span>Inventory management & forecasting</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-500 font-bold">✓</span>
+                    <span className="text-orange-500 font-bold">✓</span>
                     <span>Same-day delivery in LA</span>
                   </li>
                 </ul>
                 <Link
                   href="/wholesale-programs"
-                  className="inline-block px-6 py-3 bg-primary-600 text-white font-heading font-semibold rounded-lg hover:bg-primary-700 transition-colors"
+                  className="inline-block px-6 py-3 bg-blue-600 text-white font-heading font-semibold rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   Learn About Wholesale Programs
                 </Link>

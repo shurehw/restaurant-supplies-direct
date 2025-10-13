@@ -94,7 +94,7 @@ export default function HomeContent() {
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Takeout Containers
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -107,7 +107,7 @@ export default function HomeContent() {
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Cups & Lids
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -120,7 +120,7 @@ export default function HomeContent() {
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Napkins & Towels
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -133,7 +133,7 @@ export default function HomeContent() {
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Gloves & Bags
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -146,7 +146,7 @@ export default function HomeContent() {
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Eco-Friendly
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -159,7 +159,7 @@ export default function HomeContent() {
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
                     >
                       <div className="flex-1">
-                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
                           Tabletop
                         </h3>
                         <p className="text-xs text-ink-muted">
@@ -171,7 +171,7 @@ export default function HomeContent() {
                   <div className="mt-4 pt-4 border-t border-border">
                     <Link
                       href="/shop"
-                      className="text-sm text-primary-600 hover:text-primary-700 font-semibold"
+                      className="text-sm text-blue-600 hover:text-blue-700 font-semibold"
                     >
                       View All Categories →
                     </Link>
@@ -186,7 +186,7 @@ export default function HomeContent() {
               <LogIn className="w-4 h-4" />
               Login
             </Link>
-            <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
+            <Link href="/contact" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
               Get Quote
             </Link>
           </nav>
@@ -271,7 +271,7 @@ export default function HomeContent() {
               <div className="border-t border-border pt-3 mt-3">
                 <Link
                   href="/login"
-                  className="mx-4 px-4 py-3 border-2 border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition-colors text-center font-medium flex items-center justify-center gap-2"
+                  className="mx-4 px-4 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors text-center font-medium flex items-center justify-center gap-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <LogIn className="w-4 h-4" />
@@ -280,7 +280,7 @@ export default function HomeContent() {
               </div>
               <Link
                 href="/contact"
-                className="mx-4 px-4 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-center font-medium"
+                className="mx-4 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Get Quote
@@ -293,14 +293,14 @@ export default function HomeContent() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section with Background */}
-        <div className="relative bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20 sm:py-28 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-blue-50 via-white to-orange-50 py-20 sm:py-28 overflow-hidden">
           {/* Decorative elements */}
           <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               {/* Badge */}
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 text-white text-sm font-medium shadow-lg shadow-accent-500/20">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-medium shadow-lg shadow-orange-500/20">
                 Browse Now • Orders Opening Soon
               </div>
 
@@ -337,15 +337,15 @@ export default function HomeContent() {
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center justify-center gap-6 pt-8 text-sm text-ink">
                 <div className="flex items-center gap-2">
-                  <Truck className="w-5 h-5 text-primary-600" />
+                  <Truck className="w-5 h-5 text-blue-600" />
                   <span>Fast Nationwide Shipping</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Package className="w-5 h-5 text-primary-600" />
+                  <Package className="w-5 h-5 text-blue-600" />
                   <span>Wholesale Pricing</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Leaf className="w-5 h-5 text-primary-600" />
+                  <Leaf className="w-5 h-5 text-blue-600" />
                   <span>Eco-Friendly Options</span>
                 </div>
               </div>
@@ -373,12 +373,12 @@ export default function HomeContent() {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="your@email.com"
                       disabled={status === "submitting" || status === "success"}
-                      className="flex-1 px-5 py-4 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed hover:border-gray-300 transition-colors"
+                      className="flex-1 px-5 py-4 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed hover:border-gray-300 transition-colors"
                     />
                     <button
                       type="submit"
                       disabled={status === "submitting" || status === "success"}
-                      className="px-8 py-4 bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold rounded-xl hover:from-primary-700 hover:to-accent-700 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                      className="px-8 py-4 bg-gradient-to-r from-blue-600 to-orange-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
                     >
                       {status === "submitting" ? "Submitting..." : status === "success" ? "✓ Subscribed!" : "Notify Me"}
                     </button>
@@ -413,15 +413,15 @@ export default function HomeContent() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-primary-600 hover:shadow-2xl transition-all">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-blue-600 hover:shadow-2xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
                 <Package className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-heading font-bold text-ink mb-3">Wholesale Pricing</h3>
               <p className="text-ink-muted text-lg leading-relaxed">Volume discounts and bulk ordering with transparent, competitive pricing on all restaurant supplies.</p>
             </div>
-            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-accent-600 hover:shadow-2xl transition-all">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-orange-600 hover:shadow-2xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
                 <Palette className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-heading font-bold text-ink mb-3">Custom Branding</h3>
@@ -449,10 +449,10 @@ export default function HomeContent() {
               <strong className="text-ink">Restaurant Supplies Direct</strong> makes premium hospitality packaging and <strong className="text-ink">wholesale restaurant supplies</strong> accessible to every operator. Whether you're running an independent cafe, food truck, or multi-location restaurant group, we deliver the same quality supplies trusted by leading hospitality brands — at prices that make sense for your business.
             </p>
             <p className="mb-6 text-lg">
-              From <Link href="/takeout-containers" className="text-primary-600 hover:text-primary-700 underline font-semibold">takeout containers wholesale</Link> to <Link href="/custom-printing" className="text-primary-600 hover:text-primary-700 underline font-semibold">custom printed packaging</Link>, we ship directly from the source. No middlemen. No retail markups. Just quality restaurant disposables, fast shipping, and transparent pricing.
+              From <Link href="/takeout-containers" className="text-blue-600 hover:text-blue-700 underline font-semibold">takeout containers wholesale</Link> to <Link href="/custom-printing" className="text-blue-600 hover:text-blue-700 underline font-semibold">custom printed packaging</Link>, we ship directly from the source. No middlemen. No retail markups. Just quality restaurant disposables, fast shipping, and transparent pricing.
             </p>
             <p className="text-lg">
-              Need <Link href="/eco-friendly" className="text-primary-600 hover:text-primary-700 underline font-semibold">eco-friendly supplies</Link>? We carry the largest selection of compostable takeout containers, sustainable packaging, and recyclable disposables. Looking for branded packaging? Our <Link href="/custom-printing" className="text-primary-600 hover:text-primary-700 underline font-semibold">in-house design team</Link> can create custom printed cups, napkins, and boxes that make your brand stand out.
+              Need <Link href="/eco-friendly" className="text-blue-600 hover:text-blue-700 underline font-semibold">eco-friendly supplies</Link>? We carry the largest selection of compostable takeout containers, sustainable packaging, and recyclable disposables. Looking for branded packaging? Our <Link href="/custom-printing" className="text-blue-600 hover:text-blue-700 underline font-semibold">in-house design team</Link> can create custom printed cups, napkins, and boxes that make your brand stand out.
             </p>
           </div>
         </div>
@@ -481,12 +481,12 @@ export default function HomeContent() {
               <Link
                 key={category.href}
                 href={category.href}
-                className="group p-6 bg-white rounded-2xl border-2 border-border hover:border-primary-600 hover:shadow-2xl transition-all text-center transform hover:-translate-y-1"
+                className="group p-6 bg-white rounded-2xl border-2 border-border hover:border-blue-600 hover:shadow-2xl transition-all text-center transform hover:-translate-y-1"
               >
                 <div className={`w-16 h-16 ${category.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-md`}>
                   <category.Icon className="w-8 h-8" />
                 </div>
-                <div className="text-sm font-heading font-bold text-ink group-hover:text-primary-600 transition-colors">{category.name}</div>
+                <div className="text-sm font-heading font-bold text-ink group-hover:text-blue-600 transition-colors">{category.name}</div>
               </Link>
             ))}
           </div>

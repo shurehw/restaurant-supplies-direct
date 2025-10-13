@@ -123,7 +123,7 @@ export default function GlovesAndBagsPage() {
             Our <strong>nitrile gloves bulk</strong> selection includes powder-free, latex-free options that meet the highest food safety standards. From lightweight <strong>vinyl gloves</strong> for quick tasks to durable <strong>latex gloves</strong> for detailed prep work, we stock every type in all sizes. Our <strong>can liners wholesale</strong> range from 10-gallon bin liners to 60-gallon commercial bags.
           </p>
           <p className="text-ink-muted">
-            Need eco-friendly options? Check out our <Link href="/eco-friendly" className="text-primary-600 hover:underline font-semibold">sustainable gloves and compostable trash bags</Link>. Looking for volume discounts? <Link href="/wholesale-programs" className="text-primary-600 hover:underline font-semibold">Join our wholesale program</Link> for dedicated pricing and account management.
+            Need eco-friendly options? Check out our <Link href="/eco-friendly" className="text-blue-600 hover:underline font-semibold">sustainable gloves and compostable trash bags</Link>. Looking for volume discounts? <Link href="/wholesale-programs" className="text-blue-600 hover:underline font-semibold">Join our wholesale program</Link> for dedicated pricing and account management.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function GlovesAndBagsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {products.map((product, index) => (
-              <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-primary-600 transition-all">
+              <div key={index} className="p-6 bg-white border-2 border-border rounded-xl hover:border-blue-600 transition-all">
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
                   {product.name}
                 </h3>
@@ -153,7 +153,7 @@ export default function GlovesAndBagsPage() {
         </div>
 
         {/* Lead Gen CTA Block */}
-        <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 sm:p-12 rounded-2xl border-2 border-primary-600 mb-12">
+        <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 sm:p-12 rounded-2xl border-2 border-blue-600 mb-12">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl sm:text-3xl font-heading font-bold text-ink mb-4">
               Ready to Order Gloves & Bags in Bulk?
@@ -165,7 +165,7 @@ export default function GlovesAndBagsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-primary-700 transition-colors"
+                className="px-8 py-4 bg-blue-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Request Quote
               </Link>
@@ -195,7 +195,7 @@ export default function GlovesAndBagsPage() {
             <li><strong>Dishwashing & cleaning:</strong> Heavy-duty nitrile (thicker mil)</li>
           </ul>
           <p className="text-ink-muted">
-            Not sure which gloves or trash bags you need? <Link href="/contact" className="text-primary-600 hover:underline font-semibold">Contact our team</Link> for product samples and recommendations based on your operation size and usage patterns.
+            Not sure which gloves or trash bags you need? <Link href="/contact" className="text-blue-600 hover:underline font-semibold">Contact our team</Link> for product samples and recommendations based on your operation size and usage patterns.
           </p>
         </div>
       </CategoryPageLayout>

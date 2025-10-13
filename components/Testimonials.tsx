@@ -41,12 +41,12 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl border-2 border-border hover:border-primary-600 hover:shadow-xl transition-all"
+              className="bg-white p-8 rounded-2xl border-2 border-border hover:border-blue-600 hover:shadow-xl transition-all"
             >
               {/* Star Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-accent-500 text-accent-500" />
+                  <Star key={i} className="w-5 h-5 fill-orange-500 text-orange-500" />
                 ))}
               </div>
 
@@ -68,19 +68,19 @@ export default function Testimonials() {
         {/* Trust Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-12 border-t border-border">
           <div className="text-center">
-            <p className="text-4xl font-heading font-bold text-primary-600 mb-2">500+</p>
+            <p className="text-4xl font-heading font-bold text-blue-600 mb-2">500+</p>
             <p className="text-ink-muted">Active Customers</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-heading font-bold text-primary-600 mb-2">4.8</p>
+            <p className="text-4xl font-heading font-bold text-blue-600 mb-2">4.8</p>
             <p className="text-ink-muted">Average Rating</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-heading font-bold text-primary-600 mb-2">1-3</p>
+            <p className="text-4xl font-heading font-bold text-blue-600 mb-2">1-3</p>
             <p className="text-ink-muted">Day Shipping</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-heading font-bold text-primary-600 mb-2">99%</p>
+            <p className="text-4xl font-heading font-bold text-blue-600 mb-2">99%</p>
             <p className="text-ink-muted">On-Time Delivery</p>
           </div>
         </div>

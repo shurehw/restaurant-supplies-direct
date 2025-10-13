@@ -95,25 +95,25 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Phone className="w-8 h-8 text-primary-600" />
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                    <Phone className="w-8 h-8 text-blue-600" />
                   </div>
                 </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Call Us</h3>
                 <p className="text-ink-muted text-sm mb-3">Mon-Fri 8am-6pm PST</p>
-                <a href="tel:1-800-555-0123" className="text-primary-600 hover:underline font-semibold">
+                <a href="tel:1-800-555-0123" className="text-blue-600 hover:underline font-semibold">
                   1-800-555-0123
                 </a>
               </div>
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
                 <div className="flex justify-center mb-4">
                   <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center">
-                    <Mail className="w-8 h-8 text-accent-600" />
+                    <Mail className="w-8 h-8 text-orange-600" />
                   </div>
                 </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Email Us</h3>
                 <p className="text-ink-muted text-sm mb-3">24hr response time</p>
-                <a href="mailto:info@restaurantsuppliesdirect.com" className="text-primary-600 hover:underline font-semibold">
+                <a href="mailto:info@restaurantsuppliesdirect.com" className="text-blue-600 hover:underline font-semibold">
                   info@rsd.com
                 </a>
               </div>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Visit Us</h3>
                 <p className="text-ink-muted text-sm">Los Angeles, CA</p>
-                <Link href="/la-hospitality-supplies" className="text-primary-600 hover:underline font-semibold">
+                <Link href="/la-hospitality-supplies" className="text-blue-600 hover:underline font-semibold">
                   LA Services →
                 </Link>
               </div>
@@ -134,15 +134,15 @@ export default function ContactPage() {
             <div className="bg-white p-8 rounded-xl border-2 border-border mb-8">
               <h2 className="text-2xl font-heading font-bold text-ink mb-6">Quick Links</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Link href="/custom-printing#quote" className="p-4 bg-bg-muted rounded-lg hover:bg-accent-50 transition-colors">
+                <Link href="/custom-printing#quote" className="p-4 bg-bg-muted rounded-lg hover:bg-orange-50 transition-colors">
                   <h3 className="font-heading font-semibold text-ink mb-1">Custom Printing Quote</h3>
                   <p className="text-sm text-ink-muted">Get pricing for branded packaging</p>
                 </Link>
-                <Link href="/wholesale-programs#apply" className="p-4 bg-bg-muted rounded-lg hover:bg-primary-50 transition-colors">
+                <Link href="/wholesale-programs#apply" className="p-4 bg-bg-muted rounded-lg hover:bg-blue-50 transition-colors">
                   <h3 className="font-heading font-semibold text-ink mb-1">Wholesale Application</h3>
                   <p className="text-sm text-ink-muted">Apply for volume pricing</p>
                 </Link>
-                <Link href="/la-hospitality-supplies#quote" className="p-4 bg-bg-muted rounded-lg hover:bg-primary-50 transition-colors">
+                <Link href="/la-hospitality-supplies#quote" className="p-4 bg-bg-muted rounded-lg hover:bg-blue-50 transition-colors">
                   <h3 className="font-heading font-semibold text-ink mb-1">LA Local Account</h3>
                   <p className="text-sm text-ink-muted">Same-day delivery in Los Angeles</p>
                 </Link>
@@ -153,7 +153,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-xl border-2 border-primary-600 text-center">
+            <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 rounded-xl border-2 border-blue-600 text-center">
               <h3 className="text-2xl font-heading font-bold text-ink mb-3">
                 For Enterprise & Multi-Location
               </h3>
@@ -162,7 +162,7 @@ export default function ContactPage() {
               </p>
               <a
                 href="https://www.shurehw.com"
-                className="inline-block px-6 py-3 bg-primary-600 text-white font-heading font-semibold rounded-lg hover:bg-primary-700 transition-colors"
+                className="inline-block px-6 py-3 bg-blue-600 text-white font-heading font-semibold rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -184,13 +184,13 @@ export default function ContactPage() {
               Whether you're placing your first order or managing supplies for multiple locations, our team is here to help. We offer multiple ways to connect based on your needs and timeline.
             </p>
             <p className="text-ink-muted mb-6">
-              For <strong>immediate questions</strong> or urgent orders, call us at <a href="tel:1-800-555-0123" className="text-primary-600 hover:underline font-semibold">1-800-555-0123</a> during business hours (Mon-Fri 8am-6pm PST). Our phone support team can provide real-time pricing, check stock availability, and process rush orders.
+              For <strong>immediate questions</strong> or urgent orders, call us at <a href="tel:1-800-555-0123" className="text-blue-600 hover:underline font-semibold">1-800-555-0123</a> during business hours (Mon-Fri 8am-6pm PST). Our phone support team can provide real-time pricing, check stock availability, and process rush orders.
             </p>
             <p className="text-ink-muted mb-6">
-              For <strong>custom quotes and detailed inquiries</strong>, email us at <a href="mailto:info@restaurantsuppliesdirect.com" className="text-primary-600 hover:underline font-semibold">info@restaurantsuppliesdirect.com</a>. We respond to all emails within 24 hours and can provide detailed pricing, product recommendations, and shipping estimates.
+              For <strong>custom quotes and detailed inquiries</strong>, email us at <a href="mailto:info@restaurantsuppliesdirect.com" className="text-blue-600 hover:underline font-semibold">info@restaurantsuppliesdirect.com</a>. We respond to all emails within 24 hours and can provide detailed pricing, product recommendations, and shipping estimates.
             </p>
             <p className="text-ink-muted mb-8">
-              <strong>Los Angeles area restaurants</strong> can access same-day delivery, local account management, and warehouse pickup through our partnership with Shure Hospitality Wholesale. <Link href="/la-hospitality-supplies" className="text-primary-600 hover:underline font-semibold">Learn more about LA services</Link>.
+              <strong>Los Angeles area restaurants</strong> can access same-day delivery, local account management, and warehouse pickup through our partnership with Shure Hospitality Wholesale. <Link href="/la-hospitality-supplies" className="text-blue-600 hover:underline font-semibold">Learn more about LA services</Link>.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-ink mb-6 mt-12">
