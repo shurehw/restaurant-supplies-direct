@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
+import Footer from "@/components/Footer";
+import { Menu, X, ChevronDown, LogIn } from "lucide-react";
 
 interface CategoryPageLayoutProps {
   title: string;
@@ -62,7 +63,7 @@ export default function CategoryPageLayout({
 
               {/* Mega Menu Dropdown */}
               {megaMenuOpen && (
-                <div className="absolute top-full left-0 mt-2 w-[600px] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[600px] max-w-[90vw] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
                   <div className="grid grid-cols-2 gap-4">
                     <Link
                       href="/takeout-containers"
@@ -157,6 +158,10 @@ export default function CategoryPageLayout({
 
             <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors">
               Custom Printing
+            </Link>
+            <Link href="/login" className="flex items-center gap-1.5 text-ink-muted hover:text-ink transition-colors">
+              <LogIn className="w-4 h-4" />
+              Login
             </Link>
             <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
               Get Quote
@@ -334,25 +339,7 @@ export default function CategoryPageLayout({
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-white">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-sm text-ink-muted text-center">
-            Restaurant Supplies Direct is your trusted source for restaurant disposables, packaging, and custom print — shipped direct from the source.
-            <br />
-            Powered by{" "}
-            <a
-              href="https://www.shurehw.com"
-              className="text-primary-600 hover:text-primary-700 transition-colors underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Shure Hospitality Wholesale
-            </a>
-            , a national supplier serving leading hospitality brands.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

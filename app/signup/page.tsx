@@ -1,0 +1,140 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import { UserPlus } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Sign Up | Restaurant Supplies Direct",
+  description: "Create your Restaurant Supplies Direct account to access wholesale pricing, manage orders, and get fast shipping on restaurant supplies.",
+  robots: "noindex, nofollow",
+};
+
+export default function SignupPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-bg flex flex-col">
+      {/* Header */}
+      <header className="w-full py-6 px-4 sm:px-6 lg:px-8 bg-white border-b border-border">
+        <div className="max-w-7xl mx-auto">
+          <Link href="/" className="flex items-center gap-3">
+            <Image src="/logo-icon.svg" alt="Restaurant Supplies Direct" width={40} height={40} priority />
+            <span className="text-xl font-heading font-bold text-ink">Restaurant Supplies Direct</span>
+          </Link>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1 flex items-center justify-center px-4 py-12">
+        <div className="w-full max-w-md">
+          <div className="bg-white rounded-2xl shadow-xl border border-border p-8">
+            {/* Header */}
+            <div className="text-center mb-8">
+              <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <UserPlus className="w-8 h-8 text-accent-600" />
+              </div>
+              <h1 className="text-3xl font-heading font-bold text-ink mb-2">Create Account</h1>
+              <p className="text-ink-muted">Get started with wholesale pricing today</p>
+            </div>
+
+            {/* Coming Soon Notice */}
+            <div className="bg-accent-50 border border-accent-600 rounded-lg p-4 mb-6">
+              <p className="text-sm text-ink text-center">
+                <strong>Account creation coming soon!</strong> To get started immediately, <Link href="/contact" className="text-primary-600 hover:underline font-semibold">request a quote</Link>.
+              </p>
+            </div>
+
+            {/* Form (disabled for now) */}
+            <form className="space-y-4 opacity-50 pointer-events-none">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-ink mb-2">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    disabled
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted"
+                    placeholder="John"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-ink mb-2">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    disabled
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="company" className="block text-sm font-medium text-ink mb-2">
+                  Company Name
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  disabled
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted"
+                  placeholder="Your Restaurant"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-ink mb-2">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  disabled
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted"
+                  placeholder="you@company.com"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="password" className="block text-sm font-medium text-ink mb-2">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  disabled
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted"
+                  placeholder="••••••••"
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled
+                className="w-full px-6 py-3 bg-primary-600 text-white font-heading font-semibold rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50"
+              >
+                Create Account
+              </button>
+            </form>
+
+            {/* Sign In Link */}
+            <div className="mt-6 text-center">
+              <p className="text-sm text-ink-muted">
+                Already have an account? <Link href="/login" className="text-primary-600 hover:text-primary-700 font-semibold">Sign in</Link>
+              </p>
+            </div>
+          </div>
+
+          {/* Back to Home */}
+          <div className="mt-6 text-center">
+            <Link href="/" className="text-sm text-ink-muted hover:text-ink transition-colors">
+              ← Back to Home
+            </Link>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}

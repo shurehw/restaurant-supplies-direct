@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import LABanner from "@/components/LABanner";
+import Footer from "@/components/Footer";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Package, Palette, Leaf, Truck, Box, Coffee, FileText, ShoppingBag, Utensils, Sparkles } from "lucide-react";
+import { Menu, X, ChevronDown, Package, Palette, Leaf, Truck, Box, Coffee, FileText, ShoppingBag, Utensils, Sparkles, LogIn, UserPlus } from "lucide-react";
 
 export default function HomeContent() {
   const [email, setEmail] = useState("");
@@ -82,7 +83,7 @@ export default function HomeContent() {
 
               {/* Mega Menu Dropdown */}
               {megaMenuOpen && (
-                <div className="absolute top-full left-0 mt-2 w-[600px] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[600px] max-w-[90vw] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
                   <div className="grid grid-cols-2 gap-4">
                     <Link
                       href="/takeout-containers"
@@ -177,6 +178,10 @@ export default function HomeContent() {
 
             <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors text-sm">Custom Print</Link>
             <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors text-sm">Wholesale</Link>
+            <Link href="/login" className="flex items-center gap-1.5 text-ink-muted hover:text-ink transition-colors text-sm">
+              <LogIn className="w-4 h-4" />
+              Login
+            </Link>
             <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
               Get Quote
             </Link>
@@ -259,6 +264,16 @@ export default function HomeContent() {
               >
                 Wholesale Programs
               </Link>
+              <div className="border-t border-border pt-3 mt-3">
+                <Link
+                  href="/login"
+                  className="mx-4 px-4 py-3 border-2 border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition-colors text-center font-medium flex items-center justify-center gap-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <LogIn className="w-4 h-4" />
+                  Login
+                </Link>
+              </div>
               <Link
                 href="/contact"
                 className="mx-4 px-4 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-center font-medium"
@@ -481,25 +496,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-white">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-sm text-ink-muted text-center">
-            Restaurant Supplies Direct is your trusted source for restaurant disposables, packaging, and custom print — shipped direct from the source.
-            <br />
-            Powered by{" "}
-            <a
-              href="https://www.shurehw.com"
-              className="text-primary-600 hover:text-primary-700 transition-colors underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Shure Hospitality Wholesale
-            </a>
-            , a national supplier serving leading hospitality brands.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
