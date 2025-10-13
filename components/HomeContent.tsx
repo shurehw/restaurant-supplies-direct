@@ -287,46 +287,75 @@ export default function HomeContent() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-7xl mx-auto">
-          {/* Hero Section */}
-          <div className="max-w-3xl mx-auto text-center space-y-8 mb-16">
-            {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 text-accent-600 text-sm font-medium">
-              Browse Now • Orders Opening Soon
+      <main className="flex-1">
+        {/* Hero Section with Background */}
+        <div className="relative bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20 sm:py-28 overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center space-y-8">
+              {/* Badge */}
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 text-white text-sm font-medium shadow-lg shadow-accent-500/20">
+                Browse Now • Orders Opening Soon
+              </div>
+
+              {/* Hero Heading */}
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold text-ink leading-tight">
+                Shop Restaurant Supplies{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+                  Direct from the Source
+                </span>
+              </h1>
+
+              {/* Subheading */}
+              <p className="text-xl sm:text-2xl text-ink-muted max-w-2xl mx-auto leading-relaxed">
+                Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+                <Link
+                  href="/shop"
+                  className="group px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-xl hover:bg-primary-700 transition-all shadow-lg shadow-primary-600/30 hover:shadow-xl hover:shadow-primary-600/40 hover:-translate-y-0.5"
+                >
+                  Browse Catalog
+                  <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                </Link>
+                <Link
+                  href="/custom-printing"
+                  className="px-8 py-4 bg-white text-ink font-heading font-semibold text-lg rounded-xl hover:bg-gray-50 transition-all border-2 border-gray-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                >
+                  Custom Printing
+                </Link>
+              </div>
+
+              {/* Trust Badges */}
+              <div className="flex flex-wrap items-center justify-center gap-6 pt-8 text-sm text-ink-muted">
+                <div className="flex items-center gap-2">
+                  <Truck className="w-5 h-5 text-primary-600" />
+                  <span>Fast Nationwide Shipping</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Package className="w-5 h-5 text-primary-600" />
+                  <span>Wholesale Pricing</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Leaf className="w-5 h-5 text-primary-600" />
+                  <span>Eco-Friendly Options</span>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
 
-            {/* Hero Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink leading-heading">
-              Shop Restaurant Supplies Direct from the Source
-            </h1>
-
-            {/* Subheading */}
-            <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto">
-              Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
-              Browse our catalog now. <Link href="/contact" className="text-primary-600 hover:underline font-semibold">Contact us for quotes</Link> while e-commerce checkout is launching.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link
-                href="/shop"
-                className="px-8 py-4 bg-primary-600 text-white font-heading font-semibold text-lg rounded-lg hover:bg-primary-700 transition-colors"
-              >
-                Browse Catalog
-              </Link>
-              <Link
-                href="/custom-printing"
-                className="px-8 py-4 bg-white text-ink font-heading font-semibold text-lg rounded-lg hover:bg-gray-100 transition-colors border-2 border-border"
-              >
-                Custom Printing
-              </Link>
-            </div>
-
-            {/* Email Signup Form */}
-            <div className="pt-8 border-t border-border mt-8">
-              <p className="text-sm font-medium text-ink mb-4">Get notified when online ordering launches:</p>
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
+        {/* Email Signup Section */}
+        <div className="bg-gradient-to-b from-white to-gray-50 py-16">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-2xl shadow-xl border border-border p-8 sm:p-12">
+              <p className="text-2xl font-heading font-bold text-ink mb-3 text-center">Get Early Access</p>
+              <p className="text-ink-muted mb-8 text-center">Be the first to know when our e-commerce platform launches</p>
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label htmlFor="email" className="sr-only">
                     Email address
@@ -338,16 +367,16 @@ export default function HomeContent() {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
+                      placeholder="your@email.com"
                       disabled={status === "submitting" || status === "success"}
-                      className="flex-1 px-4 py-3 border border-border rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed"
+                      className="flex-1 px-5 py-4 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent disabled:bg-bg-muted disabled:cursor-not-allowed hover:border-gray-300 transition-colors"
                     />
                     <button
                       type="submit"
                       disabled={status === "submitting" || status === "success"}
-                      className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                      className="px-8 py-4 bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold rounded-xl hover:from-primary-700 hover:to-accent-700 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
                     >
-                      {status === "submitting" ? "Submitting..." : status === "success" ? "Subscribed!" : "Notify Me"}
+                      {status === "submitting" ? "Submitting..." : status === "success" ? "✓ Subscribed!" : "Notify Me"}
                     </button>
                   </div>
                 </div>
@@ -368,63 +397,75 @@ export default function HomeContent() {
       </main>
 
       {/* SEO Content Section */}
-      <section className="py-16 bg-white border-t border-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-heading font-bold text-ink mb-6 text-center">
-            Why Choose Restaurant Supplies Direct?
-          </h2>
-          <div className="prose prose-lg max-w-none text-ink-muted">
-            <p className="mb-6">
-              <strong>Restaurant Supplies Direct</strong> makes premium hospitality packaging and <strong>wholesale restaurant supplies</strong> accessible to every operator. Whether you're running an independent cafe, food truck, or multi-location restaurant group, we deliver the same quality supplies trusted by leading hospitality brands — at prices that make sense for your business.
-            </p>
-            <p className="mb-6">
-              From <Link href="/takeout-containers" className="text-primary-600 hover:underline font-semibold">takeout containers wholesale</Link> to <Link href="/custom-printing" className="text-primary-600 hover:underline font-semibold">custom printed packaging</Link>, we ship directly from the source. No middlemen. No retail markups. Just quality restaurant disposables, fast shipping, and transparent pricing.
-            </p>
-            <p className="mb-6">
-              Need <Link href="/eco-friendly" className="text-primary-600 hover:underline font-semibold">eco-friendly supplies</Link>? We carry the largest selection of compostable takeout containers, sustainable packaging, and recyclable disposables. Looking for branded packaging? Our <Link href="/custom-printing" className="text-primary-600 hover:underline font-semibold">in-house design team</Link> can create custom printed cups, napkins, and boxes that make your brand stand out.
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4">
+              Why Choose Restaurant Supplies Direct?
+            </h2>
+            <p className="text-xl text-ink-muted max-w-3xl mx-auto">
+              Premium supplies, transparent pricing, and dedicated service for every size operation
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-3">
-                <Package className="w-6 h-6 text-primary-600" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-primary-600 hover:shadow-2xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+                <Package className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-heading font-semibold text-ink mb-2">Wholesale Pricing</h3>
-              <p className="text-ink-muted">Volume discounts and bulk ordering with transparent, competitive pricing on all restaurant supplies.</p>
+              <h3 className="text-2xl font-heading font-bold text-ink mb-3">Wholesale Pricing</h3>
+              <p className="text-ink-muted text-lg leading-relaxed">Volume discounts and bulk ordering with transparent, competitive pricing on all restaurant supplies.</p>
             </div>
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-3">
-                <Palette className="w-6 h-6 text-accent-600" />
+            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-accent-600 hover:shadow-2xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+                <Palette className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-heading font-semibold text-ink mb-2">Custom Branding</h3>
-              <p className="text-ink-muted">In-house design and production for branded cups, napkins, takeout boxes, and shopping bags.</p>
+              <h3 className="text-2xl font-heading font-bold text-ink mb-3">Custom Branding</h3>
+              <p className="text-ink-muted text-lg leading-relaxed">In-house design and production for branded cups, napkins, takeout boxes, and shopping bags.</p>
             </div>
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3">
-                <Leaf className="w-6 h-6 text-green-600" />
+            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-green-600 hover:shadow-2xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+                <Leaf className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-heading font-semibold text-ink mb-2">Eco-Friendly Options</h3>
-              <p className="text-ink-muted">Compostable and sustainable supplies that don't compromise on quality or performance.</p>
+              <h3 className="text-2xl font-heading font-bold text-ink mb-3">Eco-Friendly Options</h3>
+              <p className="text-ink-muted text-lg leading-relaxed">Compostable and sustainable supplies that don't compromise on quality or performance.</p>
             </div>
-            <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
-                <Truck className="w-6 h-6 text-blue-600" />
+            <div className="group p-8 bg-white rounded-2xl border-2 border-border hover:border-blue-600 hover:shadow-2xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+                <Truck className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-heading font-semibold text-ink mb-2">Fast Nationwide Shipping</h3>
-              <p className="text-ink-muted">Quick delivery across the US, with same-day options available in Los Angeles.</p>
+              <h3 className="text-2xl font-heading font-bold text-ink mb-3">Fast Nationwide Shipping</h3>
+              <p className="text-ink-muted text-lg leading-relaxed">Quick delivery across the US, with same-day options available in Los Angeles.</p>
             </div>
+          </div>
+
+          {/* Text Content */}
+          <div className="prose prose-lg max-w-none text-ink-muted bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+            <p className="mb-6 text-lg">
+              <strong className="text-ink">Restaurant Supplies Direct</strong> makes premium hospitality packaging and <strong className="text-ink">wholesale restaurant supplies</strong> accessible to every operator. Whether you're running an independent cafe, food truck, or multi-location restaurant group, we deliver the same quality supplies trusted by leading hospitality brands — at prices that make sense for your business.
+            </p>
+            <p className="mb-6 text-lg">
+              From <Link href="/takeout-containers" className="text-primary-600 hover:text-primary-700 underline font-semibold">takeout containers wholesale</Link> to <Link href="/custom-printing" className="text-primary-600 hover:text-primary-700 underline font-semibold">custom printed packaging</Link>, we ship directly from the source. No middlemen. No retail markups. Just quality restaurant disposables, fast shipping, and transparent pricing.
+            </p>
+            <p className="text-lg">
+              Need <Link href="/eco-friendly" className="text-primary-600 hover:text-primary-700 underline font-semibold">eco-friendly supplies</Link>? We carry the largest selection of compostable takeout containers, sustainable packaging, and recyclable disposables. Looking for branded packaging? Our <Link href="/custom-printing" className="text-primary-600 hover:text-primary-700 underline font-semibold">in-house design team</Link> can create custom printed cups, napkins, and boxes that make your brand stand out.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Popular Categories */}
-      <section className="py-16 bg-bg-muted">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-heading font-bold text-ink mb-8 text-center">
-            Popular Categories
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4">
+              Shop by Category
+            </h2>
+            <p className="text-xl text-ink-muted">
+              Browse our complete range of wholesale restaurant supplies
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
               { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, color: "bg-orange-100 text-orange-600" },
               { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, color: "bg-brown-100 text-brown-600" },
@@ -436,12 +477,12 @@ export default function HomeContent() {
               <Link
                 key={category.href}
                 href={category.href}
-                className="p-4 bg-white rounded-lg border border-border hover:border-primary-600 hover:shadow-lg transition-all text-center group"
+                className="group p-6 bg-white rounded-2xl border-2 border-border hover:border-primary-600 hover:shadow-2xl transition-all text-center transform hover:-translate-y-1"
               >
-                <div className={`w-12 h-12 ${category.color} rounded-lg flex items-center justify-center mx-auto mb-3`}>
-                  <category.Icon className="w-6 h-6" />
+                <div className={`w-16 h-16 ${category.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-md`}>
+                  <category.Icon className="w-8 h-8" />
                 </div>
-                <div className="text-sm font-heading font-semibold text-ink group-hover:text-primary-600">{category.name}</div>
+                <div className="text-sm font-heading font-bold text-ink group-hover:text-primary-600 transition-colors">{category.name}</div>
               </Link>
             ))}
           </div>
