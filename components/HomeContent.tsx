@@ -78,12 +78,12 @@ export default function HomeContent() {
           <nav className="hidden md:flex items-center gap-3">
             {/* Search Bar */}
             <div className="relative hidden lg:block">
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
-                <Search className="w-4 h-4 text-gray-400" />
+              <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+                <Search className="w-5 h-5 text-gray-400" />
                 <input
                   type="text"
                   placeholder="Search products..."
-                  className="bg-transparent border-none outline-none text-sm w-40 placeholder:text-gray-400"
+                  className="bg-transparent border-none outline-none text-base w-56 placeholder:text-gray-400"
                 />
               </div>
             </div>
