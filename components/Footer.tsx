@@ -50,8 +50,8 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:1-800-555-0123" className="text-gray-300 hover:text-white transition-colors">
-                  1-800-555-0123
+                <a href="tel:+13102436757" className="text-gray-300 hover:text-white transition-colors">
+                  (310) 243-6757
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -74,6 +74,45 @@ export default function Footer() {
               >
                 Get a Quote
               </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Payment Methods & Trust Badges */}
+      <div className="border-t border-zinc-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col items-center gap-4 mb-6">
+            <p className="text-xs text-gray-500 uppercase tracking-wide">We Accept</p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <div className="px-3 py-2 bg-white rounded border border-gray-200 text-gray-700 text-xs font-semibold">
+                Visa
+              </div>
+              <div className="px-3 py-2 bg-white rounded border border-gray-200 text-gray-700 text-xs font-semibold">
+                Mastercard
+              </div>
+              <div className="px-3 py-2 bg-white rounded border border-gray-200 text-gray-700 text-xs font-semibold">
+                Amex
+              </div>
+              <div className="px-3 py-2 bg-white rounded border border-gray-200 text-gray-700 text-xs font-semibold">
+                Discover
+              </div>
+              <div className="px-3 py-2 bg-white rounded border border-gray-200 text-gray-700 text-xs font-semibold">
+                PayPal
+              </div>
+              <div className="px-3 py-2 bg-white rounded border border-gray-200 text-gray-700 text-xs font-semibold">
+                Apple Pay
+              </div>
+              <div className="px-3 py-2 bg-white rounded border border-gray-200 text-gray-700 text-xs font-semibold">
+                Google Pay
+              </div>
+            </div>
+            <div className="flex items-center gap-3 text-xs text-gray-500">
+              <span className="flex items-center gap-1">
+                🔒 Secure Checkout
+              </span>
+              <span>•</span>
+              <span>SSL Encrypted</span>
             </div>
           </div>
         </div>

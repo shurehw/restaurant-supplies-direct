@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Analytics from "@/components/Analytics";
+import CookieConsent from "@/components/CookieConsent";
 
 const dmSans = DM_Sans({
   variable: "--font-inter",
@@ -49,6 +51,8 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${spaceGrotesk.variable} font-sans antialiased`}
       >
+        <Analytics />
+        <CookieConsent />
         {children}
       </body>
     </html>

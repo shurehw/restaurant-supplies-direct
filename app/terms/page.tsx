@@ -166,7 +166,7 @@ export default function TermsPage() {
               </p>
               <ul className="list-none space-y-2">
                 <li>Email: info@restaurantsuppliesdirect.com</li>
-                <li>Phone: 1-800-555-0123</li>
+                <li>Phone: (310) 243-6757</li>
                 <li>Address: Los Angeles, CA</li>
               </ul>
             </section>

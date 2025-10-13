@@ -132,7 +132,7 @@ export function OrganizationSchema() {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-800-555-0123",
+      "telephone": "+1-310-243-6757",
       "contactType": "Customer Service",
       "email": "info@restaurantsuppliesdirect.com",
       "areaServed": "US"

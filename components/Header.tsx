@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown, LogIn } from "lucide-react";
+import { Menu, X, ChevronDown, LogIn, Box, Coffee, FileText, ShoppingBag, Sparkles, Utensils } from "lucide-react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,92 +33,99 @@ export default function Header() {
             onMouseEnter={() => setMegaMenuOpen(true)}
             onMouseLeave={() => setMegaMenuOpen(false)}
           >
-            <button className="flex items-center gap-1 text-ink-muted hover:text-ink transition-colors text-sm font-medium">
-              Categories
+            <button className="flex items-center gap-1 text-ink-muted hover:text-ink transition-colors text-sm font-medium py-2">
+              Shop
               <ChevronDown className="w-4 h-4" />
             </button>
 
             {/* Mega Menu Dropdown */}
             {megaMenuOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[600px] max-w-[90vw] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
-                <div className="grid grid-cols-2 gap-4">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                <div className="w-[700px] max-w-[90vw] bg-white rounded-lg shadow-2xl border-2 border-border p-6">
+                <div className="grid grid-cols-3 gap-3">
                   <Link
                     href="/takeout-containers"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    className="flex flex-col items-center p-4 rounded-lg hover:bg-orange-50 hover:border-orange-500 border-2 border-transparent transition-all group"
                   >
-                    <div className="flex-1">
-                      <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
-                        Takeout Containers
-                      </h3>
-                      <p className="text-xs text-ink-muted">
-                        To-go boxes, deli containers, clamshells
-                      </p>
+                    <div className="w-20 h-20 bg-orange-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <Box className="w-10 h-10 text-orange-600" />
                     </div>
+                    <h3 className="font-heading font-bold text-ink text-sm text-center mb-1">
+                      Takeout Containers
+                    </h3>
+                    <p className="text-xs text-ink-muted text-center">
+                      To-go boxes, clamshells
+                    </p>
                   </Link>
                   <Link
                     href="/cups-and-lids"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    className="flex flex-col items-center p-4 rounded-lg hover:bg-amber-50 hover:border-amber-500 border-2 border-transparent transition-all group"
                   >
-                    <div className="flex-1">
-                      <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
-                        Cups & Lids
-                      </h3>
-                      <p className="text-xs text-ink-muted">
-                        Paper cups, plastic cups, coffee cups
-                      </p>
+                    <div className="w-20 h-20 bg-amber-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <Coffee className="w-10 h-10 text-amber-700" />
                     </div>
+                    <h3 className="font-heading font-bold text-ink text-sm text-center mb-1">
+                      Cups & Lids
+                    </h3>
+                    <p className="text-xs text-ink-muted text-center">
+                      Paper & plastic cups
+                    </p>
                   </Link>
                   <Link
                     href="/napkins-and-towels"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    className="flex flex-col items-center p-4 rounded-lg hover:bg-blue-50 hover:border-blue-500 border-2 border-transparent transition-all group"
                   >
-                    <div className="flex-1">
-                      <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
-                        Napkins & Towels
-                      </h3>
-                      <p className="text-xs text-ink-muted">
-                        Beverage napkins, dinner napkins, paper towels
-                      </p>
+                    <div className="w-20 h-20 bg-blue-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <FileText className="w-10 h-10 text-blue-600" />
                     </div>
+                    <h3 className="font-heading font-bold text-ink text-sm text-center mb-1">
+                      Napkins & Towels
+                    </h3>
+                    <p className="text-xs text-ink-muted text-center">
+                      All napkin sizes
+                    </p>
                   </Link>
                   <Link
                     href="/gloves-and-bags"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    className="flex flex-col items-center p-4 rounded-lg hover:bg-purple-50 hover:border-purple-500 border-2 border-transparent transition-all group"
                   >
-                    <div className="flex-1">
-                      <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
-                        Gloves & Bags
-                      </h3>
-                      <p className="text-xs text-ink-muted">
-                        Disposable gloves, trash bags
-                      </p>
+                    <div className="w-20 h-20 bg-purple-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <ShoppingBag className="w-10 h-10 text-purple-600" />
                     </div>
+                    <h3 className="font-heading font-bold text-ink text-sm text-center mb-1">
+                      Gloves & Bags
+                    </h3>
+                    <p className="text-xs text-ink-muted text-center">
+                      Disposables & trash
+                    </p>
                   </Link>
                   <Link
                     href="/eco-friendly"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    className="flex flex-col items-center p-4 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all group"
                   >
-                    <div className="flex-1">
-                      <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
-                        Eco-Friendly
-                      </h3>
-                      <p className="text-xs text-ink-muted">
-                        Compostable, biodegradable, sustainable
-                      </p>
+                    <div className="w-20 h-20 bg-green-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <Sparkles className="w-10 h-10 text-green-600" />
                     </div>
+                    <h3 className="font-heading font-bold text-ink text-sm text-center mb-1">
+                      Eco-Friendly
+                    </h3>
+                    <p className="text-xs text-ink-muted text-center">
+                      Compostable options
+                    </p>
                   </Link>
                   <Link
                     href="/tabletop"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    className="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 hover:border-gray-500 border-2 border-transparent transition-all group"
                   >
-                    <div className="flex-1">
-                      <h3 className="font-heading font-semibold text-ink group-hover:text-blue-600 mb-1">
-                        Tabletop
-                      </h3>
-                      <p className="text-xs text-ink-muted">
-                        Cutlery, straws, portion cups
-                      </p>
+                    <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <Utensils className="w-10 h-10 text-gray-700" />
                     </div>
+                    <h3 className="font-heading font-bold text-ink text-sm text-center mb-1">
+                      Tabletop
+                    </h3>
+                    <p className="text-xs text-ink-muted text-center">
+                      Cutlery & straws
+                    </p>
                   </Link>
                 </div>
                 <div className="mt-4 pt-4 border-t border-border">
@@ -128,6 +135,7 @@ export default function Header() {
                   >
                     View All Categories →
                   </Link>
+                </div>
                 </div>
               </div>
             )}

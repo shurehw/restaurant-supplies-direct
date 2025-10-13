@@ -127,7 +127,7 @@ const faqs = [
       },
       {
         q: "How can I contact customer support?",
-        a: "Reach us by phone at 1-800-555-0123, email at info@restaurantsuppliesdirect.com, or through our contact form. Our team is available Monday-Friday, 8am-5pm PT."
+        a: "Reach us by phone at (310) 243-6757, email at info@restaurantsuppliesdirect.com, or through our contact form. Our team is available Monday-Friday, 8am-5pm PT."
       },
     ]
   },

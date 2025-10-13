@@ -80,14 +80,15 @@ export default function HomeContent() {
               onMouseEnter={() => setMegaMenuOpen(true)}
               onMouseLeave={() => setMegaMenuOpen(false)}
             >
-              <button className="flex items-center gap-1 text-ink-muted hover:text-ink transition-colors text-sm">
-                Categories
+              <button className="flex items-center gap-1 text-ink-muted hover:text-ink transition-colors text-sm py-2">
+                Shop
                 <ChevronDown className="w-4 h-4" />
               </button>
 
               {/* Mega Menu Dropdown */}
               {megaMenuOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[600px] max-w-[90vw] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                  <div className="w-[600px] max-w-[90vw] bg-white rounded-lg shadow-2xl border border-border p-6">
                   <div className="grid grid-cols-2 gap-4">
                     <Link
                       href="/takeout-containers"
@@ -175,6 +176,7 @@ export default function HomeContent() {
                     >
                       View All Categories →
                     </Link>
+                  </div>
                   </div>
                 </div>
               )}
@@ -300,6 +302,30 @@ export default function HomeContent() {
 
       {/* Main Content */}
       <main className="flex-1">
+        {/* Benefits Bar */}
+        <div className="bg-black text-white py-3 border-b border-zinc-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-12 text-xs sm:text-sm">
+              <div className="flex items-center gap-2">
+                <Truck className="w-4 h-4" />
+                <span className="font-medium">Free Shipping Over $500</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Package className="w-4 h-4" />
+                <span className="font-medium">Wholesale Pricing</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Palette className="w-4 h-4" />
+                <span className="font-medium">Custom Printing Available</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4" />
+                <span className="font-medium">Same-Day LA Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Hero Section with Background */}
         <div className="relative bg-gradient-to-br from-blue-50 via-white to-orange-50 py-12 sm:py-16 overflow-hidden">
           {/* Decorative elements */}
@@ -477,26 +503,177 @@ export default function HomeContent() {
               Browse our complete range of wholesale supplies
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, color: "bg-orange-100 text-orange-600" },
-              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, color: "bg-amber-100 text-amber-700" },
-              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, color: "bg-blue-100 text-blue-600" },
-              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, color: "bg-purple-100 text-purple-600" },
-              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, color: "bg-gray-100 text-gray-700" },
-              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, color: "bg-green-100 text-green-600" },
+              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-gradient-to-br from-orange-50 to-orange-100", iconColor: "text-orange-600", borderColor: "hover:border-orange-500" },
+              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-gradient-to-br from-amber-50 to-amber-100", iconColor: "text-amber-700", borderColor: "hover:border-amber-500" },
+              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-gradient-to-br from-blue-50 to-blue-100", iconColor: "text-blue-600", borderColor: "hover:border-blue-500" },
+              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-gradient-to-br from-purple-50 to-purple-100", iconColor: "text-purple-600", borderColor: "hover:border-purple-500" },
+              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gradient-to-br from-gray-50 to-gray-100", iconColor: "text-gray-700", borderColor: "hover:border-gray-500" },
+              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-gradient-to-br from-green-50 to-green-100", iconColor: "text-green-600", borderColor: "hover:border-green-500" },
             ].map((category) => (
               <Link
                 key={category.href}
                 href={category.href}
-                className="group p-4 bg-white rounded-xl border-2 border-border hover:border-blue-600 hover:shadow-lg transition-all text-center transform hover:-translate-y-0.5"
+                className={`group relative overflow-hidden rounded-xl border-2 border-border ${category.borderColor} hover:shadow-xl transition-all transform hover:-translate-y-1`}
               >
-                <div className={`w-12 h-12 ${category.color} rounded-xl flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform shadow-sm`}>
-                  <category.Icon className="w-6 h-6" />
+                <div className={`${category.bgColor} p-8 text-center`}>
+                  <div className={`w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-md ${category.iconColor}`}>
+                    <category.Icon className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-sm font-heading font-bold text-ink">{category.name}</h3>
+                  <p className="text-xs text-ink-muted mt-1">View Products →</p>
                 </div>
-                <div className="text-xs font-heading font-bold text-ink group-hover:text-blue-600 transition-colors">{category.name}</div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Shop by Need */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-3">
+              Shop by Need
+            </h2>
+            <p className="text-base text-ink-muted max-w-2xl mx-auto">
+              Find the perfect supplies for your specific business type
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              href="/contact"
+              className="group relative overflow-hidden rounded-2xl border-2 border-border hover:border-black hover:shadow-2xl transition-all"
+            >
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
+                    <Sparkles className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold text-ink">New Restaurant</h3>
+                </div>
+                <p className="text-sm text-ink-muted mb-4">
+                  Complete startup packages with everything you need to launch
+                </p>
+                <ul className="text-sm text-ink-muted space-y-2 mb-4">
+                  <li>• Takeout containers</li>
+                  <li>• Cups & lids</li>
+                  <li>• Napkins & utensils</li>
+                  <li>• Bags & to-go supplies</li>
+                </ul>
+                <span className="inline-flex items-center text-sm font-semibold text-black group-hover:underline">
+                  Get Startup Quote →
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/contact"
+              className="group relative overflow-hidden rounded-2xl border-2 border-border hover:border-black hover:shadow-2xl transition-all"
+            >
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
+                    <Truck className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold text-ink">Food Truck</h3>
+                </div>
+                <p className="text-sm text-ink-muted mb-4">
+                  Mobile-friendly packaging designed for on-the-go service
+                </p>
+                <ul className="text-sm text-ink-muted space-y-2 mb-4">
+                  <li>• Portable containers</li>
+                  <li>• Leak-proof packaging</li>
+                  <li>• Custom branded items</li>
+                  <li>• Compact storage</li>
+                </ul>
+                <span className="inline-flex items-center text-sm font-semibold text-black group-hover:underline">
+                  View Food Truck Supplies →
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/eco-friendly"
+              className="group relative overflow-hidden rounded-2xl border-2 border-border hover:border-black hover:shadow-2xl transition-all"
+            >
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
+                    <Leaf className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold text-ink">Eco-Focused</h3>
+                </div>
+                <p className="text-sm text-ink-muted mb-4">
+                  Sustainable and compostable options for eco-conscious brands
+                </p>
+                <ul className="text-sm text-ink-muted space-y-2 mb-4">
+                  <li>• 100% compostable</li>
+                  <li>• BPI certified</li>
+                  <li>• Plant-based materials</li>
+                  <li>• Zero plastic options</li>
+                </ul>
+                <span className="inline-flex items-center text-sm font-semibold text-black group-hover:underline">
+                  Browse Eco Products →
+                </span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Best Sellers */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-3">
+              Best Sellers
+            </h2>
+            <p className="text-base text-ink-muted max-w-2xl mx-auto">
+              Popular products trusted by restaurants nationwide
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {[
+              { name: "8oz Paper Hot Cups", category: "Cups & Lids", price: "$42.99", unit: "per 1000ct", popular: true },
+              { name: "9 x 6 Hinged Clamshells", category: "Takeout Containers", price: "$89.99", unit: "per 200ct", popular: true },
+              { name: "Medium Kraft Paper Bags", category: "Bags", price: "$34.99", unit: "per 500ct", popular: false },
+              { name: "Compostable PLA Cold Cups", category: "Eco-Friendly", price: "$124.99", unit: "per 1000ct", popular: false },
+            ].map((product, i) => (
+              <div key={i} className="group bg-white rounded-xl border-2 border-border hover:border-black hover:shadow-xl transition-all">
+                <div className="relative">
+                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl flex items-center justify-center">
+                    <Package className="w-16 h-16 text-gray-400" />
+                  </div>
+                  {product.popular && (
+                    <div className="absolute top-3 right-3 px-2 py-1 bg-black text-white text-xs font-bold rounded">
+                      POPULAR
+                    </div>
+                  )}
+                </div>
+                <div className="p-5">
+                  <p className="text-xs text-ink-muted mb-1">{product.category}</p>
+                  <h3 className="font-heading font-bold text-ink mb-2">{product.name}</h3>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <p className="text-xl font-heading font-black text-black">{product.price}</p>
+                    <p className="text-xs text-ink-muted">{product.unit}</p>
+                  </div>
+                  <Link
+                    href="/contact"
+                    className="block w-full text-center px-4 py-2.5 bg-black text-white font-semibold text-sm rounded-lg hover:bg-zinc-900 transition-colors"
+                  >
+                    Get Quote
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/shop"
+              className="inline-block px-8 py-3 bg-white border-2 border-black text-black font-heading font-bold rounded-lg hover:bg-black hover:text-white transition-colors"
+            >
+              View All Products →
+            </Link>
           </div>
         </div>
       </section>

@@ -288,7 +288,7 @@ export default function WholesaleProgramsPage() {
               Submit Wholesale Application
             </Link>
             <p className="text-sm text-ink-muted text-center mt-4">
-              Or call us directly: <a href="tel:1-800-555-0123" className="text-black hover:underline font-semibold">1-800-555-0123</a>
+              Or call us directly: <a href="tel:+13102436757" className="text-black hover:underline font-semibold">(310) 243-6757</a>
             </p>
           </div>
         </div>

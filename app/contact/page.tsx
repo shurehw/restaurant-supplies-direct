@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Restaurant Supplies Direct",
@@ -92,8 +93,8 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-heading font-semibold text-ink mb-2">Call Us</h3>
                 <p className="text-ink-muted text-sm mb-3">Mon-Fri 8am-6pm PST</p>
-                <a href="tel:1-800-555-0123" className="text-black hover:underline font-semibold">
-                  1-800-555-0123
+                <a href="tel:+13102436757" className="text-black hover:underline font-semibold">
+                  (310) 243-6757
                 </a>
               </div>
               <div className="p-6 bg-white rounded-xl border-2 border-border text-center">
@@ -120,6 +121,11 @@ export default function ContactPage() {
                   LA Services →
                 </Link>
               </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl border-2 border-border mb-8">
+              <h2 className="text-2xl font-heading font-bold text-ink mb-6">Send Us a Message</h2>
+              <ContactForm />
             </div>
 
             <div className="bg-white p-8 rounded-xl border-2 border-border mb-8">
@@ -175,7 +181,7 @@ export default function ContactPage() {
               Whether you're placing your first order or managing supplies for multiple locations, our team is here to help. We offer multiple ways to connect based on your needs and timeline.
             </p>
             <p className="text-ink-muted mb-6">
-              For <strong>immediate questions</strong> or urgent orders, call us at <a href="tel:1-800-555-0123" className="text-black hover:underline font-semibold">1-800-555-0123</a> during business hours (Mon-Fri 8am-6pm PST). Our phone support team can provide real-time pricing, check stock availability, and process rush orders.
+              For <strong>immediate questions</strong> or urgent orders, call us at <a href="tel:+13102436757" className="text-black hover:underline font-semibold">(310) 243-6757</a> during business hours (Mon-Fri 8am-6pm PST). Our phone support team can provide real-time pricing, check stock availability, and process rush orders.
             </p>
             <p className="text-ink-muted mb-6">
               For <strong>custom quotes and detailed inquiries</strong>, email us at <a href="mailto:info@restaurantsuppliesdirect.com" className="text-black hover:underline font-semibold">info@restaurantsuppliesdirect.com</a>. We respond to all emails within 24 hours and can provide detailed pricing, product recommendations, and shipping estimates.
