@@ -8,6 +8,8 @@ import Testimonials from "@/components/Testimonials";
 import TrustBadges from "@/components/TrustBadges";
 import StickyQuoteCTA from "@/components/StickyQuoteCTA";
 import BackToTop from "@/components/BackToTop";
+import ProductBadges from "@/components/ProductBadges";
+import ProductSpecs from "@/components/ProductSpecs";
 import Link from "next/link";
 import { Menu, X, ChevronDown, Package, Palette, Leaf, Truck, Box, Coffee, FileText, ShoppingBag, Utensils, Sparkles, LogIn, UserPlus } from "lucide-react";
 
@@ -676,10 +678,47 @@ export default function HomeContent() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
-              { name: "8oz Paper Hot Cups", category: "Cups & Lids", price: "$42.99", unit: "per 1000ct", popular: true },
-              { name: "9 x 6 Hinged Clamshells", category: "Takeout Containers", price: "$89.99", unit: "per 200ct", popular: true },
-              { name: "Medium Kraft Paper Bags", category: "Bags", price: "$34.99", unit: "per 500ct", popular: false },
-              { name: "Compostable PLA Cold Cups", category: "Eco-Friendly", price: "$124.99", unit: "per 1000ct", popular: false },
+              {
+                name: "8oz Paper Hot Cups",
+                category: "Cups & Lids",
+                price: "$42.99",
+                unit: "per 1000ct",
+                popular: true,
+                material: "Paper",
+                certifications: ["FDA"],
+                specs: { size: "8oz", caseQuantity: "1000 pcs" }
+              },
+              {
+                name: "9 x 6 Hinged Clamshells",
+                category: "Takeout Containers",
+                price: "$89.99",
+                unit: "per 200ct",
+                popular: true,
+                material: "Plastic",
+                certifications: ["FDA"],
+                specs: { dimensions: "9\" x 6\" x 3\"", caseQuantity: "200 pcs" }
+              },
+              {
+                name: "Medium Kraft Paper Bags",
+                category: "Bags",
+                price: "$34.99",
+                unit: "per 500ct",
+                popular: false,
+                material: "Paper",
+                isEcoFriendly: true,
+                specs: { size: "12\" x 7\" x 17\"", caseQuantity: "500 pcs" }
+              },
+              {
+                name: "Compostable PLA Cold Cups",
+                category: "Eco-Friendly",
+                price: "$124.99",
+                unit: "per 1000ct",
+                popular: false,
+                material: "PLA",
+                isCompostable: true,
+                certifications: ["BPI"],
+                specs: { capacity: "16oz", caseQuantity: "1000 pcs" }
+              },
             ].map((product, i) => (
               <div key={i} className="group bg-white rounded-xl border-2 border-border hover:border-black hover:shadow-xl transition-all">
                 <div className="relative">
@@ -691,10 +730,24 @@ export default function HomeContent() {
                       POPULAR
                     </div>
                   )}
+                  <div className="absolute top-3 left-3">
+                    <ProductBadges
+                      certifications={product.certifications}
+                      isCompostable={product.isCompostable}
+                      isEcoFriendly={product.isEcoFriendly}
+                      material={product.material}
+                    />
+                  </div>
                 </div>
                 <div className="p-5">
                   <p className="text-xs text-ink-muted mb-1">{product.category}</p>
                   <h3 className="font-heading font-bold text-ink mb-2">{product.name}</h3>
+
+                  {/* Product Specs */}
+                  <div className="mb-3 pb-3 border-b border-gray-100">
+                    <ProductSpecs {...product.specs} />
+                  </div>
+
                   <div className="flex items-baseline gap-2 mb-4">
                     <p className="text-xl font-heading font-black text-black">{product.price}</p>
                     <p className="text-xs text-ink-muted">{product.unit}</p>
