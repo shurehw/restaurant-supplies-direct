@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 interface CategoryPageLayoutProps {
   title: string;
@@ -27,6 +27,7 @@ export default function CategoryPageLayout({
   faqs,
 }: CategoryPageLayoutProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [megaMenuOpen, setMegaMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-bg">
@@ -48,9 +49,112 @@ export default function CategoryPageLayout({
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors">
-              Shop
-            </Link>
+            {/* Categories with Mega Menu */}
+            <div
+              className="relative"
+              onMouseEnter={() => setMegaMenuOpen(true)}
+              onMouseLeave={() => setMegaMenuOpen(false)}
+            >
+              <button className="flex items-center gap-1 text-ink-muted hover:text-ink transition-colors">
+                Categories
+                <ChevronDown className="w-4 h-4" />
+              </button>
+
+              {/* Mega Menu Dropdown */}
+              {megaMenuOpen && (
+                <div className="absolute top-full left-0 mt-2 w-[600px] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
+                  <div className="grid grid-cols-2 gap-4">
+                    <Link
+                      href="/takeout-containers"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Takeout Containers
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          To-go boxes, deli containers, clamshells
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/cups-and-lids"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Cups & Lids
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Paper cups, plastic cups, coffee cups
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/napkins-and-towels"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Napkins & Towels
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Beverage napkins, dinner napkins, paper towels
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/gloves-and-bags"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Gloves & Bags
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Disposable gloves, trash bags
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/eco-friendly"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Eco-Friendly
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Compostable, biodegradable, sustainable
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/tabletop"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Tabletop
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Cutlery, straws, portion cups
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-border">
+                    <Link
+                      href="/shop"
+                      className="text-sm text-primary-600 hover:text-primary-700 font-semibold"
+                    >
+                      View All Categories →
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
             <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors">
               Custom Printing
             </Link>

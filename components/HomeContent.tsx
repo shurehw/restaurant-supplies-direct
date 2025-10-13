@@ -4,12 +4,13 @@ import { useState } from "react";
 import Image from "next/image";
 import LABanner from "@/components/LABanner";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, Package, Palette, Leaf, Truck, Box, Coffee, FileText, ShoppingBag, Utensils, Sparkles } from "lucide-react";
 
 export default function HomeContent() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [megaMenuOpen, setMegaMenuOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,10 +69,112 @@ export default function HomeContent() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4">
-            <Link href="/shop" className="text-ink-muted hover:text-ink transition-colors text-sm">Categories</Link>
-            <Link href="/takeout-containers" className="text-ink-muted hover:text-ink transition-colors text-sm">Containers</Link>
-            <Link href="/cups-and-lids" className="text-ink-muted hover:text-ink transition-colors text-sm">Cups</Link>
-            <Link href="/eco-friendly" className="text-ink-muted hover:text-ink transition-colors text-sm">Eco-Friendly</Link>
+            {/* Categories with Mega Menu */}
+            <div
+              className="relative"
+              onMouseEnter={() => setMegaMenuOpen(true)}
+              onMouseLeave={() => setMegaMenuOpen(false)}
+            >
+              <button className="flex items-center gap-1 text-ink-muted hover:text-ink transition-colors text-sm">
+                Categories
+                <ChevronDown className="w-4 h-4" />
+              </button>
+
+              {/* Mega Menu Dropdown */}
+              {megaMenuOpen && (
+                <div className="absolute top-full left-0 mt-2 w-[600px] bg-white rounded-lg shadow-2xl border border-border p-6 z-50">
+                  <div className="grid grid-cols-2 gap-4">
+                    <Link
+                      href="/takeout-containers"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Takeout Containers
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          To-go boxes, deli containers, clamshells
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/cups-and-lids"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Cups & Lids
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Paper cups, plastic cups, coffee cups
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/napkins-and-towels"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Napkins & Towels
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Beverage napkins, dinner napkins, paper towels
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/gloves-and-bags"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Gloves & Bags
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Disposable gloves, trash bags
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/eco-friendly"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Eco-Friendly
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Compostable, biodegradable, sustainable
+                        </p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/tabletop"
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-muted transition-colors group"
+                    >
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-ink group-hover:text-primary-600 mb-1">
+                          Tabletop
+                        </h3>
+                        <p className="text-xs text-ink-muted">
+                          Cutlery, straws, portion cups
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-border">
+                    <Link
+                      href="/shop"
+                      className="text-sm text-primary-600 hover:text-primary-700 font-semibold"
+                    >
+                      View All Categories →
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
             <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors text-sm">Custom Print</Link>
             <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors text-sm">Wholesale</Link>
             <Link href="/contact" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
@@ -269,22 +372,30 @@ export default function HomeContent() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
             <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="text-3xl mb-3">📦</div>
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-3">
+                <Package className="w-6 h-6 text-primary-600" />
+              </div>
               <h3 className="text-xl font-heading font-semibold text-ink mb-2">Wholesale Pricing</h3>
               <p className="text-ink-muted">Volume discounts and bulk ordering with transparent, competitive pricing on all restaurant supplies.</p>
             </div>
             <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="text-3xl mb-3">🎨</div>
+              <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-3">
+                <Palette className="w-6 h-6 text-accent-600" />
+              </div>
               <h3 className="text-xl font-heading font-semibold text-ink mb-2">Custom Branding</h3>
               <p className="text-ink-muted">In-house design and production for branded cups, napkins, takeout boxes, and shopping bags.</p>
             </div>
             <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="text-3xl mb-3">🌱</div>
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3">
+                <Leaf className="w-6 h-6 text-green-600" />
+              </div>
               <h3 className="text-xl font-heading font-semibold text-ink mb-2">Eco-Friendly Options</h3>
               <p className="text-ink-muted">Compostable and sustainable supplies that don't compromise on quality or performance.</p>
             </div>
             <div className="p-6 bg-bg-muted rounded-lg border border-border">
-              <div className="text-3xl mb-3">🚚</div>
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
+                <Truck className="w-6 h-6 text-blue-600" />
+              </div>
               <h3 className="text-xl font-heading font-semibold text-ink mb-2">Fast Nationwide Shipping</h3>
               <p className="text-ink-muted">Quick delivery across the US, with same-day options available in Los Angeles.</p>
             </div>
@@ -300,20 +411,22 @@ export default function HomeContent() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
-              { name: "Takeout Containers", href: "/takeout-containers", icon: "📦" },
-              { name: "Cups & Lids", href: "/cups-and-lids", icon: "☕" },
-              { name: "Napkins & Towels", href: "/napkins-and-towels", icon: "🧻" },
-              { name: "Gloves & Bags", href: "/gloves-and-bags", icon: "🧤" },
-              { name: "Tabletop & To-Go", href: "/tabletop", icon: "🍴" },
-              { name: "Eco-Friendly", href: "/eco-friendly", icon: "🌱" },
+              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, color: "bg-orange-100 text-orange-600" },
+              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, color: "bg-brown-100 text-brown-600" },
+              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, color: "bg-blue-100 text-blue-600" },
+              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, color: "bg-purple-100 text-purple-600" },
+              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, color: "bg-gray-100 text-gray-600" },
+              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, color: "bg-green-100 text-green-600" },
             ].map((category) => (
               <Link
                 key={category.href}
                 href={category.href}
-                className="p-4 bg-white rounded-lg border border-border hover:border-primary-600 hover:shadow-lg transition-all text-center"
+                className="p-4 bg-white rounded-lg border border-border hover:border-primary-600 hover:shadow-lg transition-all text-center group"
               >
-                <div className="text-3xl mb-2">{category.icon}</div>
-                <div className="text-sm font-heading font-semibold text-ink">{category.name}</div>
+                <div className={`w-12 h-12 ${category.color} rounded-lg flex items-center justify-center mx-auto mb-3`}>
+                  <category.Icon className="w-6 h-6" />
+                </div>
+                <div className="text-sm font-heading font-semibold text-ink group-hover:text-primary-600">{category.name}</div>
               </Link>
             ))}
           </div>
