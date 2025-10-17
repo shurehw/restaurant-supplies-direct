@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk, Kalam } from "next/font/google";
+import { DM_Sans, Space_Grotesk, Patrick_Hand } from "next/font/google";
 import "./globals.css";
 import Analytics from "@/components/Analytics";
 import CookieConsent from "@/components/CookieConsent";
@@ -16,9 +16,9 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-const kalam = Kalam({
+const patrickHand = Patrick_Hand({
   variable: "--font-handwritten",
-  weight: ["400", "700"],
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
@@ -79,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} ${spaceGrotesk.variable} ${kalam.variable} font-sans antialiased`}
+        className={`${dmSans.variable} ${spaceGrotesk.variable} ${patrickHand.variable} font-sans antialiased`}
       >
         <Analytics />
         <CookieConsent />
