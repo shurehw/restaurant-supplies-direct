@@ -537,28 +537,28 @@ export default function HomeContent() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="group p-5 bg-white rounded-xl border-2 border-border hover:border-blue-600 hover:shadow-lg transition-all">
+            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Package className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Wholesale Pricing</h3>
               <p className="text-ink-muted text-sm leading-relaxed">Volume discounts and bulk ordering with transparent, competitive pricing on all supplies.</p>
             </div>
-            <div className="group p-5 bg-white rounded-xl border-2 border-border hover:border-brand-orange hover:shadow-lg transition-all">
+            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Palette className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Custom Branding</h3>
               <p className="text-ink-muted text-sm leading-relaxed">In-house design and production for branded cups, napkins, takeout boxes, and bags.</p>
             </div>
-            <div className="group p-5 bg-white rounded-xl border-2 border-border hover:border-green-600 hover:shadow-lg transition-all">
+            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-green-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Eco-Friendly Options</h3>
               <p className="text-ink-muted text-sm leading-relaxed">Compostable and sustainable supplies that don't compromise on quality or performance.</p>
             </div>
-            <div className="group p-5 bg-white rounded-xl border-2 border-border hover:border-blue-600 hover:shadow-lg transition-all">
+            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Truck className="w-6 h-6 text-white" />
               </div>
@@ -595,17 +595,17 @@ export default function HomeContent() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-gradient-to-br from-orange-50 to-orange-100", iconColor: "text-orange-600", borderColor: "hover:border-orange-500", count: "500+" },
-              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-gradient-to-br from-amber-50 to-amber-100", iconColor: "text-amber-700", borderColor: "hover:border-amber-500", count: "300+" },
-              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-gradient-to-br from-blue-50 to-blue-100", iconColor: "text-blue-600", borderColor: "hover:border-blue-500", count: "200+" },
-              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-gradient-to-br from-purple-50 to-purple-100", iconColor: "text-purple-600", borderColor: "hover:border-purple-500", count: "150+" },
-              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gradient-to-br from-gray-50 to-gray-100", iconColor: "text-gray-700", borderColor: "hover:border-gray-500", count: "250+" },
-              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-gradient-to-br from-green-50 to-green-100", iconColor: "text-green-600", borderColor: "hover:border-green-500", count: "180+" },
+              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-gradient-to-br from-orange-50 to-orange-100", iconColor: "text-orange-600", borderColor: "hover:border-orange-400", count: "500+" },
+              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-gradient-to-br from-amber-50 to-amber-100", iconColor: "text-amber-700", borderColor: "hover:border-amber-400", count: "300+" },
+              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-gradient-to-br from-blue-50 to-blue-100", iconColor: "text-blue-600", borderColor: "hover:border-blue-400", count: "200+" },
+              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-gradient-to-br from-purple-50 to-purple-100", iconColor: "text-purple-600", borderColor: "hover:border-purple-400", count: "150+" },
+              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gradient-to-br from-gray-50 to-gray-100", iconColor: "text-gray-700", borderColor: "hover:border-gray-400", count: "250+" },
+              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-gradient-to-br from-green-50 to-green-100", iconColor: "text-green-600", borderColor: "hover:border-green-400", count: "180+" },
             ].map((category) => (
               <Link
                 key={category.href}
                 href={category.href}
-                className={`group relative overflow-hidden rounded-xl border-2 border-border ${category.borderColor} hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300`}
+                className={`group relative overflow-hidden rounded-2xl border border-gray-200 ${category.borderColor} hover:shadow-lg transition-all transform hover:-translate-y-1 duration-300`}
               >
                 <div className={`${category.bgColor} p-8 text-center relative`}>
                   <div className="absolute top-2 right-2 px-2 py-0.5 bg-black/80 backdrop-blur-sm rounded-full text-[10px] font-bold text-white shadow-lg">
@@ -855,16 +855,16 @@ export default function HomeContent() {
               <div className="text-center mb-6">
                 <h3 className="text-xl font-heading font-bold text-ink-muted">Typical Marketplace</h3>
               </div>
-              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+              <div className="bg-gray-50 p-5 rounded-xl border-l-4 border-gray-300">
                 <p className="text-sm text-ink-muted">❌ 463K+ products = overwhelming</p>
               </div>
-              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+              <div className="bg-gray-50 p-5 rounded-xl border-l-4 border-gray-300">
                 <p className="text-sm text-ink-muted">❌ Generic support—you're on your own</p>
               </div>
-              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+              <div className="bg-gray-50 p-5 rounded-xl border-l-4 border-gray-300">
                 <p className="text-sm text-ink-muted">❌ No educational content or guidance</p>
               </div>
-              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+              <div className="bg-gray-50 p-5 rounded-xl border-l-4 border-gray-300">
                 <p className="text-sm text-ink-muted">❌ Just selling products, not solutions</p>
               </div>
             </div>
@@ -874,16 +874,16 @@ export default function HomeContent() {
               <div className="text-center mb-6">
                 <h3 className="text-xl font-heading font-bold text-black">Restaurant Supplies Direct</h3>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-white p-5 rounded-lg border-2 border-green-500">
+              <div className="bg-gradient-to-br from-green-50 to-white p-5 rounded-xl border-l-4 border-green-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ Curated disposables selection—no clutter</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-white p-5 rounded-lg border-2 border-blue-500">
+              <div className="bg-gradient-to-br from-blue-50 to-white p-5 rounded-xl border-l-4 border-blue-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ 2-hour response guarantee + personal service</p>
               </div>
-              <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-lg border-2 border-brand-orange">
+              <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-xl border-l-4 border-orange-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ 10+ educational buying guides</p>
               </div>
-              <div className="bg-gradient-to-br from-purple-50 to-white p-5 rounded-lg border-2 border-purple-500">
+              <div className="bg-gradient-to-br from-purple-50 to-white p-5 rounded-xl border-l-4 border-purple-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ Custom printing + free samples</p>
               </div>
             </div>
@@ -903,7 +903,7 @@ export default function HomeContent() {
       {/* Free Samples CTA */}
       <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl border-2 border-black shadow-xl p-8 sm:p-12 text-center">
+          <div className="bg-white rounded-3xl border border-gray-300 shadow-lg p-8 sm:p-12 text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-full flex items-center justify-center mx-auto mb-6">
               <Package className="w-8 h-8 text-white" />
             </div>
@@ -916,13 +916,13 @@ export default function HomeContent() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-black text-white font-heading font-bold text-lg rounded-lg hover:bg-zinc-900 transition-colors shadow-lg"
+                className="px-8 py-4 bg-ink text-white font-heading font-bold text-lg rounded-xl hover:bg-gray-800 transition-colors shadow-md"
               >
                 Request Free Samples
               </Link>
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-white text-black font-heading font-bold text-lg rounded-lg border-2 border-black hover:bg-gray-50 transition-colors"
+                className="px-8 py-4 bg-white text-ink font-heading font-bold text-lg rounded-xl border border-gray-300 hover:bg-gray-50 transition-colors"
               >
                 Get a Quote
               </Link>
