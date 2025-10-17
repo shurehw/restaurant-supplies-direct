@@ -398,17 +398,17 @@ export default function HomeContent() {
         </div>
 
         {/* Hero Section with Background */}
-        <div className="relative bg-gradient-to-br from-orange-50 via-white to-blue-50 py-12 sm:py-16 overflow-hidden">
+        <div className="relative bg-bg py-12 sm:py-16 overflow-hidden">
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-5">
               {/* Badge */}
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-2">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-orange text-white text-sm font-medium mb-2">
                 Powered by Shure Hospitality Wholesale
               </div>
 
               {/* Hero Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-ink leading-[1.1]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-black text-ink leading-[1.1]">
                 Restaurant Supplies.{" "}
                 <span className="relative inline-block">
                   <span className="gradient-text">Direct.</span>
@@ -427,14 +427,14 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <Link
                   href="/shop"
-                  className="group px-8 py-4 bg-orange-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-orange-600 transition-colors"
+                  className="group px-8 py-4 bg-brand-orange text-white font-heading font-semibold text-lg rounded-lg hover:bg-brand-orange-dark transition-colors shadow-md hover:shadow-lg"
                 >
                   Browse Catalog
                   <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/custom-printing"
-                  className="px-8 py-4 bg-white text-ink font-heading font-semibold text-lg rounded-lg hover:bg-gray-50 transition-all border-2 border-gray-300 hover:border-orange-500"
+                  className="px-8 py-4 bg-white text-ink font-heading font-semibold text-lg rounded-lg hover:bg-gray-50 transition-all border-2 border-gray-300 hover:border-brand-orange shadow-sm"
                 >
                   Custom Print
                 </Link>
@@ -460,7 +460,7 @@ export default function HomeContent() {
         </div>
 
         {/* Email Signup Section */}
-        <div className="bg-white py-10">
+        <div className="bg-bg py-10">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-xl shadow-lg border border-border p-6 sm:p-8">
               <p className="text-xl font-heading font-bold text-ink mb-2 text-center">Want in early?</p>
@@ -525,28 +525,28 @@ export default function HomeContent() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
+              <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Package className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Wholesale Pricing</h3>
               <p className="text-ink-muted text-sm leading-relaxed">Volume discounts and bulk ordering with transparent, competitive pricing on all supplies.</p>
             </div>
             <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-md transition-all">
-              <div className="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
+              <div className="w-12 h-12 bg-brand-orange rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Palette className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Custom Branding</h3>
               <p className="text-ink-muted text-sm leading-relaxed">In-house design and production for branded cups, napkins, takeout boxes, and bags.</p>
             </div>
             <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-green-400 hover:shadow-md transition-all">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
+              <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Eco-Friendly Options</h3>
               <p className="text-ink-muted text-sm leading-relaxed">Compostable and sustainable supplies that don't compromise on quality or performance.</p>
             </div>
             <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
+              <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Truck className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Fast Nationwide Shipping</h3>
@@ -570,7 +570,7 @@ export default function HomeContent() {
       </section>
 
       {/* Popular Categories */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-2">
@@ -580,14 +580,14 @@ export default function HomeContent() {
               Browse our complete range of wholesale supplies
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-gradient-to-br from-orange-50 to-orange-100", iconColor: "text-orange-600", borderColor: "hover:border-orange-400", count: "500+" },
-              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-gradient-to-br from-amber-50 to-amber-100", iconColor: "text-amber-700", borderColor: "hover:border-amber-400", count: "300+" },
-              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-gradient-to-br from-blue-50 to-blue-100", iconColor: "text-blue-600", borderColor: "hover:border-blue-400", count: "200+" },
-              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-gradient-to-br from-purple-50 to-purple-100", iconColor: "text-purple-600", borderColor: "hover:border-purple-400", count: "150+" },
-              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gradient-to-br from-gray-50 to-gray-100", iconColor: "text-gray-700", borderColor: "hover:border-gray-400", count: "250+" },
-              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-gradient-to-br from-green-50 to-green-100", iconColor: "text-green-600", borderColor: "hover:border-green-400", count: "180+" },
+              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-orange-50", iconColor: "text-orange-600", borderColor: "hover:border-orange-400", count: "500+" },
+              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-amber-50", iconColor: "text-amber-700", borderColor: "hover:border-amber-400", count: "300+" },
+              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-blue-50", iconColor: "text-blue-600", borderColor: "hover:border-blue-400", count: "200+" },
+              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-purple-50", iconColor: "text-purple-600", borderColor: "hover:border-purple-400", count: "150+" },
+              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gray-50", iconColor: "text-gray-700", borderColor: "hover:border-gray-400", count: "250+" },
+              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-green-50", iconColor: "text-green-600", borderColor: "hover:border-green-400", count: "180+" },
             ].map((category) => (
               <Link
                 key={category.href}
@@ -602,7 +602,7 @@ export default function HomeContent() {
                     <category.Icon className="w-8 h-8" />
                   </div>
                   <h3 className="text-sm font-heading font-bold text-ink">{category.name}</h3>
-                  <p className="text-xs text-ink-muted mt-1">View Products →</p>
+                  <p className="text-sm text-ink-muted mt-1">View Products →</p>
                 </div>
               </Link>
             ))}
@@ -611,7 +611,7 @@ export default function HomeContent() {
       </section>
 
       {/* Shop by Need */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-3">
@@ -624,11 +624,11 @@ export default function HomeContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link
               href="/contact"
-              className="group relative overflow-hidden rounded-2xl border-2 border-border hover:border-black hover:shadow-2xl transition-all"
+              className="group relative overflow-hidden rounded-2xl border-2 border-gray-200 hover:border-black hover:shadow-2xl transition-all shadow-sm"
             >
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8">
+              <div className="bg-white p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
+                  <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-md">
                     <Sparkles className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-heading font-bold text-ink">New Restaurant</h3>
@@ -649,11 +649,11 @@ export default function HomeContent() {
             </Link>
             <Link
               href="/contact"
-              className="group relative overflow-hidden rounded-2xl border-2 border-border hover:border-black hover:shadow-2xl transition-all"
+              className="group relative overflow-hidden rounded-2xl border-2 border-gray-200 hover:border-brand-orange hover:shadow-2xl transition-all shadow-sm"
             >
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8">
+              <div className="bg-white p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
+                  <div className="w-16 h-16 bg-brand-orange rounded-2xl flex items-center justify-center shadow-md">
                     <Truck className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-heading font-bold text-ink">Food Truck</h3>
@@ -674,11 +674,11 @@ export default function HomeContent() {
             </Link>
             <Link
               href="/eco-friendly"
-              className="group relative overflow-hidden rounded-2xl border-2 border-border hover:border-black hover:shadow-2xl transition-all"
+              className="group relative overflow-hidden rounded-2xl border-2 border-gray-200 hover:border-green-600 hover:shadow-2xl transition-all shadow-sm"
             >
-              <div className="bg-gradient-to-br from-green-50 to-green-100 p-8">
+              <div className="bg-white p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
+                  <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center shadow-md">
                     <Leaf className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-heading font-bold text-ink">Eco-Focused</h3>
@@ -712,7 +712,7 @@ export default function HomeContent() {
               Popular products trusted by restaurants nationwide
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
                 name: "8oz Paper Hot Cups",
@@ -758,7 +758,7 @@ export default function HomeContent() {
             ].map((product, i) => (
               <div key={i} className="group bg-white rounded-xl border-2 border-border hover:border-black hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
                 <div className="relative">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl flex items-center justify-center overflow-hidden">
+                  <div className="h-48 bg-gray-100 rounded-t-xl flex items-center justify-center overflow-hidden">
                     <img
                       src={`https://images.unsplash.com/photo-${
                         i === 0 ? '1544787219-7f47ccb76574' : // Coffee cups
@@ -785,7 +785,7 @@ export default function HomeContent() {
                   </div>
                 </div>
                 <div className="p-5">
-                  <p className="text-xs text-ink-muted mb-1">{product.category}</p>
+                  <p className="text-sm text-ink-muted mb-1">{product.category}</p>
                   <h3 className="font-heading font-bold text-ink mb-2">{product.name}</h3>
 
                   {/* Product Specs */}
@@ -822,7 +822,7 @@ export default function HomeContent() {
       <TrustBadges />
 
       {/* Why Choose RSD vs Competition */}
-      <section className="py-16 bg-white border-t border-border">
+      <section className="py-16 bg-bg border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-3">
@@ -861,16 +861,16 @@ export default function HomeContent() {
               <div className="text-center mb-6">
                 <h3 className="text-xl font-heading font-bold text-black">Restaurant Supplies Direct</h3>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-white p-5 rounded-xl border-l-4 border-green-400 shadow-sm">
+              <div className="bg-green-50 p-5 rounded-xl border-l-4 border-green-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ Curated disposables selection—no clutter</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-white p-5 rounded-xl border-l-4 border-blue-400 shadow-sm">
+              <div className="bg-blue-50 p-5 rounded-xl border-l-4 border-blue-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ 2-hour response guarantee + personal service</p>
               </div>
-              <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-xl border-l-4 border-orange-400 shadow-sm">
+              <div className="bg-orange-50 p-5 rounded-xl border-l-4 border-orange-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ 10+ educational buying guides</p>
               </div>
-              <div className="bg-gradient-to-br from-purple-50 to-white p-5 rounded-xl border-l-4 border-purple-400 shadow-sm">
+              <div className="bg-purple-50 p-5 rounded-xl border-l-4 border-purple-400 shadow-sm">
                 <p className="text-sm font-semibold text-ink">✓ Custom printing + free samples</p>
               </div>
             </div>
@@ -888,10 +888,10 @@ export default function HomeContent() {
       </section>
 
       {/* Free Samples CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl border border-gray-300 shadow-lg p-8 sm:p-12 text-center">
-            <div className="w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center mx-auto mb-6">
               <Package className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
@@ -903,7 +903,7 @@ export default function HomeContent() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-ink text-white font-heading font-bold text-lg rounded-xl hover:bg-gray-800 transition-colors shadow-md"
+                className="px-8 py-4 bg-brand-orange text-white font-heading font-bold text-lg rounded-xl hover:bg-brand-orange-dark transition-colors shadow-md hover:shadow-lg"
               >
                 Request Free Samples
               </Link>
