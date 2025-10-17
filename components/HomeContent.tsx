@@ -582,24 +582,24 @@ export default function HomeContent() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-orange-50", iconColor: "text-orange-600", borderColor: "hover:border-orange-400", count: "500+" },
-              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-amber-50", iconColor: "text-amber-700", borderColor: "hover:border-amber-400", count: "300+" },
-              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-blue-50", iconColor: "text-blue-600", borderColor: "hover:border-blue-400", count: "200+" },
-              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-purple-50", iconColor: "text-purple-600", borderColor: "hover:border-purple-400", count: "150+" },
-              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-gray-50", iconColor: "text-gray-700", borderColor: "hover:border-gray-400", count: "250+" },
-              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-green-50", iconColor: "text-green-600", borderColor: "hover:border-green-400", count: "180+" },
+              { name: "Takeout Containers", href: "/takeout-containers", Icon: Box, bgColor: "bg-white", iconBgColor: "bg-orange-600", borderColor: "hover:border-brand-orange", count: "500+" },
+              { name: "Cups & Lids", href: "/cups-and-lids", Icon: Coffee, bgColor: "bg-white", iconBgColor: "bg-amber-600", borderColor: "hover:border-amber-500", count: "300+" },
+              { name: "Napkins & Towels", href: "/napkins-and-towels", Icon: FileText, bgColor: "bg-white", iconBgColor: "bg-blue-600", borderColor: "hover:border-blue-500", count: "200+" },
+              { name: "Gloves & Bags", href: "/gloves-and-bags", Icon: ShoppingBag, bgColor: "bg-white", iconBgColor: "bg-purple-600", borderColor: "hover:border-purple-500", count: "150+" },
+              { name: "Tabletop & To-Go", href: "/tabletop", Icon: Utensils, bgColor: "bg-white", iconBgColor: "bg-gray-700", borderColor: "hover:border-gray-500", count: "250+" },
+              { name: "Eco-Friendly", href: "/eco-friendly", Icon: Sparkles, bgColor: "bg-white", iconBgColor: "bg-green-600", borderColor: "hover:border-green-500", count: "180+" },
             ].map((category) => (
               <Link
                 key={category.href}
                 href={category.href}
-                className={`group relative overflow-hidden rounded-2xl border border-gray-200 ${category.borderColor} hover:shadow-lg transition-all transform hover:-translate-y-1 duration-300`}
+                className={`group relative overflow-hidden rounded-2xl border-2 border-gray-200 ${category.borderColor} hover:shadow-lg transition-all transform hover:-translate-y-1 duration-300 shadow-sm`}
               >
                 <div className={`${category.bgColor} p-8 text-center relative`}>
                   <div className="absolute top-2 right-2 px-2 py-0.5 bg-black/80 backdrop-blur-sm rounded-full text-[10px] font-bold text-white shadow-lg">
                     {category.count}
                   </div>
-                  <div className={`w-16 h-16 bg-white/95 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg border-2 border-white/40 ${category.iconColor}`}>
-                    <category.Icon className="w-8 h-8" />
+                  <div className={`w-16 h-16 ${category.iconBgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-md`}>
+                    <category.Icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-sm font-heading font-bold text-ink">{category.name}</h3>
                   <p className="text-sm text-ink-muted mt-1">View Products →</p>
