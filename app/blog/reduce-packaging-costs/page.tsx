@@ -43,7 +43,7 @@ export default function BlogPost() {
         {/* Header */}
         <header className="mb-8">
           <div className="flex items-center gap-3 text-sm text-ink-muted mb-4">
-            <span className="px-3 py-1 bg-gray-100 text-black font-semibold rounded-full">
+            <span className="px-3 py-1 bg-orange-100 text-orange-600 font-semibold rounded-full">
               Tips
             </span>
             <time dateTime="2025-10-05">October 5, 2025</time>
@@ -153,7 +153,7 @@ export default function BlogPost() {
             This approach can reduce disposable utensil costs by 40-60% while aligning with sustainability trends.
           </p>
 
-          <div className="bg-gray-50 p-8 rounded-2xl border-2 border-black my-12">
+          <div className="bg-white p-8 rounded-2xl border-2 border-brand-orange my-12 shadow-md">
             <h3 className="font-heading font-bold text-ink text-2xl mb-4">
               Ready to Cut Costs?
             </h3>

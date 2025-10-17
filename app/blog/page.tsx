@@ -122,7 +122,7 @@ export default function BlogPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16">
+      <section className="bg-bg py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
@@ -148,7 +148,7 @@ export default function BlogPage() {
                 className="bg-white rounded-2xl border-2 border-border hover:border-black hover:shadow-xl transition-all overflow-hidden group"
               >
                 {/* Image area */}
-                <div className="relative h-48 bg-gradient-to-br from-gray-100 to-accent-100">
+                <div className="relative h-48 bg-gray-100">
                   <Image
                     src={post.image}
                     alt={post.title}

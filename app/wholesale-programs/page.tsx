@@ -89,10 +89,10 @@ export default function WholesaleProgramsPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-24">
+      <section className="bg-bg py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-orange text-white text-sm font-medium mb-6">
               Powered by Shure Hospitality Wholesale
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-heading text-ink">
@@ -103,7 +103,7 @@ export default function WholesaleProgramsPage() {
             </p>
             <Link
               href="#apply"
-              className="inline-block px-8 py-4 bg-orange-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-orange-600 transition-colors"
+              className="inline-block px-8 py-4 bg-brand-orange text-white font-heading font-semibold text-lg rounded-lg hover:bg-brand-orange-dark transition-colors shadow-md hover:shadow-lg"
             >
               Apply for Wholesale Account
             </Link>
@@ -112,7 +112,7 @@ export default function WholesaleProgramsPage() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
@@ -129,10 +129,10 @@ export default function WholesaleProgramsPage() {
               { title: "Custom Packaging Needs", desc: "Branded supplies required", Icon: Palette },
               { title: "Enterprise Catering", desc: "Large-scale operations", Icon: Utensils },
             ].map((item, i) => (
-              <div key={i} className="p-6 bg-bg-muted rounded-xl border-2 border-border text-center">
+              <div key={i} className="p-6 bg-white rounded-xl border-2 border-border text-center shadow-sm">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
-                    <item.Icon className="w-8 h-8 text-black" />
+                  <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center">
+                    <item.Icon className="w-8 h-8 text-orange-600" />
                   </div>
                 </div>
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">{item.title}</h3>
@@ -175,7 +175,7 @@ export default function WholesaleProgramsPage() {
       </section>
 
       {/* SHW Integration */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -197,7 +197,7 @@ export default function WholesaleProgramsPage() {
                 Learn more about Shure HW →
               </Link>
             </div>
-            <div className="bg-gradient-to-br from-gray-50 to-orange-50 p-8 rounded-2xl border-2 border-black">
+            <div className="bg-white p-8 rounded-2xl border-2 border-black shadow-md">
               <h3 className="text-2xl font-heading font-bold text-ink mb-6">Case Study: Multi-Unit Group</h3>
               <div className="space-y-4 text-ink-muted">
                 <p><strong>Challenge:</strong> 12-location fast-casual chain needed consistent packaging across all stores with custom branding.</p>
@@ -216,7 +216,7 @@ export default function WholesaleProgramsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-heading font-bold text-ink mb-8 text-center">
             Wholesale Program FAQ

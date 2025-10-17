@@ -23,7 +23,7 @@ export default function EcoFriendlyPackagingGuide() {
               ← Back to Blog
             </Link>
             <div className="flex items-center gap-3 text-sm text-ink-muted mb-4">
-              <span className="px-3 py-1 bg-gray-100 text-black font-semibold rounded-full">
+              <span className="px-3 py-1 bg-orange-100 text-orange-600 font-semibold rounded-full">
                 Sustainability
               </span>
               <time dateTime="2025-10-08">Oct 8, 2025</time>
@@ -92,7 +92,7 @@ export default function EcoFriendlyPackagingGuide() {
             <section>
               <h2 className="text-2xl font-heading font-bold text-ink mb-3">Best Eco-Friendly Options by Product Type</h2>
 
-              <div className="bg-gray-50 p-6 rounded-xl border border-border my-6">
+              <div className="bg-bg-muted p-6 rounded-xl border border-border my-6">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-3">Takeout Containers</h3>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Molded fiber (bagasse):</strong> Made from sugarcane waste, fully compostable, heat-resistant</li>
@@ -101,7 +101,7 @@ export default function EcoFriendlyPackagingGuide() {
                 </ul>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-xl border border-border my-6">
+              <div className="bg-bg-muted p-6 rounded-xl border border-border my-6">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-3">Cups & Lids</h3>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>PLA cold cups:</strong> Compostable alternative to plastic, clear like PET</li>
@@ -110,7 +110,7 @@ export default function EcoFriendlyPackagingGuide() {
                 </ul>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-xl border border-border my-6">
+              <div className="bg-bg-muted p-6 rounded-xl border border-border my-6">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-3">Cutlery & Straws</h3>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>CPLA cutlery:</strong> Crystallized PLA, heat-resistant and compostable</li>
@@ -175,16 +175,16 @@ export default function EcoFriendlyPackagingGuide() {
               </ul>
             </section>
 
-            <div className="bg-black text-white p-8 rounded-xl my-8">
-              <h3 className="text-2xl font-heading font-bold mb-3">
+            <div className="bg-white p-8 rounded-xl border-2 border-brand-orange my-8 shadow-md">
+              <h3 className="text-2xl font-heading font-bold text-ink mb-3">
                 Ready to Make the Switch?
               </h3>
-              <p className="mb-6">
+              <p className="text-ink-muted mb-6">
                 Browse our complete selection of certified compostable and eco-friendly packaging.
               </p>
               <Link
                 href="/eco-friendly"
-                className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+                className="inline-block px-8 py-4 bg-black text-white font-heading font-semibold rounded-xl hover:bg-zinc-900 transition-colors shadow-lg"
               >
                 Shop Eco-Friendly Products
               </Link>
@@ -205,7 +205,7 @@ export default function EcoFriendlyPackagingGuide() {
           <div className="mt-12 pt-8 border-t border-border">
             <h3 className="text-xl font-heading font-bold text-ink mb-4">Related Articles</h3>
             <div className="space-y-3">
-              <Link href="/blog/choosing-takeout-containers" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <Link href="/blog/choosing-takeout-containers" className="block p-4 bg-bg-muted rounded-lg hover:bg-bg transition-colors">
                 <p className="font-semibold text-ink mb-1">How to Choose the Right Takeout Containers</p>
                 <p className="text-sm text-ink-muted">A comprehensive guide to selecting containers for your menu</p>
               </Link>

@@ -75,10 +75,10 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-20">
+      <section className="bg-bg py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-orange text-white text-sm font-medium mb-6">
               Powered by Shure Hospitality Wholesale
             </div>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-6 text-center">
@@ -128,9 +128,9 @@ export default function ContactPage() {
             </div>
 
             {/* Free Samples CTA */}
-            <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-xl border-2 border-brand-orange mb-8">
+            <div className="bg-white p-8 rounded-xl border-2 border-brand-orange mb-8 shadow-md">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-brand-orange rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-brand-orange rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
                   <Package className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -153,26 +153,26 @@ export default function ContactPage() {
             <div className="bg-white p-8 rounded-xl border-2 border-border mb-8">
               <h2 className="text-2xl font-heading font-bold text-ink mb-6">Quick Links</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Link href="/custom-printing#quote" className="p-4 bg-bg-muted rounded-lg hover:bg-orange-50 transition-colors">
+                <Link href="/custom-printing#quote" className="p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors border border-orange-200">
                   <h3 className="font-heading font-semibold text-ink mb-1">Custom Printing Quote</h3>
                   <p className="text-sm text-ink-muted">Get pricing for branded packaging</p>
                 </Link>
-                <Link href="/wholesale-programs#apply" className="p-4 bg-bg-muted rounded-lg hover:bg-blue-50 transition-colors">
+                <Link href="/wholesale-programs#apply" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors border border-blue-200">
                   <h3 className="font-heading font-semibold text-ink mb-1">Wholesale Application</h3>
                   <p className="text-sm text-ink-muted">Apply for volume pricing</p>
                 </Link>
-                <Link href="/la-hospitality-supplies#quote" className="p-4 bg-bg-muted rounded-lg hover:bg-blue-50 transition-colors">
+                <Link href="/la-hospitality-supplies#quote" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors border border-blue-200">
                   <h3 className="font-heading font-semibold text-ink mb-1">LA Local Account</h3>
                   <p className="text-sm text-ink-muted">Same-day delivery in Los Angeles</p>
                 </Link>
-                <Link href="/shop" className="p-4 bg-bg-muted rounded-lg hover:bg-bg-muted transition-colors">
+                <Link href="/shop" className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors border border-gray-200">
                   <h3 className="font-heading font-semibold text-ink mb-1">Browse Products</h3>
                   <p className="text-sm text-ink-muted">View our full catalog</p>
                 </Link>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-50 to-orange-50 p-8 rounded-xl border-2 border-black text-center">
+            <div className="bg-white p-8 rounded-xl border-2 border-black text-center shadow-md">
               <h3 className="text-2xl font-heading font-bold text-ink mb-3">
                 For Enterprise & Multi-Location
               </h3>
@@ -181,7 +181,7 @@ export default function ContactPage() {
               </p>
               <a
                 href="https://www.shurehw.com"
-                className="inline-block px-6 py-3 bg-black text-white font-heading font-semibold rounded-lg hover:bg-zinc-900 transition-colors"
+                className="inline-block px-6 py-3 bg-black text-white font-heading font-semibold rounded-lg hover:bg-zinc-900 transition-colors shadow-md hover:shadow-lg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -193,7 +193,7 @@ export default function ContactPage() {
       </section>
 
       {/* Additional Content for SEO */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold text-ink mb-6">
@@ -216,7 +216,7 @@ export default function ContactPage() {
               Frequently Asked Questions
             </h2>
             <div className="space-y-6">
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   What are your business hours?
                 </h3>
@@ -224,7 +224,7 @@ export default function ContactPage() {
                   Phone support is available Monday-Friday 8am-6pm PST. Email support operates 24/7 with responses within 24 hours. LA warehouse pickup available Monday-Friday 7am-4pm.
                 </p>
               </div>
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   How quickly can you fulfill an urgent order?
                 </h3>
@@ -232,7 +232,7 @@ export default function ContactPage() {
                   Most in-stock items ship within 1-3 business days. Los Angeles area customers can qualify for same-day delivery on urgent orders. Call us for rush order availability and expedited shipping options.
                 </p>
               </div>
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   Do you provide product samples?
                 </h3>
@@ -240,7 +240,7 @@ export default function ContactPage() {
                   Yes! We offer product samples for most items, especially for custom printing orders. Contact us with your sample request and we'll arrange to send them to you, typically at no cost for serious inquiries.
                 </p>
               </div>
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   Can I visit your warehouse or showroom?
                 </h3>

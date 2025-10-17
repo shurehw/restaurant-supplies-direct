@@ -74,9 +74,9 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-24">
+      <section className="bg-bg py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-orange text-white text-sm font-medium mb-6">
             Powered by Shure Hospitality Wholesale
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink mb-6 leading-tight">
@@ -98,7 +98,7 @@ export default function AboutPage() {
               We're changing that by bringing institutional-quality supplies, transparent pricing, and white-glove service directly to every operator — whether you're running one location or one hundred.
             </p>
 
-            <div className="bg-gradient-to-br from-gray-50 to-orange-50 p-8 rounded-xl border-2 border-black my-12">
+            <div className="bg-white p-8 rounded-xl border-2 border-black my-12 shadow-md">
               <h3 className="text-2xl font-heading font-bold text-ink mb-4">
                 Backed by Shure Hospitality Wholesale
               </h3>
@@ -125,7 +125,7 @@ export default function AboutPage() {
 
             <h2 className="text-3xl font-heading font-bold text-ink mb-4">What We Offer</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="p-6 bg-bg-muted rounded-lg border border-border">
+              <div className="p-6 bg-white rounded-lg border-2 border-border shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
                     <Package className="w-6 h-6 text-black" />
@@ -140,9 +140,9 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              <div className="p-6 bg-bg-muted rounded-lg border border-border">
+              <div className="p-6 bg-white rounded-lg border-2 border-border shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
                     <Palette className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
@@ -155,7 +155,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              <div className="p-6 bg-bg-muted rounded-lg border border-border">
+              <div className="p-6 bg-white rounded-lg border-2 border-border shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
                     <Leaf className="w-6 h-6 text-green-600" />
@@ -170,7 +170,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              <div className="p-6 bg-bg-muted rounded-lg border border-border">
+              <div className="p-6 bg-white rounded-lg border-2 border-border shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
                     <Truck className="w-6 h-6 text-black" />
@@ -278,7 +278,7 @@ export default function AboutPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="px-6 py-3 bg-orange-500 text-white font-heading font-semibold rounded-lg hover:bg-orange-600 transition-colors"
+                  className="px-6 py-3 bg-brand-orange text-white font-heading font-semibold rounded-lg hover:bg-brand-orange-dark transition-colors shadow-md hover:shadow-lg"
                 >
                   Contact Us
                 </Link>

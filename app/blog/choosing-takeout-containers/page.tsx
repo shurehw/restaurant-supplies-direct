@@ -43,7 +43,7 @@ export default function BlogPost() {
         {/* Header */}
         <header className="mb-8">
           <div className="flex items-center gap-3 text-sm text-ink-muted mb-4">
-            <span className="px-3 py-1 bg-gray-100 text-black font-semibold rounded-full">
+            <span className="px-3 py-1 bg-orange-100 text-orange-600 font-semibold rounded-full">
               Buying Guide
             </span>
             <time dateTime="2025-10-10">October 10, 2025</time>
@@ -130,7 +130,7 @@ export default function BlogPost() {
             <li>Plant-based PLA containers</li>
           </ul>
 
-          <div className="bg-gray-50 p-8 rounded-2xl border-2 border-black my-12">
+          <div className="bg-white p-8 rounded-2xl border-2 border-brand-orange my-12 shadow-md">
             <h3 className="font-heading font-bold text-ink text-2xl mb-4">
               Ready to Order?
             </h3>
