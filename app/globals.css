@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  /* Base / Surface - Warm Peachy Tones */
-  --bg: #FFEDD5;
-  --bg-muted: #FED7AA;
-  --border: #FDBA74;
+  /* Base / Surface - Subtle Warm Peachy Tones */
+  --bg: #FFF6EC;
+  --bg-muted: #FFF0E0;
+  --border: #FFE4CC;
 
   /* Text */
   --ink: #0F172A;
