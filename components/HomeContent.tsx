@@ -926,54 +926,6 @@ export default function HomeContent() {
       {/* Testimonials */}
       <Testimonials />
 
-      {/* FAQ Section */}
-      <section className="py-12 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-heading font-bold text-ink mb-6 text-center">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: "What types of restaurant supplies do you offer?",
-                a: "We carry a complete range of restaurant disposables including takeout containers, cups and lids, napkins, gloves, trash bags, eco-friendly packaging, and custom printed items. All products are available for bulk wholesale orders."
-              },
-              {
-                q: "Do you offer wholesale pricing?",
-                a: "Yes! We offer volume discounts and wholesale pricing on all products. The more you buy, the more you save. Contact us for custom quotes on large orders or multi-location accounts."
-              },
-              {
-                q: "Can I get custom printed packaging?",
-                a: "Absolutely. We offer in-house custom printing on cups, napkins, takeout boxes, and bags. Our design team can help create branded packaging that showcases your restaurant's identity."
-              },
-              {
-                q: "What are your minimum order quantities?",
-                a: "Minimum orders vary by product, typically starting at one case (100-500 units). Custom printing orders have higher minimums. Contact us for specific product MOQs."
-              },
-              {
-                q: "Do you offer eco-friendly and compostable options?",
-                a: "Yes! We carry a wide selection of compostable takeout containers, sustainable packaging, and recyclable disposables that meet BPI and CMA compostability standards."
-              },
-              {
-                q: "How fast is shipping?",
-                a: "Most orders ship within 1-3 business days. We offer standard ground shipping nationwide, with expedited options available. Los Angeles area customers can qualify for same-day delivery through Shure Hospitality Wholesale."
-              },
-              {
-                q: "Do you serve restaurant groups and multi-location businesses?",
-                a: "Yes! Through our partnership with Shure Hospitality Wholesale, we provide dedicated account management, volume pricing, and custom solutions for restaurant groups. Learn more about our wholesale programs."
-              },
-            ].map((faq, i) => (
-              <div key={i} className="bg-bg-muted p-4 rounded-lg border border-border">
-                <h3 className="text-sm font-heading font-semibold text-ink mb-1.5">
-                  {faq.q}
-                </h3>
-                <p className="text-xs text-ink-muted leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <Footer />
       <StickyQuoteCTA />
       <BackToTop />
