@@ -398,13 +398,13 @@ export default function HomeContent() {
         </div>
 
         {/* Hero Section with Background */}
-        <div className="relative bg-white py-12 sm:py-16 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-orange-50 via-white to-blue-50 py-12 sm:py-16 overflow-hidden">
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-5">
               {/* Badge */}
-              <div className="inline-flex items-center px-4 py-2 rounded-full text-white text-xs font-bold shadow-xl border-2" style={{ backgroundColor: '#FF6B35', borderColor: '#E55520' }}>
-                Browse Now • Orders Opening Soon
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-2">
+                Powered by Shure Hospitality Wholesale
               </div>
 
               {/* Hero Heading */}
@@ -427,14 +427,14 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <Link
                   href="/shop"
-                  className="group px-6 py-3 bg-black text-white font-semibold text-base rounded-xl hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl"
+                  className="group px-8 py-4 bg-orange-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-orange-600 transition-colors"
                 >
                   Browse Catalog
                   <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/custom-printing"
-                  className="px-6 py-3 bg-white text-black font-semibold text-base rounded-xl hover:bg-gray-50 transition-all border-2 border-black hover:border-brand-orange hover:shadow-lg"
+                  className="px-8 py-4 bg-white text-ink font-heading font-semibold text-lg rounded-lg hover:bg-gray-50 transition-all border-2 border-gray-300 hover:border-orange-500"
                 >
                   Custom Print
                 </Link>
