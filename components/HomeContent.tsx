@@ -60,6 +60,13 @@ export default function HomeContent() {
 
       {/* Header */}
       <header className="w-full py-3 px-4 sm:px-6 lg:px-8 border-b border-border bg-white sticky top-0 z-50">
+        {/* Fast Response Badge */}
+        <div className="max-w-7xl mx-auto mb-2 flex justify-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 border border-green-200 rounded-full">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-xs font-semibold text-green-700">2-Hour Response Guarantee</span>
+          </div>
+        </div>
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image
@@ -810,6 +817,103 @@ export default function HomeContent() {
 
       {/* Trust Badges */}
       <TrustBadges />
+
+      {/* Why Choose RSD vs Competition */}
+      <section className="py-16 bg-white border-t border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-3">
+              Why Restaurants Choose Us
+            </h2>
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
+              Unlike massive marketplaces with 463K products, we specialize in disposables only—curated selection, expert service, real support
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Them column */}
+            <div className="space-y-4">
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-heading font-bold text-ink-muted">Typical Marketplace</h3>
+              </div>
+              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                <p className="text-sm text-ink-muted">❌ 463K+ products = overwhelming</p>
+              </div>
+              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                <p className="text-sm text-ink-muted">❌ Generic support—you're on your own</p>
+              </div>
+              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                <p className="text-sm text-ink-muted">❌ No educational content or guidance</p>
+              </div>
+              <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                <p className="text-sm text-ink-muted">❌ Just selling products, not solutions</p>
+              </div>
+            </div>
+
+            {/* Us column */}
+            <div className="space-y-4">
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-heading font-bold text-black">Restaurant Supplies Direct</h3>
+              </div>
+              <div className="bg-gradient-to-br from-green-50 to-white p-5 rounded-lg border-2 border-green-500">
+                <p className="text-sm font-semibold text-ink">✓ Curated disposables selection—no clutter</p>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-white p-5 rounded-lg border-2 border-blue-500">
+                <p className="text-sm font-semibold text-ink">✓ 2-hour response guarantee + personal service</p>
+              </div>
+              <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-lg border-2 border-brand-orange">
+                <p className="text-sm font-semibold text-ink">✓ 10+ educational buying guides</p>
+              </div>
+              <div className="bg-gradient-to-br from-purple-50 to-white p-5 rounded-lg border-2 border-purple-500">
+                <p className="text-sm font-semibold text-ink">✓ Custom printing + free samples</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/blog/rsd-vs-webstaurantstore"
+              className="inline-block text-blue-600 hover:text-blue-700 font-semibold underline"
+            >
+              Read the detailed comparison →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Free Samples CTA */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-orange-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl border-2 border-black shadow-xl p-8 sm:p-12 text-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-full flex items-center justify-center mx-auto mb-6">
+              <Package className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
+              Try Before You Buy
+            </h2>
+            <p className="text-lg text-ink-muted mb-8 max-w-2xl mx-auto">
+              Not sure which products are right for your operation? Request free samples and test them in your restaurant before committing to bulk orders.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact"
+                className="px-8 py-4 bg-black text-white font-heading font-bold text-lg rounded-lg hover:bg-zinc-900 transition-colors shadow-lg"
+              >
+                Request Free Samples
+              </Link>
+              <Link
+                href="/contact"
+                className="px-8 py-4 bg-white text-black font-heading font-bold text-lg rounded-lg border-2 border-black hover:bg-gray-50 transition-colors"
+              >
+                Get a Quote
+              </Link>
+            </div>
+            <p className="text-sm text-ink-muted mt-6">
+              Available for most products • No cost for serious inquiries • Fast shipping
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Testimonials */}
       <Testimonials />

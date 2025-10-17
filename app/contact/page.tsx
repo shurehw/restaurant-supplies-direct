@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Package } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -120,6 +120,24 @@ export default function ContactPage() {
                 <Link href="/la-hospitality-supplies" className="text-black hover:underline font-semibold">
                   LA Services →
                 </Link>
+              </div>
+            </div>
+
+            {/* Free Samples CTA */}
+            <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-xl border-2 border-brand-orange mb-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-brand-orange rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Package className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-heading font-bold text-ink mb-2">Request Free Samples</h2>
+                  <p className="text-ink-muted mb-4">
+                    Test products in your restaurant before committing to bulk orders. Available for most items at no cost for serious inquiries.
+                  </p>
+                  <p className="text-sm text-ink-muted">
+                    Include "sample request" in your message below with the products you'd like to try.
+                  </p>
+                </div>
               </div>
             </div>
 
