@@ -3,9 +3,16 @@
   <path d="M256 32L448 144V368L256 480L64 368V144L256 32Z" fill="#FF6B35"/>
   <!-- Inner diamond cutout -->
   <path d="M256 120L360 180V300L256 360L152 300V180L256 120Z" fill="white"/>
-  <!-- Takeout Container Icon -->
-  <path d="M220 240L200 340H312L292 240H220Z" fill="#FF6B35"/>
-  <rect x="196" y="232" width="120" height="16" rx="4" fill="#FF6B35"/>
-  <path d="M240 248L236 268H276L272 248H240Z" fill="white"/>
-  <line x1="256" y1="248" x2="256" y2="340" stroke="white" stroke-width="4"/>
+
+  <!-- Chinese Takeout Box Icon -->
+  <!-- Box body - trapezoid shape -->
+  <path d="M220 240L200 330L256 350L312 330L292 240Z" fill="#FF6B35"/>
+  <!-- Top flaps -->
+  <path d="M220 240L200 225L256 215L312 225L292 240Z" fill="#FF6B35"/>
+  <!-- Left fold line -->
+  <line x1="220" y1="240" x2="200" y2="330" stroke="white" stroke-width="3"/>
+  <!-- Right fold line -->
+  <line x1="292" y1="240" x2="312" y2="330" stroke="white" stroke-width="3"/>
+  <!-- Center seam -->
+  <line x1="256" y1="215" x2="256" y2="350" stroke="white" stroke-width="3"/>
 </svg>

@@ -3,11 +3,17 @@
   <path d="M128 64L256 128V256L128 320L0 256V128L128 64Z" fill="#FF6B35"/>
   <path d="M128 100L200 136V232L128 268L56 232V136L128 100Z" fill="white"/>
 
-  <!-- Takeout Container Icon -->
-  <path d="M110 180L100 240H156L146 180H110Z" fill="#FF6B35"/>
-  <rect x="98" y="174" width="60" height="8" rx="2" fill="#FF6B35"/>
-  <path d="M120 182L118 194H138L136 182H120Z" fill="white"/>
-  <line x1="128" y1="182" x2="128" y2="240" stroke="white" stroke-width="2"/>
+  <!-- Chinese Takeout Box Icon -->
+  <!-- Box body -->
+  <path d="M110 180L100 230L128 240L156 230L146 180Z" fill="#FF6B35"/>
+  <!-- Top flaps -->
+  <path d="M110 180L100 172L128 167L156 172L146 180Z" fill="#FF6B35"/>
+  <!-- Left fold -->
+  <line x1="110" y1="180" x2="100" y2="230" stroke="white" stroke-width="1.5"/>
+  <!-- Right fold -->
+  <line x1="146" y1="180" x2="156" y2="230" stroke="white" stroke-width="1.5"/>
+  <!-- Center seam -->
+  <line x1="128" y1="167" x2="128" y2="240" stroke="white" stroke-width="1.5"/>
 
   <!-- RSD Text -->
   <text x="300" y="260" font-family="Plus Jakarta Sans, sans-serif" font-size="200" font-weight="800" fill="#003D7A">RSD</text>
