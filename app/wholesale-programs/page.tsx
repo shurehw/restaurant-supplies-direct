@@ -89,21 +89,21 @@ export default function WholesaleProgramsPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-black to-zinc-900 text-white py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
               Powered by Shure Hospitality Wholesale
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-heading">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-heading text-ink">
               Wholesale Programs Built for Growth
             </h1>
-            <p className="text-xl sm:text-2xl text-white/90 mb-8">
+            <p className="text-xl sm:text-2xl text-ink-muted mb-8">
               Volume pricing, dedicated support, and custom solutions for restaurant groups and high-volume operations.
             </p>
             <Link
               href="#apply"
-              className="inline-block px-8 py-4 bg-white text-black font-heading font-semibold text-lg rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-block px-8 py-4 bg-orange-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-orange-600 transition-colors"
             >
               Apply for Wholesale Account
             </Link>

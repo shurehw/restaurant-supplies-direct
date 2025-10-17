@@ -138,8 +138,12 @@ export default function FAQPage() {
     <div className="min-h-screen bg-bg">
       <Header />
 
-      <section className="py-12">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
+            Powered by Shure Hospitality Wholesale
+          </div>
           <h1 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
             Frequently Asked Questions
           </h1>
@@ -176,7 +180,7 @@ export default function FAQPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+              className="inline-block px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors"
             >
               Contact Us
             </Link>

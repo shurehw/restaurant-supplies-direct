@@ -74,9 +74,13 @@ export default function ContactPage() {
       />
       <Header />
 
-      <section className="py-16 sm:py-20">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
+              Powered by Shure Hospitality Wholesale
+            </div>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-6 text-center">
               Get in Touch
             </h1>

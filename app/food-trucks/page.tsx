@@ -17,37 +17,28 @@ export default function FoodTrucksPage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-accent via-accent-dark to-gray-900 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=1920&auto=format&fit=crop"
-            alt="Food truck serving customers"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
-              <Truck className="w-4 h-4 text-white" />
-              <span className="text-sm font-semibold">Food Truck Specialists</span>
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
+              Powered by Shure Hospitality Wholesale
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-ink">
               Hit the Road Fully Stocked
             </h1>
-            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
+            <p className="text-xl text-ink-muted mb-8 leading-relaxed">
               Complete food truck supply packs with everything you need to serve customers on the go. Durable packaging, space-efficient storage, wholesale pricing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="inline-block px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-gray-100 transition-colors text-center shadow-lg"
+                className="inline-block px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-colors text-center"
               >
                 Get Your Custom Pack
               </Link>
               <Link
                 href="/shop"
-                className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-black transition-colors text-center"
+                className="inline-block px-8 py-4 bg-white border-2 border-border text-ink font-semibold rounded-xl hover:border-orange-500 transition-colors text-center"
               >
                 Browse Products
               </Link>
@@ -303,7 +294,7 @@ export default function FoodTrucksPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent-dark transition-colors"
+              className="inline-block px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-colors"
             >
               Get Custom Pack Quote
             </Link>
@@ -489,13 +480,13 @@ export default function FoodTrucksPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-block px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent-dark transition-colors"
+              className="inline-block px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-colors"
             >
               Request Custom Pack Quote
             </Link>
             <Link
               href="tel:+13102436757"
-              className="inline-block px-8 py-4 bg-white border-2 border-border text-ink font-semibold rounded-xl hover:border-accent transition-colors"
+              className="inline-block px-8 py-4 bg-white border-2 border-border text-ink font-semibold rounded-xl hover:border-orange-500 transition-colors"
             >
               Call (310) 243-6757
             </Link>
