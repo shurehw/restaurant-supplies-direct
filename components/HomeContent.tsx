@@ -398,20 +398,7 @@ export default function HomeContent() {
         </div>
 
         {/* Hero Section with Background */}
-        <div className="relative bg-gradient-to-br from-blue-50 via-white to-orange-50 py-12 sm:py-16 overflow-hidden">
-          {/* Decorative elements */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(249,115,22,0.1),transparent_50%)]"></div>
-            <svg className="absolute inset-0 w-full h-full opacity-[0.03]" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-                  <path d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" strokeWidth="1"/>
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
-          </div>
+        <div className="relative bg-white py-12 sm:py-16 overflow-hidden">
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-5">
@@ -473,11 +460,11 @@ export default function HomeContent() {
         </div>
 
         {/* Email Signup Section */}
-        <div className="bg-gradient-to-b from-white to-gray-50 py-10">
+        <div className="bg-white py-10">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-xl shadow-lg border border-border p-6 sm:p-8">
-              <p className="text-xl font-heading font-bold text-ink mb-2 text-center">Get Early Access</p>
-              <p className="text-sm text-ink-muted mb-6 text-center">Get notified when we drop</p>
+              <p className="text-xl font-heading font-bold text-ink mb-2 text-center">Want in early?</p>
+              <p className="text-sm text-ink-muted mb-6 text-center">Drop your email and we'll ping you when ordering goes live</p>
               <form onSubmit={handleSubmit} className="space-y-3">
                 <div>
                   <label htmlFor="email" className="sr-only">
@@ -520,7 +507,7 @@ export default function HomeContent() {
       </main>
 
       {/* SEO Content Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16 sm:py-20 bg-bg-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="relative inline-block mb-2">
@@ -583,7 +570,7 @@ export default function HomeContent() {
       </section>
 
       {/* Popular Categories */}
-      <section className="py-12 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-2">
@@ -715,7 +702,7 @@ export default function HomeContent() {
       </section>
 
       {/* Best Sellers */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-16 bg-bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-3">
@@ -901,7 +888,7 @@ export default function HomeContent() {
       </section>
 
       {/* Free Samples CTA */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-orange-50">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl border border-gray-300 shadow-lg p-8 sm:p-12 text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-full flex items-center justify-center mx-auto mb-6">
