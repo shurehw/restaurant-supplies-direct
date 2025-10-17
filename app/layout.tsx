@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk, Caveat } from "next/font/google";
+import { DM_Sans, Space_Grotesk, Permanent_Marker } from "next/font/google";
 import "./globals.css";
 import Analytics from "@/components/Analytics";
 import CookieConsent from "@/components/CookieConsent";
@@ -16,8 +16,9 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-const caveat = Caveat({
+const permanentMarker = Permanent_Marker({
   variable: "--font-handwritten",
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
@@ -78,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} ${spaceGrotesk.variable} ${caveat.variable} font-sans antialiased`}
+        className={`${dmSans.variable} ${spaceGrotesk.variable} ${permanentMarker.variable} font-sans antialiased`}
       >
         <Analytics />
         <CookieConsent />
