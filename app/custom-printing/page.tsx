@@ -149,10 +149,10 @@ export default function CustomPrintingPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-24">
+      <section className="bg-bg py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-orange text-white text-sm font-medium mb-6">
               Powered by Shure Hospitality Wholesale
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink mb-6 leading-heading">
@@ -163,7 +163,7 @@ export default function CustomPrintingPage() {
             </p>
             <Link
               href="#quote"
-              className="inline-block px-8 py-4 bg-orange-500 text-white font-heading font-semibold text-lg rounded-lg hover:bg-orange-600 transition-colors"
+              className="inline-block px-8 py-4 bg-brand-orange text-white font-heading font-semibold text-lg rounded-lg hover:bg-brand-orange-dark transition-colors shadow-md hover:shadow-lg"
             >
               Request Custom Quote
             </Link>
@@ -172,7 +172,7 @@ export default function CustomPrintingPage() {
       </section>
 
       {/* Products We Print */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
@@ -184,7 +184,7 @@ export default function CustomPrintingPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {customProducts.map((product, index) => (
-              <div key={index} className="p-6 bg-bg-muted rounded-xl border-2 border-border hover:border-orange-500 transition-all">
+              <div key={index} className="p-6 bg-bg-muted rounded-xl border-2 border-border hover:border-brand-orange transition-all">
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
                   {product.name}
                 </h3>
@@ -217,7 +217,7 @@ export default function CustomPrintingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((item) => (
               <div key={item.step} className="text-center">
-                <div className="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-2xl font-heading font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-brand-orange text-white rounded-full flex items-center justify-center text-2xl font-heading font-bold mx-auto mb-4 shadow-md">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-ink mb-2">
@@ -231,7 +231,7 @@ export default function CustomPrintingPage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -293,7 +293,7 @@ export default function CustomPrintingPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-gray-50 to-orange-50 p-12 rounded-2xl border-2 border-black">
+            <div className="bg-orange-50 p-12 rounded-2xl border-2 border-black">
               <div className="text-center">
                 <h3 className="text-2xl font-heading font-bold text-ink mb-4">
                   Multi-Location? High Volume?
@@ -332,13 +332,13 @@ export default function CustomPrintingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-heading font-bold text-ink mb-8 text-center">
             Custom Printing FAQ
           </h2>
           <div className="space-y-6">
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 What are the minimum order quantities for custom printing?
               </h3>
@@ -346,7 +346,7 @@ export default function CustomPrintingPage() {
                 Minimums vary by product: cups start at 1,000 units, napkins at 5,000, takeout boxes at 2,500, and bags at 1,000. These minimums help keep per-unit costs low and quality high.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 How long does custom printing take?
               </h3>
@@ -354,7 +354,7 @@ export default function CustomPrintingPage() {
                 Standard turnaround is 2-4 weeks from proof approval. Rush orders (1-2 weeks) are available for an additional fee. Timeline includes design, proofing, production, and shipping.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 Do I need to provide artwork, or can you design it?
               </h3>
@@ -362,7 +362,7 @@ export default function CustomPrintingPage() {
                 Both! If you have a logo, we'll adapt it for printing. If not, our in-house design team can create custom artwork that matches your brand. Design services are included in most custom printing orders.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 Can I see a proof before production?
               </h3>
@@ -370,7 +370,7 @@ export default function CustomPrintingPage() {
                 Yes! Every custom printing order includes a detailed digital proof showing exactly how your packaging will look. We don't start production until you approve the proof.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 How much does custom printing cost?
               </h3>
@@ -378,7 +378,7 @@ export default function CustomPrintingPage() {
                 Pricing depends on product type, quantity, number of colors, and print area. Generally, expect to pay 20-40% more than blank stock, with per-unit costs decreasing significantly at higher volumes. Request a quote for exact pricing.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 Can you print multiple colors or full-color designs?
               </h3>

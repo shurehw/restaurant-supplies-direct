@@ -222,7 +222,7 @@ export default function WholesaleProgramsPage() {
             Wholesale Program FAQ
           </h2>
           <div className="space-y-6">
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 What are the minimum requirements to qualify for wholesale pricing?
               </h3>
@@ -230,7 +230,7 @@ export default function WholesaleProgramsPage() {
                 We typically work with operations spending $2,000+ per month, multi-location restaurant groups (3+ locations), or businesses with custom packaging needs. Contact us if you're close to these thresholds - we can often work with growing operations.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 How much can I save with wholesale pricing?
               </h3>
@@ -238,7 +238,7 @@ export default function WholesaleProgramsPage() {
                 Volume discounts typically range from 15-30% off standard pricing, depending on order size and frequency. Larger accounts and annual commitments can access even deeper discounts through our partnership with Shure Hospitality Wholesale.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 Do you offer payment terms like Net-30?
               </h3>
@@ -246,7 +246,7 @@ export default function WholesaleProgramsPage() {
                 Yes. Qualified wholesale accounts can access Net-30 or Net-60 payment terms after credit approval. New accounts typically start with prepayment and transition to terms after establishing history.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 Can you handle orders for multiple locations?
               </h3>
@@ -254,7 +254,7 @@ export default function WholesaleProgramsPage() {
                 Absolutely. We specialize in multi-location accounts. Your dedicated account manager will coordinate orders, manage inventory, and arrange delivery to all your locations - whether you have 3 stores or 300.
               </p>
             </div>
-            <div className="bg-bg-muted p-6 rounded-lg border border-border">
+            <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
               <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                 What's the difference between Restaurant Supplies Direct and Shure Hospitality Wholesale?
               </h3>

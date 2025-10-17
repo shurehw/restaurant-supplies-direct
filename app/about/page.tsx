@@ -228,7 +228,7 @@ export default function AboutPage() {
               Frequently Asked Questions
             </h2>
             <div className="space-y-6 mb-12">
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   How long has Restaurant Supplies Direct been in business?
                 </h3>
@@ -236,7 +236,7 @@ export default function AboutPage() {
                   Restaurant Supplies Direct is a division of Shure Hospitality Wholesale, which has been serving the hospitality industry for decades. RSD was launched to bring institutional-quality supplies to independent operators through modern e-commerce.
                 </p>
               </div>
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   Where are your products manufactured?
                 </h3>
@@ -244,7 +244,7 @@ export default function AboutPage() {
                   We source from leading manufacturers worldwide, with a focus on North American suppliers for faster shipping and better quality control. All products meet US food safety standards and are rigorously tested before we add them to our catalog.
                 </p>
               </div>
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   Do you have a physical location I can visit?
                 </h3>
@@ -252,7 +252,7 @@ export default function AboutPage() {
                   Yes! Our Los Angeles warehouse welcomes customer visits by appointment. You can view products in person, pick up orders, or meet with our team. Los Angeles area customers also have access to same-day delivery through Shure HW.
                 </p>
               </div>
-              <div className="bg-bg-muted p-6 rounded-lg border border-border">
+              <div className="bg-white p-6 rounded-lg border-2 border-border shadow-sm">
                 <h3 className="text-lg font-heading font-semibold text-ink mb-2">
                   What makes you different from other restaurant supply companies?
                 </h3>
