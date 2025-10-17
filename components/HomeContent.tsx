@@ -49,8 +49,8 @@ export default function HomeContent() {
       {/* Coming Soon Banner */}
       <div className="bg-black text-white py-2.5 px-4 border-b border-zinc-800">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-xs sm:text-sm font-medium">
-            Online ordering drops soon — <Link href="/contact" className="underline hover:text-zinc-300 font-semibold">hit us up</Link> for orders now
+          <p className="text-xs sm:text-sm">
+            <span className="font-handwritten text-base" style={{ color: '#FF8556' }}>psst...</span> Online ordering drops soon — <Link href="/contact" className="underline hover:text-zinc-300 font-semibold">hit us up</Link> for orders now
           </p>
         </div>
       </div>

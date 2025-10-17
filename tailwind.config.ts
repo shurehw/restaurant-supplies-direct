@@ -9,10 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Base / Surface
-        bg: "#FFFCF9",
-        "bg-muted": "#FFF9F5",
-        border: "#F0E6DC",
+        // Base / Surface (warm cream tones)
+        bg: "#FFF8F0",
+        "bg-muted": "#FFF3E6",
+        border: "#FFE8D6",
 
         // Text
         ink: "#0F172A",
