@@ -79,6 +79,7 @@ export default {
           "Apple Color Emoji",
           "Segoe UI Emoji",
         ],
+        handwritten: ["var(--font-handwritten)", "cursive"],
       },
       fontSize: {
         xs: "12px",

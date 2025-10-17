@@ -423,14 +423,17 @@ export default function HomeContent() {
               {/* Hero Heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-ink leading-[1.1]">
                 Restaurant Supplies.{" "}
-                <span className="gradient-text">
-                  Direct.
+                <span className="relative inline-block">
+                  <span className="gradient-text">Direct.</span>
+                  <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 200 12" preserveAspectRatio="none">
+                    <path d="M2 7 Q50 2, 100 7 T198 7" stroke="#FF6B35" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                  </svg>
                 </span>
               </h1>
 
               {/* Subheading */}
               <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto leading-snug">
-                Premium disposables, packaging, and custom print. No middleman, no markup.
+                Premium disposables, packaging, and custom print. <span className="font-handwritten text-2xl text-brand-orange">No middleman, no markup.</span>
               </p>
 
               {/* CTA Buttons */}
@@ -520,9 +523,14 @@ export default function HomeContent() {
       <section className="py-12 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-2">
-              Why Work With Us
-            </h2>
+            <div className="relative inline-block mb-2">
+              <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink">
+                Why Work With Us
+              </h2>
+              <div className="absolute -right-12 -top-4 font-handwritten text-2xl text-brand-orange rotate-12 hidden sm:block">
+                (the real deal)
+              </div>
+            </div>
             <p className="text-base text-ink-muted max-w-2xl mx-auto">
               Direct pricing, quality products, zero BS
             </p>
@@ -833,9 +841,12 @@ export default function HomeContent() {
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-3">
               Why Restaurants Choose Us
             </h2>
-            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto mb-2">
               Unlike massive marketplaces with 463K products, we specialize in disposables only—curated selection, expert service, real support
             </p>
+            <div className="font-handwritten text-xl text-brand-orange">
+              ↓ here's the honest comparison ↓
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -896,9 +907,14 @@ export default function HomeContent() {
             <div className="w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-full flex items-center justify-center mx-auto mb-6">
               <Package className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
-              Try Before You Buy
-            </h2>
+            <div className="relative">
+              <h2 className="text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
+                Try Before You Buy
+              </h2>
+              <div className="absolute -left-16 top-0 font-handwritten text-3xl text-brand-orange -rotate-12 hidden lg:block">
+                👈 yes, really!
+              </div>
+            </div>
             <p className="text-lg text-ink-muted mb-8 max-w-2xl mx-auto">
               Not sure which products are right for your operation? Request free samples and test them in your restaurant before committing to bulk orders.
             </p>
