@@ -180,6 +180,7 @@ export default function Header() {
           <Link href="/custom-printing" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Custom Print</Link>
           <Link href="/wholesale-programs" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Wholesale</Link>
           <Link href="/blog" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">Blog</Link>
+          <Link href="/faq" className="text-ink-muted hover:text-ink transition-colors text-sm font-medium">FAQ</Link>
           <Link href="/login" className="flex items-center gap-1 text-ink-muted hover:text-ink transition-colors text-sm font-medium">
             <LogIn className="w-4 h-4" />
             Login
@@ -272,6 +273,13 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
+            </Link>
+            <Link
+              href="/faq"
+              className="px-4 py-3 text-ink hover:bg-bg-muted rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              FAQ
             </Link>
             <div className="border-t border-border pt-3 mt-3">
               <Link
