@@ -253,7 +253,7 @@ export default function HomeContent() {
               <LogIn className="w-4 h-4" />
               Login
             </Link>
-            <Link href="/contact" className="px-4 py-1.5 bg-gradient-to-r from-brand-blue to-brand-blue-dark text-white rounded-lg hover:from-brand-blue-dark hover:to-brand-blue-dark transition-all text-sm font-semibold shadow-md hover:shadow-lg">
+            <Link href="/contact" className="px-4 py-1.5 bg-ink text-white rounded-lg hover:bg-gray-800 transition-all text-sm font-semibold">
               Get Quote
             </Link>
           </nav>
@@ -447,7 +447,7 @@ export default function HomeContent() {
                 </Link>
                 <Link
                   href="/custom-printing"
-                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-xl hover:bg-gray-50 transition-all border border-gray-300 hover:border-brand-orange hover:shadow-lg"
+                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-xl hover:bg-gray-50 transition-all border-2 border-ink hover:border-brand-orange hover:shadow-lg"
                 >
                   Custom Print
                 </Link>
