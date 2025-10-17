@@ -440,14 +440,14 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <Link
                   href="/shop"
-                  className="group px-6 py-3 bg-gradient-to-r from-brand-blue to-brand-blue-light text-white font-semibold text-base rounded-lg hover:from-brand-blue-dark hover:to-brand-blue transition-all shadow-lg hover:shadow-xl"
+                  className="group px-6 py-3 bg-ink text-white font-semibold text-base rounded-xl hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl"
                 >
                   Browse Catalog
                   <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/custom-printing"
-                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-lg hover:bg-gray-50 transition-all border-2 border-brand-orange hover:border-brand-orange-dark hover:shadow-lg"
+                  className="px-6 py-3 bg-white text-ink font-semibold text-base rounded-xl hover:bg-gray-50 transition-all border border-gray-300 hover:border-brand-orange hover:shadow-lg"
                 >
                   Custom Print
                 </Link>
