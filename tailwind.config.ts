@@ -10,9 +10,9 @@ export default {
     extend: {
       colors: {
         // Base / Surface
-        bg: "#FFFFFF",
-        "bg-muted": "#F8FAFC",
-        border: "#E2E8F0",
+        bg: "#FFFCF9",
+        "bg-muted": "#FFF9F5",
+        border: "#F0E6DC",
 
         // Text
         ink: "#0F172A",

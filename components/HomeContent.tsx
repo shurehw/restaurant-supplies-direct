@@ -433,7 +433,7 @@ export default function HomeContent() {
 
               {/* Subheading */}
               <p className="text-lg sm:text-xl text-ink-muted max-w-2xl mx-auto leading-snug">
-                Premium disposables, packaging, and custom print. <span className="font-handwritten text-2xl" style={{ color: '#FF8556' }}>No middleman, no markup.</span>
+                We're your direct line to quality disposables and custom packaging. <span className="font-handwritten text-2xl" style={{ color: '#FF8556' }}>No middleman, no markup.</span>
               </p>
 
               {/* CTA Buttons */}
@@ -520,7 +520,7 @@ export default function HomeContent() {
       </main>
 
       {/* SEO Content Section */}
-      <section className="py-12 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16 sm:py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="relative inline-block mb-2">
@@ -532,33 +532,33 @@ export default function HomeContent() {
               </div>
             </div>
             <p className="text-base text-ink-muted max-w-2xl mx-auto">
-              Direct pricing, quality products, zero BS
+              We keep it simple: quality products, honest pricing, real people who actually pick up the phone
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Package className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Wholesale Pricing</h3>
               <p className="text-ink-muted text-sm leading-relaxed">Volume discounts and bulk ordering with transparent, competitive pricing on all supplies.</p>
             </div>
-            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-md transition-all">
+            <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-dark rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Palette className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Custom Branding</h3>
               <p className="text-ink-muted text-sm leading-relaxed">In-house design and production for branded cups, napkins, takeout boxes, and bags.</p>
             </div>
-            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-green-400 hover:shadow-md transition-all">
+            <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-green-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-ink mb-2">Eco-Friendly Options</h3>
               <p className="text-ink-muted text-sm leading-relaxed">Compostable and sustainable supplies that don't compromise on quality or performance.</p>
             </div>
-            <div className="group p-5 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
+            <div className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md">
                 <Truck className="w-6 h-6 text-white" />
               </div>
@@ -842,7 +842,7 @@ export default function HomeContent() {
               Why Restaurants Choose Us
             </h2>
             <p className="text-lg text-ink-muted max-w-2xl mx-auto mb-2">
-              Unlike massive marketplaces with 463K products, we specialize in disposables only—curated selection, expert service, real support
+              Unlike massive marketplaces drowning you in 463K products, we focus on one thing: disposables. That means we actually know what we're selling, and we're here to help you find the right fit.
             </p>
             <div className="font-handwritten text-xl" style={{ color: '#FF8556' }}>
               ↓ here's the honest comparison ↓
@@ -911,7 +911,7 @@ export default function HomeContent() {
               Try Before You Buy
             </h2>
             <p className="text-lg text-ink-muted mb-8 max-w-2xl mx-auto">
-              Not sure which products are right for your operation? Request free samples and test them in your restaurant before committing to bulk orders.
+              Not sure which containers or cups work best? We get it. Request free samples and test them in your kitchen before you commit to anything.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
