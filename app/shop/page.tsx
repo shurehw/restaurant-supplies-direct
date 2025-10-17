@@ -69,7 +69,7 @@ export default function ShopPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-bg via-bg to-bg-muted py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-ink mb-4 leading-heading">
@@ -112,9 +112,9 @@ export default function ShopPage() {
               <Link
                 key={category.slug}
                 href={`/${category.slug}`}
-                className="group p-8 bg-white border-2 border-border rounded-xl hover:border-black hover:shadow-lg transition-all"
+                className="group p-8 bg-white border-2 border-gray-200 rounded-xl hover:border-brand-orange hover:shadow-lg transition-all shadow-sm"
               >
-                <h3 className="text-2xl font-heading font-bold text-ink mb-2 group-hover:text-black transition-colors">
+                <h3 className="text-2xl font-heading font-bold text-ink mb-2 group-hover:text-brand-orange transition-colors">
                   {category.name}
                 </h3>
                 <p className="text-ink-muted mb-4">{category.description}</p>
