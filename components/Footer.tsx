@@ -13,24 +13,9 @@ export default function Footer() {
             <p className="text-sm text-gray-300 mb-4">
               Premium restaurant disposables, packaging, and custom print — shipped direct from the source.
             </p>
-            <p className="text-xs text-gray-400 mb-4">
+            <p className="text-xs text-gray-400">
               Powered by <a href="https://www.shurehw.com" className="text-gray-300 hover:text-white underline" target="_blank" rel="noopener noreferrer">Shure Hospitality Wholesale</a>
             </p>
-            {/* Social Media Links */}
-            <div className="flex gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-colors">
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-sky-500 rounded-lg flex items-center justify-center transition-colors">
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-zinc-800 hover:bg-blue-700 rounded-lg flex items-center justify-center transition-colors">
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Shop */}
@@ -56,6 +41,7 @@ export default function Footer() {
               <li><Link href="/custom-printing" className="text-gray-300 hover:text-white transition-colors">Custom Printing</Link></li>
               <li><Link href="/wholesale-programs" className="text-gray-300 hover:text-white transition-colors">Wholesale Programs</Link></li>
               <li><Link href="/la-hospitality-supplies" className="text-gray-300 hover:text-white transition-colors">LA Local Delivery</Link></li>
+              <li><Link href="/shipping" className="text-gray-300 hover:text-white transition-colors">Shipping Policy</Link></li>
             </ul>
           </div>
 
@@ -82,13 +68,24 @@ export default function Footer() {
                 </span>
               </li>
             </ul>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col gap-4">
               <Link
                 href="/contact"
-                className="inline-block px-4 py-2 bg-white text-black text-sm font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+                className="inline-block px-4 py-2 bg-white text-black text-sm font-semibold rounded-lg hover:bg-gray-200 transition-colors text-center"
               >
                 Get a Quote
               </Link>
+              <div className="flex gap-3">
+                <a
+                  href="https://www.linkedin.com/company/restaurantsuppliesdirect/about/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -178,9 +175,11 @@ export default function Footer() {
             <p>
               © {new Date().getFullYear()} Restaurant Supplies Direct. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <div className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-end">
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
+              <Link href="/shipping" className="hover:text-white transition-colors">Shipping</Link>
+              <Link href="/returns" className="hover:text-white transition-colors">Returns</Link>
             </div>
           </div>
         </div>

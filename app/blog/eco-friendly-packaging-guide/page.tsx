@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -35,6 +36,17 @@ export default function EcoFriendlyPackagingGuide() {
             <p className="text-lg text-ink-muted">
               Everything you need to know about compostable, biodegradable, and recyclable packaging options for your restaurant.
             </p>
+          </div>
+
+          {/* Hero Image */}
+          <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&auto=format&fit=crop"
+              alt="Eco-friendly compostable packaging and containers"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
 
           {/* Content */}

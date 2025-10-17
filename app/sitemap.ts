@@ -19,8 +19,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contact',
     '/faq',
     '/blog',
+    '/blog/choosing-takeout-containers',
+    '/blog/eco-friendly-packaging-guide',
+    '/blog/food-truck-supplies-checklist',
+    '/blog/reduce-packaging-costs',
     '/privacy',
     '/terms',
+    '/shipping',
+    '/returns',
   ]
 
   return routes.map((route) => ({

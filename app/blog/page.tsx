@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -15,12 +16,67 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "restaurant-disposables-guide",
+    title: "Complete Guide to Restaurant Disposables",
+    excerpt: "Essential guide to choosing restaurant disposables including takeout containers, cups, napkins, gloves, and more. Save costs while maintaining quality.",
+    category: "Restaurant Management",
+    readTime: "10 min read",
+    date: "2025-10-16",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "custom-branded-packaging",
+    title: "Custom Branded Packaging: Build Your Restaurant's Brand Identity",
+    excerpt: "Learn how custom printed packaging and branded disposables can increase brand recognition, customer loyalty, and marketing ROI.",
+    category: "Branding",
+    readTime: "8 min read",
+    date: "2025-10-16",
+    image: "https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "coffee-shop-cups-lids-guide",
+    title: "Best Cups and Lids for Coffee Shops and Cafes",
+    excerpt: "Complete buyer's guide for selecting hot cups, cold cups, lids, and sleeves. Maximize quality while controlling costs.",
+    category: "Coffee Shop",
+    readTime: "9 min read",
+    date: "2025-10-16",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "new-restaurant-supply-checklist",
+    title: "Complete Restaurant Supply Checklist for New Owners",
+    excerpt: "Everything you need to stock before opening day. A comprehensive checklist of disposables, packaging, and essential supplies.",
+    category: "Restaurant Startup",
+    readTime: "12 min read",
+    date: "2025-10-16",
+    image: "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "napkins-paper-products-guide",
+    title: "Napkins, Towels, and Paper Products: Choosing Quality",
+    excerpt: "Complete guide to selecting napkins, paper towels, and paper products. Balance quality, cost, and customer satisfaction.",
+    category: "Restaurant Supplies",
+    readTime: "8 min read",
+    date: "2025-10-16",
+    image: "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "gloves-food-safety-compliance",
+    title: "Gloves and Food Safety: Complete Compliance Guide",
+    excerpt: "Essential guide to food safety gloves, proper usage, compliance requirements, and choosing the right gloves for your restaurant.",
+    category: "Food Safety",
+    readTime: "9 min read",
+    date: "2025-10-16",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop",
+  },
+  {
     slug: "choosing-takeout-containers",
     title: "How to Choose the Right Takeout Containers for Your Restaurant",
     excerpt: "A comprehensive guide to selecting takeout containers based on your menu, budget, and sustainability goals.",
     category: "Buying Guide",
     readTime: "5 min read",
     date: "2025-10-10",
+    image: "https://images.unsplash.com/photo-1603073809001-c4a6937d5b26?w=800&auto=format&fit=crop",
   },
   {
     slug: "eco-friendly-packaging-guide",
@@ -29,6 +85,7 @@ const blogPosts = [
     category: "Sustainability",
     readTime: "7 min read",
     date: "2025-10-08",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&auto=format&fit=crop",
   },
   {
     slug: "reduce-packaging-costs",
@@ -37,6 +94,7 @@ const blogPosts = [
     category: "Tips",
     readTime: "4 min read",
     date: "2025-10-05",
+    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&auto=format&fit=crop",
   },
   {
     slug: "food-truck-supplies-checklist",
@@ -45,6 +103,7 @@ const blogPosts = [
     category: "Buying Guide",
     readTime: "6 min read",
     date: "2025-10-01",
+    image: "https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=800&auto=format&fit=crop",
   },
 ];
 
@@ -76,10 +135,16 @@ export default function BlogPage() {
                 key={post.slug}
                 className="bg-white rounded-2xl border-2 border-border hover:border-black hover:shadow-xl transition-all overflow-hidden group"
               >
-                {/* Placeholder image area */}
-                <div className="h-48 bg-gradient-to-br from-gray-100 to-accent-100 relative">
+                {/* Image area */}
+                <div className="relative h-48 bg-gradient-to-br from-gray-100 to-accent-100">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-white text-black text-xs font-semibold rounded-full">
+                    <span className="px-3 py-1 bg-white text-black text-xs font-semibold rounded-full shadow-md">
                       {post.category}
                     </span>
                   </div>

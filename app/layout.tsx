@@ -17,15 +17,18 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Coming Soon | Restaurant Supplies Direct",
-  description: "Premium restaurant disposables, packaging, and custom print — shipped direct from the source. Powered by Shure Hospitality Wholesale.",
-  keywords: ["restaurant supplies direct", "wholesale restaurant packaging", "restaurant disposables online", "takeout containers", "custom printed packaging"],
+  title: {
+    default: "Restaurant Supplies Direct | Wholesale Disposables & Custom Packaging",
+    template: "%s | Restaurant Supplies Direct"
+  },
+  description: "Wholesale restaurant disposables, takeout containers, and custom printed packaging shipped direct from Los Angeles. Bulk pricing, fast nationwide delivery, and custom branding for restaurants and food service businesses.",
+  keywords: ["restaurant supplies direct", "wholesale restaurant packaging", "restaurant disposables online", "takeout containers", "custom printed packaging", "bulk restaurant supplies", "food service disposables"],
   viewport: {
     width: 'device-width',
     initialScale: 1,
     maximumScale: 5,
   },
-  themeColor: '#000000',
+  themeColor: '#FF6B35',
   manifest: '/manifest.json',
   icons: {
     icon: [
@@ -36,16 +39,17 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Coming Soon | Restaurant Supplies Direct",
-    description: "Premium restaurant disposables, packaging, and custom print — shipped direct from the source.",
+    title: "Restaurant Supplies Direct | Wholesale Disposables & Custom Packaging",
+    description: "Wholesale restaurant disposables and custom printed packaging shipped direct from Los Angeles. Bulk pricing and fast nationwide delivery.",
     type: "website",
     siteName: "Restaurant Supplies Direct",
     locale: "en_US",
+    url: "https://restaurantsuppliesdirect.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coming Soon | Restaurant Supplies Direct",
-    description: "Premium restaurant disposables, packaging, and custom print — shipped direct from the source.",
+    title: "Restaurant Supplies Direct | Wholesale Disposables & Custom Packaging",
+    description: "Wholesale restaurant disposables and custom printed packaging shipped direct from Los Angeles.",
   },
   robots: {
     index: true,
@@ -57,6 +61,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  metadataBase: new URL('https://restaurantsuppliesdirect.com'),
 };
 
 export default function RootLayout({

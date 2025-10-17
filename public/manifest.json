@@ -1,0 +1,42 @@
+{
+  "name": "Restaurant Supplies Direct",
+  "short_name": "RSD",
+  "description": "Wholesale restaurant disposables, packaging, and custom print — shipped direct from the source",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6B35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "shortcuts": [
+    {
+      "name": "Shop All Products",
+      "short_name": "Shop",
+      "description": "Browse all restaurant supplies",
+      "url": "/shop",
+      "icons": [{ "src": "/logo-icon.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Custom Printing",
+      "short_name": "Custom",
+      "description": "Get custom branded packaging",
+      "url": "/custom-printing",
+      "icons": [{ "src": "/logo-icon.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with our team",
+      "url": "/contact",
+      "icons": [{ "src": "/logo-icon.svg", "sizes": "96x96" }]
+    }
+  ]
+}
