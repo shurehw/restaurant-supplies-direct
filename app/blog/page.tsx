@@ -16,6 +16,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "rsd-vs-webstaurantstore",
+    title: "Restaurant Supplies Direct vs WebstaurantStore: Honest Comparison",
+    excerpt: "Detailed comparison of two restaurant supply approaches: specialized disposables expert vs. broad marketplace. Find the best fit for your business.",
+    category: "Comparison",
+    readTime: "11 min read",
+    date: "2025-10-16",
+    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&auto=format&fit=crop",
+  },
+  {
     slug: "restaurant-disposables-guide",
     title: "Complete Guide to Restaurant Disposables",
     excerpt: "Essential guide to choosing restaurant disposables including takeout containers, cups, napkins, gloves, and more. Save costs while maintaining quality.",
