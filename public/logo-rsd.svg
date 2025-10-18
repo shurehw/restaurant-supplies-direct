@@ -5,15 +5,15 @@
 
   <!-- Chinese Takeout Box Icon - Centered -->
   <!-- Box body -->
-  <path d="M105 165L95 215L128 225L161 215L151 165Z" fill="#FF6B35"/>
+  <path d="M105 161L95 211L128 221L161 211L151 161Z" fill="#FF6B35"/>
   <!-- Top flaps -->
-  <path d="M105 165L95 155L128 150L161 155L151 165Z" fill="#FF6B35"/>
+  <path d="M105 161L95 151L128 146L161 151L151 161Z" fill="#FF6B35"/>
   <!-- Left fold -->
-  <line x1="105" y1="165" x2="95" y2="215" stroke="white" stroke-width="1.5"/>
+  <line x1="105" y1="161" x2="95" y2="211" stroke="white" stroke-width="1.5"/>
   <!-- Right fold -->
-  <line x1="151" y1="165" x2="161" y2="215" stroke="white" stroke-width="1.5"/>
+  <line x1="151" y1="161" x2="161" y2="211" stroke="white" stroke-width="1.5"/>
   <!-- Center seam -->
-  <line x1="128" y1="150" x2="128" y2="225" stroke="white" stroke-width="1.5"/>
+  <line x1="128" y1="146" x2="128" y2="221" stroke="white" stroke-width="1.5"/>
 
   <!-- RSD Text -->
   <text x="300" y="260" font-family="Plus Jakarta Sans, sans-serif" font-size="200" font-weight="800" fill="#003D7A">RSD</text>
