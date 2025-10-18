@@ -6,13 +6,13 @@
 
   <!-- Chinese Takeout Box Icon - Centered -->
   <!-- Box body -->
-  <path d="M220 213L200 303L256 319L312 303L292 213Z" fill="#FF6B35"/>
+  <path d="M210 220L190 303L256 319L322 303L302 220Z" fill="#FF6B35"/>
   <!-- Top flaps -->
-  <path d="M220 213L200 200L256 193L312 200L292 213Z" fill="#FF6B35"/>
+  <path d="M210 220L190 207L256 200L322 207L302 220Z" fill="#FF6B35"/>
   <!-- Left fold -->
-  <line x1="220" y1="213" x2="200" y2="303" stroke="white" stroke-width="3"/>
+  <line x1="210" y1="220" x2="190" y2="303" stroke="white" stroke-width="3"/>
   <!-- Right fold -->
-  <line x1="292" y1="213" x2="312" y2="303" stroke="white" stroke-width="3"/>
+  <line x1="302" y1="220" x2="322" y2="303" stroke="white" stroke-width="3"/>
   <!-- Center seam -->
-  <line x1="256" y1="193" x2="256" y2="319" stroke="white" stroke-width="3"/>
+  <line x1="256" y1="200" x2="256" y2="319" stroke="white" stroke-width="3"/>
 </svg>
